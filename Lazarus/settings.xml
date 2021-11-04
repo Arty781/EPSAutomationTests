@@ -1,0 +1,1069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <devices>
+    <can-bus>
+      <CanDevicesType>PeakCAN</CanDevicesType>
+      <bitrate>500000</bitrate>
+    </can-bus>
+  </devices>
+  <ecu-strings>
+    <ecu type="Marelli_4GV">
+      <item name="boxcode">030906034AF 2019       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Marelli_4HV">
+      <item name="boxcode">03C906024A  0040       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Marelli_4MV">
+      <item name="boxcode">036906034AJ 4955       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Marelli_9GV">
+      <item name="boxcode">032906034AJ 9333       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Marelli_11GV">
+      <item name="boxcode">05C906034A </item>
+      <item name="software">9606</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">05C907445</item>
+      <item name="hwversion">H01</item>
+    </ecu>
+    <ecu type="Marelli_CFC311">
+      <item name="boxcodeSoftware_fpc_ecutype">420910156H  0050|123456|3.0l V6 TFSI     </item>
+    </ecu>
+    <ecu type="AL420_GS1904">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="AL420_GS1911">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="AL450">
+      <item name="boxcode">2H0927158A </item>
+      <item name="software">1009</item>
+      <item name="vin">-----------------</item>
+      <item name="hwversion">H01</item>
+      <item name="ecutype">2H0 20RTDIRdW ZH9X5D201009</item>
+      <item name="vwsystemname">J217</item>
+      <item name="vwfazzit">SME-RBG13.02.1403930527</item>
+      <item name="asamversion">002011</item>
+      <item name="asam">EV_TCMAL450211</item>
+    </ecu>
+    <ecu type="AL551">
+      <item name="boxcode">8R0927158T </item>
+      <item name="software">1003</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">06K907425J</item>
+      <item name="hwversion">H08</item>
+      <item name="ecutype">0BK 20TFSIUSA</item>
+      <item name="vwsystemname">J217</item>
+      <item name="vwfazzit">ZFS-00519.07.1151060134</item>
+      <item name="asamversion">002018</item>
+      <item name="asam">EV_TCMAL551211</item>
+      <item name="coding">00 00 02</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="AL552">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="AL552_4MB">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="AL651">
+      <item name="boxcode">8K0927158  </item>
+      <item name="software">0030</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">0B6927156</item>
+      <item name="hwversion">H05</item>
+      <item name="ecutype">0B6 42 FSIUSA</item>
+      <item name="vwsystemname">J217</item>
+      <item name="vwfazzit">ZFS-00518.11.1150160050</item>
+      <item name="asamversion">001012</item>
+      <item name="asam">EV_TCMAL651211</item>
+      <item name="coding">00 10 02</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="AL750">
+      <item name="boxcodeSoftware_fpc_ecutype">09G927750PF  2462|123456|3.0l V6 TFSI     </item>
+    </ecu>
+    <ecu type="AL750_TP20">
+      <item name="boxcodeSoftware_fpc_ecutype">09G927750PF  2462|123456|3.0l V6 TFSI     </item>
+    </ecu>
+    <ecu type="AL951">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="AL991">
+      <item name="boxcode">0C8927750AL</item>
+      <item name="software">2447</item>
+      <item name="hwboxcode">0C8927750AL</item>
+      <item name="hwversion">002</item>
+      <item name="ecutype">AL1000 AISIN</item>
+      <item name="vwsystemname">J217</item>
+      <item name="vwfazzit">AW7-00008.12.1400020276</item>
+      <item name="asamversion">002112</item>
+      <item name="asam">EV_TCMAL991031</item>
+      <item name="coding">00 05 F8</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="AQ250_6F">
+      <item name="boxcodeSoftware_fpc_ecutype">09G927750HM  1012|123456|3.0l V6 TFSI     </item>
+    </ecu>
+    <ecu type="AQ250_6F_TP20">
+      <item name="boxcodeSoftware_fpc_ecutype">09G927750HM  1012|123456|3.0l V6 TFSI     </item>
+    </ecu>
+    <ecu type="AQ300">
+      <item name="boxcode">09S927158R </item>
+      <item name="software">3578</item>
+    </ecu>
+    <ecu type="AQ250">
+      <item name="boxcode">0C8927755  </item>
+      <item name="software">2882</item>
+      <item name="hwboxcode">0C8927755</item>
+      <item name="hwversion">002</item>
+      <item name="ecutype">AL 750 6A</item>
+      <item name="vwsystemname">J217</item>
+      <item name="vwfazzit">AW7-00008.12.1400020276</item>
+      <item name="asamversion">002112</item>
+      <item name="asam">EV_TCMAL991031</item>
+      <item name="coding">00 05 F8</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="AQ450">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="DL382">
+      <item name="boxcode">4G0927153Q</item>
+      <item name="software">0006</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DL382_G2">
+      <item name="boxcode">4K0927153AB</item>
+      <item name="software">0004</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DL501_G1">
+      <item name="boxcode">8K2927156S</item>
+      <item name="software">0004</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DL501_G2">
+      <item name="boxcode">8K5927156R</item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DL800_G1">
+      <item name="boxcode">4T0927155</item>
+      <item name="software">0813</item>
+      <item name="hwversion">H02</item>
+      <item name="vwfazzit">5KD-56611.05.1589810018</item>
+      <item name="asamversion">001001</item>
+      <item name="asam">EV_TCMDL800041</item>
+    </ecu>
+    <ecu type="DL800_G2">
+      <item name="boxcode">0BT300011K</item>
+      <item name="software">1409</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DQ250_02E_Cxx">
+      <item name="boxcode_dsg">02E300012G  1968</item>
+      <item name="hwboxcode_dsg">02E927770AJ</item>
+    </ecu>
+    <ecu type="DQ250_02E_Fxx">
+      <item name="boxcode_dsg">02E300012G  1968</item>
+      <item name="hwboxcode_dsg">02E927770AJ</item>
+    </ecu>
+    <ecu type="DQ250_02E_Exx">
+      <item name="boxcodeSoftware_fpc_ecutype">02E300011BQ 1806|123456|3.0l V6 TFSI     </item>
+      <item name="hwboxcode">02E927770AM  </item>
+    </ecu>
+    <ecu type="DQ380">
+      <item name="boxcode">0DE300040J</item>
+      <item name="software">1401</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DQ381">
+      <item name="boxcode">0GC300012M </item>
+      <item name="software">2302</item>
+      <item name="vin">WVWZZZAUZKW034178</item>
+      <item name="hwboxcode">0GC927711H</item>
+      <item name="hwversion">H06</item>
+      <item name="ecutype">GSG DQ381    </item>
+      <item name="vwfazzit">BXR-28412.08.1824100034</item>
+      <item name="asamversion">001</item>
+      <item name="asam">EV_TCMDQ381061</item>
+      <item name="coding">00 14</item>
+      <item name="fcnt-attempted">00 04 00 04 00 07</item>
+      <item name="fcnt-success">00 04 00 04 00 07</item>
+    </ecu>
+    <ecu type="DQ400">
+      <item name="boxcode">0BT300011K</item>
+      <item name="software">1409</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DQ500_Bosch_0DL">
+      <item name="boxcode">0DL300012H </item>
+      <item name="software">2110</item>
+      <item name="vin">-----------------</item>
+      <item name="hwboxcode">0GC927711G</item>
+      <item name="hwversion">H06</item>
+      <item name="ecutype">GSG DQ500    </item>
+      <item name="vwsystemname">J217</item>
+      <item name="vwfazzit">BXR-28420.06.1724021053</item>
+      <item name="asamversion">001001</item>
+      <item name="asam">EV_TCMDQ500021</item>
+      <item name="coding">00 14</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="DQ500_Temic_0BT_0BH">
+      <item name="boxcode">0BT300011K</item>
+      <item name="software">1409</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DQ500_Temic_0DL">
+      <item name="boxcode">0DL300012H</item>
+      <item name="software">1409</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DQ250_0D9">
+      <item name="boxcode">0D9300012L</item>
+      <item name="software">4517</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="DQ200_0AM">
+      <item name="boxcode_dsg">02E300058P  3512</item>
+      <item name="hwboxcode_dsg">02E927770AM</item>
+    </ecu>
+    <ecu type="DQ200_0CW_G1">
+      <item name="boxcode">0CW300044S</item>
+      <item name="software">4530</item>
+      <item name="asam">EV_TCMDQ200021</item>
+      <item name="asamversion">001001</item>
+      <item name="hwboxcode">0AM927769G</item>
+      <item name="hwversion">H43</item>
+      <item name="ecutype">GSG DQ200-MQB</item>
+      <item name="vwsystemname">J743</item>
+      <item name="ecusn">CU501307245075</item>
+      <item name="vwfazzit">CU5-07124.07.1300005075</item>
+      <item name="vwsparepartnumber">0CW300044S</item>
+    </ecu>
+    <ecu type="DQ200_0CW_G2">
+      <item name="boxcode">0CW300049K </item>
+      <item name="software">0906</item>
+      <item name="asam">EV_TCMDQ200021</item>
+      <item name="asamversion">001001</item>
+      <item name="hwboxcode">0AM927769E</item>
+      <item name="hwversion">H05</item>
+      <item name="ecutype">GSG DQ200G2_M</item>
+      <item name="vwsystemname">J743</item>
+      <item name="vwfazzit">CU5-07221.09.1600005772</item>
+      <item name="vwsparepartnumber">0CW300049K </item>
+    </ecu>
+    <ecu type="VL300">
+      <item name="boxcode_dsg">02E300058P  3512</item>
+      <item name="hwboxcode_dsg">02E927770AM</item>
+    </ecu>
+    <ecu type="VL380">
+      <item name="boxcode">4G1927155M</item>
+      <item name="software">0004</item>
+    </ecu>
+    <ecu type="VGSNAG2" />
+    <ecu type="SQ100">
+      <item name="boxcode">4G1927155M</item>
+      <item name="software">0004</item>
+    </ecu>
+    <ecu type="ME71">
+      <item name="boxcodeSoftware_fpc_ecutype">3B0907551AT 0050|123456|2.0L V10/4V TFSI   </item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="ME711">
+      <item name="boxcodeSoftware_fpc_ecutype">07K906032S  9652|123456|2.0L V10/4V TFSI   </item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="ME75">
+      <item name="boxcodeSoftware_fpc_ecutype">8E0909518F  0005|123456|2.0L V10/4V TFSI   </item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Porsche_PDK3000">
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Porsche_PDK4000">
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="Porsche_PDK2_TC400">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+    </ecu>
+    <ecu type="ME7510">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="ME7520">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="ME7530">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="MED91">
+      <item name="boxcodeSoftware_fpc_ecutype">1K0907115   0030|123456|4.2L V8/4V FSI     </item>
+      <item name="hwboxcode">8E1907560    </item>
+      <item name="vin">XXXXXXXXXXXXXXXXX</item>
+      <item name="vwfazzit">XXXXXXXXXXXXXX BPG-81024.03.0757H15---18490928</item>
+    </ecu>
+    <ecu type="MED911">
+      <item name="boxcodeSoftware_fpc_ecutype">8E1910560D  0030|123456|4.2L V8/4V FSI     </item>
+      <item name="hwboxcode">8E1907560    </item>
+      <item name="vin">XXXXXXXXXXXXXXXXX</item>
+      <item name="vwfazzit">XXXXXXXXXXXXXX BPG-81024.03.0757H15---18490928</item>
+    </ecu>
+    <ecu type="MED911_UDS">
+      <item name="boxcode_uds">8T0907560M </item>
+      <item name="software_uds">0004</item>
+      <item name="vin_uds">XXXXXXXXXXXXXXXXX</item>
+    </ecu>
+    <ecu type="MED912">
+      <item name="boxcodeSoftware_fpc_ecutype">4F5910552A  0040|123456|5.0L V10/4V TFSI   </item>
+      <item name="hwboxcode">4F1907552A   </item>
+      <item name="engine">BUH </item>
+      <item name="vin">XXXXXXXXXXXXXXXXX</item>
+      <item name="vwfazzit">XXXXXXXXXXXXXX BPG-81015.05.08F1H05---14790176</item>
+    </ecu>
+    <ecu type="MED9510">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="EDC16CP34">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="EDC16U01">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="EDC16U31">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="EDC16U34">
+      <item name="boxcode">1K0907115   0030       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="EDC17C46">
+      <item name="boxcode">03L906018BC</item>
+      <item name="software">9784</item>
+      <item name="vin">WAUZZZ8K09A080019</item>
+    </ecu>
+    <ecu type="EDC17C54">
+      <item name="boxcode">03L906012AS</item>
+      <item name="software">6070</item>
+      <item name="vin">WAUZZZ8K09A080020</item>
+    </ecu>
+    <ecu type="EDC17C64">
+      <item name="boxcode">04L906021DT</item>
+      <item name="software">8127</item>
+      <item name="vin">VSSZZZ5FZDR035900</item>
+    </ecu>
+    <ecu type="EDC17C74">
+      <item name="boxcode">04L906026BN</item>
+      <item name="software">1197</item>
+      <item name="vin">WVWZZZAUZHP510964</item>
+      <item name="bootid">EDC17 CB.09.02.01 C67.06</item>
+      <item name="hwboxcode">04L907309R</item>
+      <item name="hwversion">H23</item>
+      <item name="ecutype">R4 2,0L EDC</item>
+      <item name="vwsystemname">-----</item>
+      <item name="vwfazzit">RB8-65801.06.1616740289</item>
+      <item name="asamversion">002002</item>
+      <item name="asam">EV_ECM20TDI01104L906026BN</item>
+    </ecu>
+    <ecu type="EDC17CP04">
+      <item name="boxcode">8K0907401  </item>
+      <item name="software">0009</item>
+      <item name="vin">WAUZZZ8K09A080023</item>
+    </ecu>
+    <ecu type="EDC17CP04_v41">
+      <item name="boxcode">8K0907401  </item>
+      <item name="software">0009</item>
+      <item name="vin">WAUZZZ8K09A080023</item>
+    </ecu>
+    <ecu type="EDC17CP14_v24">
+      <item name="boxcode">03L906019AN</item>
+      <item name="software">4602</item>
+      <item name="vin">WAUZZZ8K09A080024</item>
+    </ecu>
+    <ecu type="EDC17CP14_v32">
+      <item name="boxcode">03L906019AN</item>
+      <item name="software">4602</item>
+      <item name="vin">WAUZZZ8K09A080024</item>
+    </ecu>
+    <ecu type="EDC17CP14_v33">
+      <item name="boxcode">03L906019AN</item>
+      <item name="software">4602</item>
+      <item name="vin">WAUZZZ8K09A080024</item>
+    </ecu>
+    <ecu type="EDC17CP14_v33_v2">
+      <item name="boxcode">03L906019AN</item>
+      <item name="software">4602</item>
+      <item name="vin">WAUZZZ8K09A080024</item>
+    </ecu>
+    <ecu type="EDC17CP14_v34">
+      <item name="boxcode">03L906019AN</item>
+      <item name="software">4602</item>
+      <item name="vin">WAUZZZ8K09A080024</item>
+    </ecu>
+    <ecu type="EDC17CP14_v40">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="EDC17CP20_v22">
+      <item name="boxcode">03L906019EK</item>
+      <item name="software">3136</item>
+      <item name="vin">WAUZZZ8K09A080025</item>
+    </ecu>
+    <ecu type="EDC17CP20_v23">
+      <item name="boxcode">03L906019EK</item>
+      <item name="software">3136</item>
+      <item name="vin">WAUZZZ8K09A080025</item>
+    </ecu>
+    <ecu type="EDC17CP20_v27">
+      <item name="boxcode">03L906019EK</item>
+      <item name="software">3136</item>
+      <item name="vin">WAUZZZ8K09A080025</item>
+    </ecu>
+    <ecu type="EDC17CP20_v34">
+      <item name="boxcode">03L906022EN</item>
+      <item name="software">7373</item>
+      <item name="vin">WAUZZZ8K09A080025</item>
+    </ecu>
+    <ecu type="EDC17CP24_v21">
+      <item name="boxcode">4L0910401Q </item>
+      <item name="software">0080</item>
+      <item name="vin">WAUZZZ8K09A080028</item>
+    </ecu>
+    <ecu type="EDC17CP24_v210">
+      <item name="boxcode">4L0910401Q </item>
+      <item name="software">0080</item>
+      <item name="vin">WAUZZZ8K09A080028</item>
+    </ecu>
+    <ecu type="EDC17CP44_v31">
+      <item name="boxcode">8K5907589  </item>
+      <item name="software">0004</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="EDC17CP44_xxx907409">
+      <item name="boxcode">7P0907409  </item>
+      <item name="software">0006</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="EDC17CP44_v36">
+      <item name="boxcode">8K5907401G </item>
+      <item name="software">0001</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="EDC17CP54">
+      <item name="boxcode">2H6907311E </item>
+      <item name="software">0001</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="EDC17CP74">
+      <item name="boxcode">2H6907311E </item>
+      <item name="software">0001</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="EDC17U01">
+      <item name="boxcode">2H6907311E </item>
+      <item name="software">0001</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="EDC17U05">
+      <item name="boxcode">2H6907311E </item>
+      <item name="software">0001</item>
+      <item name="vin">WAUZZZ8K09A080026</item>
+    </ecu>
+    <ecu type="ME1711">
+      <item name="boxcode">8K5907115J </item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME1716">
+      <item name="boxcode">04E906022  </item>
+      <item name="software">2848</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME1756">
+      <item name="boxcode">8K5907115J </item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME17520">
+      <item name="boxcode">8K5907115J </item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME17522">
+      <item name="boxcode">8K5907115J </item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME17524">
+      <item name="boxcode">8K5907115J </item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME17526">
+      <item name="boxcode">8K5907115J </item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080018</item>
+    </ecu>
+    <ecu type="ME17833">
+      <item name="boxcode">14FA194CP.05.</item>
+      <item name="vin">SBM14DCA4JW001110</item>
+    </ecu>
+    <ecu type="MED171">
+      <item name="boxcode">8K2907115L </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A000000</item>
+      <item name="hwboxcode">8T1907560</item>
+      <item name="hwversion">H04</item>
+      <item name="ecutype">4.2l V8HDZ</item>
+      <item name="vwsystemname">J623</item>
+      <item name="asamversion">001001</item>
+      <item name="asam">EV_ECM42FSI0118T2907560_001</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="MED171_KWP2000">
+      <item name="boxcodeSoftware_fpc_ecutype">1K0907115AT 0040|123456|4.2L V8/4V FSI     </item>
+      <item name="hwboxcode">1K0907115AK</item>
+      <item name="vin">XXXXXXXXXXXXXXXXX</item>
+      <item name="vwfazzit">BPG-81004.06.11E3H26---12431199</item>
+    </ecu>
+    <ecu type="MED1711_KWP2000">
+      <item name="boxcode">0CW300044T</item>
+      <item name="software">4530</item>
+    </ecu>
+    <ecu type="MED1711">
+      <item name="boxcode">4G0906014C </item>
+      <item name="software">0006</item>
+      <item name="vin">WAUZZZ8K09A080017</item>
+      <item name="bootid">ADT17 CB.05.04.00 C40.06     </item>
+    </ecu>
+    <ecu type="MED1711_v2">
+      <item name="boxcode">8T2907560E </item>
+      <item name="software">0003</item>
+      <item name="vin">WAUZZZ8K09A080017</item>
+      <item name="hwboxcode">8T1907560</item>
+      <item name="hwversion">H04</item>
+      <item name="ecutype">4.2l V8HDZ</item>
+      <item name="vwsystemname">J623</item>
+      <item name="asamversion">001001</item>
+      <item name="asam">EV_ECM42FSI0118T2907560_001</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01 00 01</item>
+      <item name="fcnt-success">00 01 00 01 00 01 00 01 00 01</item>
+    </ecu>
+    <ecu type="MED17110">
+      <item name="boxcode">4G0906560B </item>
+      <item name="software">0008</item>
+      <item name="vin">WAUZZZ8K09A080017</item>
+    </ecu>
+    <ecu type="MED17121">
+      <item name="boxcode">4G0906560B </item>
+      <item name="software">0008</item>
+      <item name="vin">WAUZZZ8K09A080017</item>
+    </ecu>
+    <ecu type="MED17127">
+      <item name="boxcode">04C906025F </item>
+      <item name="software">6355</item>
+      <item name="vin">WAUZZZ8K09A123456</item>
+      <item name="bootid">MED17 CB.09.07.01 C92.06     </item>
+      <item name="hwboxcode">04C907309BA</item>
+      <item name="hwversion">H20</item>
+      <item name="ecutype">R3 1.0l TFS</item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">RB8-65802.11.1812640250</item>
+      <item name="asamversion">003009</item>
+      <item name="asam">EV_ECM10TFS01104C906025F</item>
+    </ecu>
+    <ecu type="MED1716">
+      <item name="boxcode">03H906023N </item>
+      <item name="software">1161</item>
+      <item name="vin">WAUZZZ8K09A080016</item>
+    </ecu>
+    <ecu type="MED17161">
+      <item name="boxcode">4G0906560B </item>
+      <item name="software">0008</item>
+      <item name="vin">WAUZZZ8K09A080017</item>
+    </ecu>
+    <ecu type="MED17161_v2">
+      <item name="boxcode">4G0906560B </item>
+      <item name="software">0008</item>
+      <item name="vin">WAUZZZ8K09A080017</item>
+    </ecu>
+    <ecu type="MED17162">
+      <item name="boxcode">8S0907404G </item>
+      <item name="software">0002</item>
+      <item name="vin">-----------------</item>
+      <item name="bootid">MED17 CB.09.07.00 C86.06     </item>
+      <item name="hwboxcode">07K907309E</item>
+      <item name="hwversion">H22</item>
+      <item name="ecutype">2.5l R5/4V TF</item>
+      <item name="vwsystemname">-----</item>
+      <item name="vwfazzit">RB8-65831.10.1716181466</item>
+      <item name="asamversion">001001</item>
+      <item name="asam">EV_ECM25TFS0118S0907404G</item>
+    </ecu>
+    <ecu type="MED17162_03H">
+      <item name="boxcode">03H906026A </item>
+      <item name="software">4561</item>
+      <item name="vin">-----------------</item>
+      <item name="bootid">MED17 CB.09.07.00 C86.06     </item>
+      <item name="hwboxcode">03H907309L</item>
+      <item name="hwversion">H22</item>
+      <item name="ecutype">VR6 2.5l TFS</item>
+      <item name="vwsystemname">-----</item>
+      <item name="vwfazzit">RB8-65831.10.1716181466</item>
+      <item name="asamversion">001006</item>
+      <item name="asam">EV_ECM25TFS01103H906026A</item>
+    </ecu>
+    <ecu type="MED17162_v31">
+      <item name="boxcode">8V0907404A </item>
+      <item name="software">0004</item>
+      <item name="vin">WAUZZZ8K09A080015</item>
+    </ecu>
+    <ecu type="MED175">
+      <item name="boxcode">5K0907115   0040       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="MED175_UDS">
+      <item name="boxcode">8T0907115A </item>
+      <item name="software">0004</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MED1751">
+      <item name="boxcode">5K0907115   0040       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="MED1752">
+      <item name="boxcode">06J997029J  1514       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E180712</item>
+    </ecu>
+    <ecu type="MED17520">
+      <item name="boxcode">04E906016F </item>
+      <item name="software">6186</item>
+      <item name="vin">WAUZZZ8K09A080014</item>
+    </ecu>
+    <ecu type="MED17521">
+      <item name="boxcode">04E906016F </item>
+      <item name="software">6186</item>
+      <item name="vin">WAUZZZ8K09A080014</item>
+    </ecu>
+    <ecu type="MED17525">
+      <item name="boxcode">04E906027HB</item>
+      <item name="software">2328</item>
+      <item name="vin">WAUZZZ8K09A080013</item>
+    </ecu>
+    <ecu type="MED1755_KWP2000">
+      <item name="boxcode">03C906026K  6414       MED17.5</item>
+      <item name="vin">WVWZZZ3CZ9E000001</item>
+    </ecu>
+    <ecu type="MED1755_UDS_v1">
+      <item name="boxcode">03C906026AB</item>
+      <item name="software">3731</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MED1755_UDS_v2">
+      <item name="boxcode">03C906027AR</item>
+      <item name="software">9970</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+      <item name="bootid">MED17 CB.03.05.06 C33.00  1.0</item>
+      <item name="hwboxcode">03C907309N </item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">RB8-65828.01.1212630679</item>
+    </ecu>
+    <ecu type="MED1775">
+      <item name="boxcode">03C906026AB</item>
+      <item name="software">3731</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="DCM37_v1">
+      <item name="boxcode">4L0910401Q </item>
+      <item name="software">0080</item>
+      <item name="vin">WAUZZZ8K09A080028</item>
+    </ecu>
+    <ecu type="DCM37_v2">
+      <item name="boxcode">4L0910401Q </item>
+      <item name="software">0080</item>
+      <item name="vin">WAUZZZ8K09A080028</item>
+    </ecu>
+    <ecu type="DCM62V">
+      <item name="boxcode">4L0910401Q </item>
+      <item name="software">0080</item>
+      <item name="vin">WAUZZZ8K09A080028</item>
+    </ecu>
+    <ecu type="GCM74">
+      <item name="boxcode">05C906032B </item>
+      <item name="software">1019</item>
+      <item name="vin">WAUZZZ8K09A080028</item>
+    </ecu>
+    <ecu type="MG1CA811">
+      <item name="boxcode">04E906056E </item>
+      <item name="software">1244</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS001">
+      <item name="boxcode">5NA907115A </item>
+      <item name="software">0004</item>
+      <item name="vin">3VV3B7AX6JM182475</item>
+      <item name="hwboxcode">06L907309B</item>
+      <item name="hwversion">H31</item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">ZSC-86409.06.1878250096</item>
+      <item name="asamversion">001005</item>
+      <item name="asam">EV_ECM20TFS0115NA907115A</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01 00 01</item>
+      <item name="bootid">MDG1  CB.06.031.5 013.00</item>
+      <item name="ecutype">R4 2.0l TFSI</item>
+    </ecu>
+    <ecu type="MG1CS002_D">
+      <item name="boxcode">8W0907559G</item>
+      <item name="software">0008</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS002_F">
+      <item name="boxcode">8W0907551J</item>
+      <item name="software">0003</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS008">
+      <item name="boxcode">9Y0909101E</item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS011">
+      <item name="boxcode">05E906018  </item>
+      <item name="software">5470</item>
+      <item name="vin">WVWZZZAUZJP575729</item>
+      <item name="hwboxcode">05E907309</item>
+      <item name="hwversion">H22</item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">RB8-65823.12.1713130604</item>
+      <item name="asamversion">003006</item>
+      <item name="asam">EV_ECM15TFS01105E906018</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01</item>
+      <item name="bootid">MDG1  CB.06.043.0 026.00</item>
+      <item name="ecutype">R4 1.5l TFS</item>
+    </ecu>
+    <ecu type="MG1CS011_D">
+      <item name="boxcode">05E906012A </item>
+      <item name="software">9971</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">05E907309D</item>
+      <item name="hwversion">H01</item>
+    </ecu>
+    <ecu type="MG1CS024">
+      <item name="boxcode">8W0907559G</item>
+      <item name="software">0008</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS031">
+      <item name="boxcode">8W0907115R</item>
+      <item name="software">0004</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS211">
+      <item name="boxcode">04E906034AB</item>
+      <item name="software">1656</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MD1CP004">
+      <item name="boxcode">4G2907311B</item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MD1CS004">
+      <item name="boxcode">05L906027T </item>
+      <item name="software">1113</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">05L907309</item>
+      <item name="hwversion">H01</item>
+    </ecu>
+    <ecu type="MD1CP014">
+      <item name="boxcode">4G2907311B</item>
+      <item name="software">0002</item>
+      <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="Simos_062">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_063">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_071">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_077">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_078">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_081">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S81.1 CB.00.00.00 C01.00 S81</item>
+    </ecu>
+    <ecu type="Simos_082">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_083">
+      <item name="boxcodeSoftware_fpc_ecutype">4F1910551A  0030|123456|3.0l V6 TFSI     </item>
+      <item name="hwboxcode">4F1907551    </item>
+      <item name="vin">WAUWG94F09N051052</item>
+      <item name="engine">CCAA</item>
+      <item name="vwfazzit">SME-RBG23.03.09--H02---03930089</item>
+    </ecu>
+    <ecu type="Simos_084">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_085">
+      <item name="boxcode">8K5907551G </item>
+      <item name="software">0007</item>
+      <item name="vin">WVWZZZAUZGW000010</item>
+    </ecu>
+    <ecu type="Simos_086">
+      <item name="boxcode">7P0907551  </item>
+      <item name="software">0002</item>
+      <item name="vin">WVWZZZAUZGW000010</item>
+    </ecu>
+    <ecu type="Simos_091">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_1020">
+      <item name="boxcode">03F906070E </item>
+      <item name="software">9699</item>
+      <item name="vin">WVWZZZAUZGW000009</item>
+    </ecu>
+    <ecu type="Simos_10x2">
+      <item name="boxcode">03F906070GR</item>
+      <item name="software">2691</item>
+      <item name="vin">VSSZZZ6JZDR085480</item>
+      <item name="hwboxcode">03F907309AE</item>
+      <item name="hwversion">H10</item>
+      <item name="ecutype">SIMOS10.22A </item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">SJ8-FST03.04.1200130151</item>
+      <item name="asamversion">004004</item>
+      <item name="asam">EV_ECM12TFS02103F906070GR</item>
+      <item name="fcnt-attempted">00 01 00 02 00 03</item>
+      <item name="fcnt-success">00 01 00 02 00 03</item>
+      <item name="engine-code">CBZB</item>
+    </ecu>
+    <ecu type="Simos_111">
+      <item name="boxcode">8K0907551C </item>
+      <item name="software">0005</item>
+      <item name="vin">WAUZZZ8K09A080011</item>
+      <item name="bootid">S84.1 CB.00.00.L0 C01.00 S84</item>
+    </ecu>
+    <ecu type="Simos_121">
+      <item name="boxcode">8K0906264  </item>
+      <item name="software">0011</item>
+      <item name="vin">WVWZZZAUZGW000007</item>
+      <item name="vwfazzit">SME-RBG13.02.1403930527</item>
+    </ecu>
+    <ecu type="Simos_122">
+      <item name="boxcode">8K0906264  </item>
+      <item name="software">0011</item>
+      <item name="vin">WVWZZZAUZGW000007</item>
+    </ecu>
+    <ecu type="Simos_129">
+      <item name="boxcode">4J0901159  </item>
+      <item name="software">X114</item>
+      <item name="vin">WVWZZZAUZGW000007</item>
+    </ecu>
+    <ecu type="Simos_151x">
+      <item name="boxcode">4G2907551A</item>
+      <item name="software">0004</item>
+      <item name="vin">WVWZZZAUZGW000006</item>
+    </ecu>
+    <ecu type="Simos_152x">
+      <item name="boxcode">4G2907551A</item>
+      <item name="software">0004</item>
+      <item name="vin">WVWZZZAUZGW000006</item>
+    </ecu>
+    <ecu type="Simos_161x">
+      <item name="boxcode">4G2907551A</item>
+      <item name="software">0004</item>
+      <item name="vin">WVWZZZAUZGW000006</item>
+    </ecu>
+    <ecu type="Simos_162x">
+      <item name="boxcode">4M0907551  </item>
+      <item name="software">0003</item>
+      <item name="vin">WVWZZZAUZGW000005</item>
+    </ecu>
+    <ecu type="Simos_181">
+      <item name="boxcode">8V0906259B </item>
+      <item name="software">0003</item>
+      <item name="vin">WAUZZZ8V7HA073533</item>
+      <item name="bootid">SC8.1 CB.00.00.90 C02.00 SC8 </item>
+      <item name="hwboxcode">06K907425B</item>
+      <item name="hwversion">H13</item>
+      <item name="ecutype">1.8l R4 TSI </item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">SME-RBG13.02.1403930528</item>
+      <item name="asamversion">001005</item>
+      <item name="asam">EV_ECM20TFS0205G0906259E</item>
+      <item name="fcnt-attempted">00 01 00 02 00 03 00 04 00 05</item>
+      <item name="fcnt-success">00 AA 00 BB 00 33 00 22 00 11</item>
+      <item name="engine-code">CHHB</item>
+    </ecu>
+    <ecu type="Simos_184">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_185">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_1810">
+      <item name="boxcode">3G0906259F </item>
+      <item name="software">0004</item>
+      <item name="vin">-----------------</item>
+      <item name="bootid">SCG.1 CB.00.00.40 C02.00 SCG </item>
+      <item name="hwboxcode">06K907425J</item>
+      <item name="hwversion">H13</item>
+      <item name="ecutype">1.8l R4 TSI </item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">SJ8-FST22.03.1711200586</item>
+      <item name="asamversion">001001</item>
+      <item name="asam">EV_ECM18TFS0203G0906259F</item>
+    </ecu>
+    <ecu type="Simos_192">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_20120">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_PCR21">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_PPD11">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_PPD12_v1">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Simos_PPD12_v2">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Porsche_SDI61">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Porsche_SDI8">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Porsche_SDI9">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Porsche_SDI101">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Porsche_SDI102">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Porsche_SDI21x">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Haldex_Gen4">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Haldex_Gen5">
+      <item name="boxcode">0CQ907554  </item>
+      <item name="software">7056</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+      <item name="hwboxcode">0CQ907554</item>
+      <item name="hwversion">H52</item>
+      <item name="ecutype">Haldex4Motion</item>
+      <item name="vwfazzit">HA1-00026.01.1500011080</item>
+      <item name="asamversion">002001</item>
+      <item name="asam">EV_AllWheelContrHA1VW37X</item>
+    </ecu>
+    <ecu type="Haldex_Gen5_BORGLB724">
+      <item name="boxcode">8W0906259  </item>
+      <item name="software">0005</item>
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="McLaren_PCCU_P13">
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+    <ecu type="Daimler_CPCNG">
+      <item name="vin">WVWZZZAUZGW000001</item>
+    </ecu>
+  </ecu-strings>
+</root>

@@ -1,0 +1,105 @@
+{
+  "uuid": "d233d824-a94c-4cf2-b0f3-5ac574d2d4b7-tr-0-1004",
+  "historyId": "_034.Tests.ClientTests.BaseEcuFlashing",
+  "fullName": "_034.Tests.ClientTests.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.ClientTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.ClientTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.IO.FileNotFoundException : Could not load file or assembly 'WaitAutomatedLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.",
+    "trace": "   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By element, Int32 seconds)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_o(String email) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\LoginPage\\Login.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Login.EnterLogin(String email)\r\n   at _034.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\ClientTests.cs:line 22"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.IO.FileNotFoundException : Could not load file or assembly 'WaitAutomatedLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.",
+        "trace": "   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By element, Int32 seconds)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_o(String email) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\LoginPage\\Login.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Login.EnterLogin(String email)\r\n   at _034.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\ClientTests.cs:line 22"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Could not load file or assembly 'WaitAutomatedLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.",
+            "trace": "   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By element, Int32 seconds)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_o(String email) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\LoginPage\\Login.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663414_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636043757354,
+          "stop": 1636043759452
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b4c74ccd163744179f5b41882eed8e5c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636043752214,
+      "stop": 1636043759522
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636043752213,
+  "stop": 1636043759528
+}

@@ -1,0 +1,445 @@
+{
+  "uuid": "8042542c-1f00-4e7d-929e-3abbc830e5a7-tr-0-1003",
+  "historyId": "OEM.Tests.ClientTests.BaseEcuFlashing",
+  "fullName": "OEM.Tests.ClientTests.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "OEM.Tests.ClientTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "OEM.Tests.ClientTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "OEM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "BaseEcuFlashing"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: oemAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044639989,
+          "stop": 1636044643555
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044643556,
+          "stop": 1636044644561
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044644562,
+          "stop": 1636044647146
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044647148,
+          "stop": 1636044649511
+        },
+        {
+          "name": "Select controller for Engine",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044649512,
+          "stop": 1636044650696
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044650696,
+          "stop": 1636044652986
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044652986,
+          "stop": 1636044655269
+        },
+        {
+          "name": "Fill client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044678075,
+          "stop": 1636044680169
+        },
+        {
+          "name": "Press Confirm button for client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044680170,
+          "stop": 1636044682311
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044682312,
+          "stop": 1636044686016
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044686016,
+          "stop": 1636044689452
+        },
+        {
+          "name": "Select binary from the list - Simos 084 - 8K0907551C S0005 02.11.2021 serie",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044689452,
+          "stop": 1636044690722
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044690722,
+          "stop": 1636044692938
+        },
+        {
+          "name": "Select calibration for selected binary - Serie emulation",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044692939,
+          "stop": 1636044697004
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044697004,
+          "stop": 1636044699484
+        },
+        {
+          "name": "Press the Calibrate button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044699486,
+          "stop": 1636044700944
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044700944,
+          "stop": 1636044703355
+        },
+        {
+          "name": "Start the flashing vehicle",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044703355,
+          "stop": 1636044704560
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044704560,
+          "stop": 1636044984264
+        },
+        {
+          "name": "Wait fifteen seconds",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044984264,
+          "stop": 1636045000274
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636045000275,
+          "stop": 1636045003218
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636045003218,
+          "stop": 1636045006061
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636045006061,
+          "stop": 1636045008855
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636045011045,
+          "stop": 1636045013685
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "73b8aba74e004d728341d6287bc05a37-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636044635670,
+      "stop": 1636045013739
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636044635669,
+  "stop": 1636045013748
+}

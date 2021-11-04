@@ -1,0 +1,180 @@
+{
+  "uuid": "3c9b030f-5466-4224-a9eb-f074b1173714-tr-0-1004",
+  "historyId": "SRT.Tests.ClientTests.BaseEcuFlashing",
+  "fullName": "SRT.Tests.ClientTests.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "14"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "SRT.Tests.ClientTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "SRT.Tests.ClientTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "SRT"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 45 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 35\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Actions.cs:line 53\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.FillClientInfoVWR()\r\n   at SRT.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\SRT.Tests\\TESTS\\ClientTests.cs:line 31"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 45 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 35\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Actions.cs:line 53\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.FillClientInfoVWR()\r\n   at SRT.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\SRT.Tests\\TESTS\\ClientTests.cs:line 31"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: BugsBunny",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636038378344,
+          "stop": 1636038381804
+        },
+        {
+          "name": "Enter user's password: 321654987",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636038381804,
+          "stop": 1636038382885
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636038382885,
+          "stop": 1636038385480
+        },
+        {
+          "name": "Select controller for Engine",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636038385480,
+          "stop": 1636038386261
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636038386262,
+          "stop": 1636038399701
+        },
+        {
+          "name": "Fill client info",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 45 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 35\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Actions.cs:line 53\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663357_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636038399702,
+          "stop": 1636038450753
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "37a40970d47e4a6ab3467a67315e4f72-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636038374348,
+      "stop": 1636038456749
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636038374347,
+  "stop": 1636038456754
+}

@@ -1,0 +1,265 @@
+{
+  "uuid": "5ffb021d-0946-44da-97b4-0f614610ab29-tr-0-1004",
+  "historyId": "_034.Tests.ClientTests.BaseEcuFlashing",
+  "fullName": "_034.Tests.ClientTests.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.ClientTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.ClientTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "BaseEcuFlashing"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044024840,
+          "stop": 1636044028905
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044028906,
+          "stop": 1636044030339
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044030340,
+          "stop": 1636044033378
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044033379,
+          "stop": 1636044035543
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044055657,
+          "stop": 1636044059035
+        },
+        {
+          "name": "Select binary from the list - Simos 084 - 8K0907551C S0005 - 03.11.2021 last",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044059036,
+          "stop": 1636044063614
+        },
+        {
+          "name": "Select calibration for selected binary - Serie emulation",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044063615,
+          "stop": 1636044067178
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044067178,
+          "stop": 1636044070883
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044070883,
+          "stop": 1636044077332
+        },
+        {
+          "name": "Start the flashing vehicle",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044077334,
+          "stop": 1636044080220
+        },
+        {
+          "name": "Make sure the binary is installed successfully",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044080221,
+          "stop": 1636044346415
+        },
+        {
+          "name": "Press NewFlash button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636044346415,
+          "stop": 1636044348664
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "52beed551ed34332bf614aef1197b7f8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636044020212,
+      "stop": 1636044348703
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636044020211,
+  "stop": 1636044348710
+}

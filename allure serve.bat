@@ -1,0 +1,1 @@
+allure serve "C:\Users\User\source\repos\AutomatedProjectEPS\allure-results"

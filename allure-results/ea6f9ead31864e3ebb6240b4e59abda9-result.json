@@ -1,0 +1,88 @@
+{
+  "uuid": "462c8d7f-1d8d-432f-8672-2a12ec46ad7a-tr-0-1003",
+  "historyId": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "fullName": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadBaseAndPerformanceBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadBaseAndPerformanceBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : Failed to locate opened application window with appId: C:\\Users\\User\\AppData\\Local\\BETA 034 Flash Tool Admin\\FlashToolAdmin.exe, and processId: 18732\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1..ctor(ICommandExecutor commandExecutor, ICapabilities appiumOptions)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)\r\n   at OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Initialize(String application) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 31\r\n   at _034.Tests.BaseClassAdmin.Initialize() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 15\r\n--TearDown\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 48\r\n   at _034.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+  },
+  "stage": "finished",
+  "description": "\nInitialize SetUp method failed\n\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "UploadBaseAndPerformanceBinaries skipped because of Initialize failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : Failed to locate opened application window with appId: C:\\Users\\User\\AppData\\Local\\BETA 034 Flash Tool Admin\\FlashToolAdmin.exe, and processId: 18732\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1..ctor(ICommandExecutor commandExecutor, ICapabilities appiumOptions)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1..ctor(Uri remoteAddress, ICapabilities appiumOptions)\r\n   at OpenQA.Selenium.Appium.Windows.WindowsDriver`1..ctor(Uri remoteAddress, AppiumOptions AppiumOptions)\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Initialize(String application) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 31\r\n   at _034.Tests.BaseClassAdmin.Initialize() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 15\r\n--TearDown\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 48\r\n   at _034.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "818d292b24e548d5a5afd2c8df57f1df-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636115481466,
+      "stop": 1636115487123
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636115481465,
+  "stop": 1636115487133
+}

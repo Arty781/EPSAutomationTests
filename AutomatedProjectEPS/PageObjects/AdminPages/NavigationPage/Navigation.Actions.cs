@@ -1,5 +1,6 @@
 ﻿using AutomatedProjectEPS.ClassHelpers;
 using NUnit.Allure.Steps;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,8 +39,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Navigate to Binary Upload page")]
         public BinaryUpload GoToBinaryUpload()
         {
-            WaitUntil.WaitSomeInterval();
-            // WaitUntil.ElementIsClickable(tabBinaryUpload);
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_tabBinaryUpload);
             tabBinaryUpload.Click();
             return Pages.BinaryUpload;
         }

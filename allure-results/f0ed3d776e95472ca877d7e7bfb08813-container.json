@@ -1,0 +1,44 @@
+{
+  "uuid": "3caf16f5-8847-4980-b289-1cb6c34eba44-tc-0-1002",
+  "name": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "children": [
+    "66314fbd-287b-4067-b3ca-4f56920ab9be-tr-0-1003"
+  ],
+  "befores": [
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636114231357,
+      "stop": 1636114231357
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636114231358,
+      "stop": 1636114231358
+    }
+  ],
+  "links": [],
+  "start": 1636114165657,
+  "stop": 1636114231418
+}

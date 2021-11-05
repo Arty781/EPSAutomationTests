@@ -1,0 +1,88 @@
+{
+  "uuid": "8766a36f-b823-465a-b10f-3678fe31d3aa-tr-0-1003",
+  "historyId": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "fullName": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadBaseAndPerformanceBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadBaseAndPerformanceBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at AutomatedProjectEPS.ClassHelpers.Browser.Initialize(String application) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 31\r\n   at _034.Tests.BaseClassAdmin.Initialize() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 15\r\n--TearDown\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 49\r\n   at _034.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+  },
+  "stage": "finished",
+  "description": "\nInitialize SetUp method failed\n\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "UploadBaseAndPerformanceBinaries skipped because of Initialize failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at AutomatedProjectEPS.ClassHelpers.Browser.Initialize(String application) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 31\r\n   at _034.Tests.BaseClassAdmin.Initialize() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 15\r\n--TearDown\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 49\r\n   at _034.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9a766a23c1c049d997a42e5c4b93a16f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636124570435,
+      "stop": 1636124570473
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636124570434,
+  "stop": 1636124570481
+}

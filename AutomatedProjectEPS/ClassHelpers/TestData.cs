@@ -6,7 +6,7 @@
         public const string AdminOEM = "C:\\Users\\User\\AppData\\Local\\BETA OEM Flash Tool Admin\\FlashToolAdmin.exe";
 
         public const string Client034 = "C:\\Users\\User\\AppData\\Local\\BETA 034 Flash Tool\\FlashToolClient.exe";
-        public const string Admin034 = "C:\\Users\\User\\AppData\\Local\\BETA 034 Flash Tool Admin\\FlashToolAdmin.exe";
+        public const string Admin034 = @"C:\Users\User\AppData\Local\BETA 034 Flash Tool Admin\FlashToolAdmin.exe";
 
         public const string ClientCC = "C:\\Users\\User\\AppData\\Local\\BETA CC Flash Tool\\FlashToolClient.exe";
         public const string AdminCC = "C:\\Users\\User\\AppData\\Local\\BETA CC Flash Tool Admin\\FlashToolAdmin.exe";
@@ -50,7 +50,7 @@
     public class BinariesPuth
     {
         public const string BaseSimos084 = "Simos 084 - 8K0907551C S0005.bin";
-        public const string PerformanceSimos084 = "Simos 084 - 8K0907551C S0005 - TestPerf.bin";
+        public const string PerformanceSimos084 = "Simos 084 - 8K0907551C S0005 - Performance.bin";
 
     }
 
@@ -69,6 +69,13 @@
     {
         public const string Base = "Serie emulation";
         public const string Performance = "Performance";
+
+    }
+
+    public class Scripts
+    {
+
+        public const string SCRIPT = "var timeId=setInterval(function(){window.scrollY<document.body.scrollHeight-window.screen.availHeight?window.scrollTo(0,document.body.scrollHeight):(clearInterval(timeId),window.scrollTo(0,0))},500);";
 
     }
 }

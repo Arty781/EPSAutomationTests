@@ -1,0 +1,165 @@
+{
+  "uuid": "4961986f-4062-4af5-bedd-3568ed32190f-tr-0-1003",
+  "historyId": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "fullName": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadBaseAndPerformanceBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadBaseAndPerformanceBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An unknown error occurred in the remote end while processing the command.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.SendKeys(String text)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.SelectBaseBinary()\r\n   at _034.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 28"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "UploadBaseAndPerformanceBinaries",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An unknown error occurred in the remote end while processing the command.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.SendKeys(String text)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.SelectBaseBinary()\r\n   at _034.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 28"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100086092,
+          "stop": 1636100089980
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100089981,
+          "stop": 1636100091149
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100091150,
+          "stop": 1636100091957
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100091958,
+          "stop": 1636100095552
+        },
+        {
+          "name": "Upload base binary - {0}",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An unknown error occurred in the remote end while processing the command.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.SendKeys(String text)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100095552,
+          "stop": 1636100099465
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6272a43b9f49443cb0b8df7bd36b0856-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636100079796,
+      "stop": 1636100099503
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636100079795,
+  "stop": 1636100099511
+}

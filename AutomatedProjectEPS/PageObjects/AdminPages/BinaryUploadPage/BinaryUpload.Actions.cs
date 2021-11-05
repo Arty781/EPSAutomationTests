@@ -1,6 +1,7 @@
 ﻿using AutomatedProjectEPS.ClassHelpers;
 using NUnit.Allure.Steps;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +15,9 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Upload base binary - {0}")]
         public BinaryUpload SelectBaseBinary(string puthBinary)
         {
-
             WaitUntil.ElementIsClickable(_btnBaseBinary);
-            //Browser._Driver.FindElementById("tb_PerfomanceBinaries").Click();
-            // btnBaseBinary.SendKeys(Browser.RootPath() + "Binariki\\" + puthBinary);
-            string puth = "C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\Binariki\\Simos 084 - 8K0907551C S0005.bin";
-            btnBaseBinary.SendKeys(puth + Keys.Enter);
-            //CruciatusFactory.Keyboard.SendEnter();
-
+            Browser._Driver.FindElementByAccessibilityId("PerfomanceBinariesTb").Click();
+            btnBaseBinary.SendKeys(Keys.Enter + Browser.RootPath() + "Binariki\\" + puthBinary + Keys.Enter);
             return this;
         }
 
@@ -30,8 +26,7 @@ namespace AutomatedProjectEPS.PageObjects
         public BinaryUpload SelectPerformanceBinary(string puthBinary)
         {
             WaitUntil.ElementIsClickable(_btnPerformanceBinary);
-            btnPerformanceBinary.SendKeys(Browser.RootPath() + "Binariki\\" + puthBinary);
-            //CruciatusFactory.Keyboard.SendEnter();
+            btnPerformanceBinary.SendKeys(Keys.Enter + Browser.RootPath() + "Binariki\\" + puthBinary + Keys.Enter);
 
             return this;
         }
@@ -41,7 +36,9 @@ namespace AutomatedProjectEPS.PageObjects
         public BinaryUpload ChangeBinaryLabel()
         {
             WaitUntil.ElementIsClickable(_inputBinaryLabel);
-            inputBinaryLabel.SendKeys(inputBinaryLabel.Text + " testqa-" + Browser.Random.Next(1, 10000000));
+            string label = GetBinaryLabel();
+            inputBinaryLabel.Clear();
+            inputBinaryLabel.SendKeys(label + " " + DateTime.Now );
             return this;
         }
 
@@ -49,8 +46,8 @@ namespace AutomatedProjectEPS.PageObjects
         public BinaryUpload SelectPrice()
         {
             WaitUntil.ElementIsClickable(_comboBoxPricing);
-            comboBoxPricing.SendKeys("final test");
-            //comboBoxPricing.Click();
+            comboBoxPricing.Click();
+            comboBoxPricing.SendKeys(Keys.Down + Keys.Enter);
             WaitUntil.WaitSomeInterval(1);
 
             return this;
@@ -59,10 +56,10 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Press the Upload button")]
         public BinaryUpload UploadBinary()
         {
-            WaitUntil.WaitSomeInterval(1);
             WaitUntil.ElementIsClickable(_btnUploadBinary);
             btnUploadBinary.Click();
             return this;
+           
         }
 
         [AllureStep("Press the Add button")]
@@ -80,6 +77,13 @@ namespace AutomatedProjectEPS.PageObjects
             btnEdit.Click();
             // WaitUntil.WaitSomeInterval(1);
             return this;
+        }
+
+        [AllureStep("Get binary label")]
+        public string GetBinaryLabel()
+        {
+            string label = inputBinaryLabel.Text;
+            return label;
         }
     }
 }

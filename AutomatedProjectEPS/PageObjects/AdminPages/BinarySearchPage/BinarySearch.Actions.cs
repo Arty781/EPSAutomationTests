@@ -16,7 +16,7 @@ namespace AutomatedProjectEPS.PageObjects
             WaitUntil.WaitSomeInterval(1);
             WaitUntil.ElementIsVisible(_inputSearch);
             inputSearch.SendKeys(binaryName);
-            btnSearch.Click();
+            Browser._Driver.FindElementByAccessibilityId("SearchBtn").Click();
 
             return this;
         }

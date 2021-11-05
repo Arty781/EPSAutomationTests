@@ -1,0 +1,314 @@
+{
+  "uuid": "7f0a4b1f-bc6c-4194-9ce9-80eeb456acd8-tr-0-1003",
+  "historyId": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "fullName": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadBaseAndPerformanceBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadBaseAndPerformanceBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 49 but was 48. Strings differ at index 0.\r\n  Expected: \"Simos 084 - 8K0907551C S0005 11/5/2021 2:55:02 PM\"\r\n  But was:  \"02E300012G S1968 DQ250 Exx November 2020 test 24\"\r\n  -----------^\r\n",
+    "trace": "   at AutomatedProjectEPS.PageObjects.BinarySearch.MakeSureBinaryFound(String binaryLabel) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinarySearchPage\\BinarySearch.Assertions.cs:line 16\r\n   at _034.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 39\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "UploadBaseAndPerformanceBinaries",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 49 but was 48. Strings differ at index 0.\r\n  Expected: \"Simos 084 - 8K0907551C S0005 11/5/2021 2:55:02 PM\"\r\n  But was:  \"02E300012G S1968 DQ250 Exx November 2020 test 24\"\r\n  -----------^\r\n",
+        "trace": "   at AutomatedProjectEPS.PageObjects.BinarySearch.MakeSureBinaryFound(String binaryLabel) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinarySearchPage\\BinarySearch.Assertions.cs:line 16\r\n   at _034.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 39\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116882433,
+          "stop": 1636116886050
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116886050,
+          "stop": 1636116887063
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116887064,
+          "stop": 1636116889785
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116889787,
+          "stop": 1636116891836
+        },
+        {
+          "name": "Upload base binary - Simos 084 - 8K0907551C S0005.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116891836,
+          "stop": 1636116898375
+        },
+        {
+          "name": "Change binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Get binary label",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1636116899570,
+              "stop": 1636116900661
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116898376,
+          "stop": 1636116904943
+        },
+        {
+          "name": "Select price from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116904944,
+          "stop": 1636116909726
+        },
+        {
+          "name": "Upload performance binary - Simos 084 - 8K0907551C S0005 - Performance.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116909726,
+          "stop": 1636116916113
+        },
+        {
+          "name": "Press the Add button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116916114,
+          "stop": 1636116918359
+        },
+        {
+          "name": "Press the Upload button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116918359,
+          "stop": 1636116920959
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116920960,
+          "stop": 1636116935988
+        },
+        {
+          "name": "Get binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116935988,
+          "stop": 1636116937244
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116937245,
+          "stop": 1636116942064
+        },
+        {
+          "name": "Search the binary - Simos 084 - 8K0907551C S0005 11/5/2021 2:55:02 PM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636116942065,
+          "stop": 1636116948175
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a3a8d9a270e142c7b8fedaa31d11dba5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636116876306,
+      "stop": 1636116950621
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636116876306,
+  "stop": 1636116950627
+}

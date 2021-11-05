@@ -26,7 +26,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common CloseProgressBarAfterFlashing()
         {
-            WaitUntil.WaitSecondWindowHandle(300);
+            WaitUntil.WaitSecondWindowHandle(600);
             SwitchWindow();
 
             WaitUntil.ElementIsVisible(_progressBarBox);
@@ -49,7 +49,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common PressEnterKey()
         {
-            WaitUntil.ElementIsVisible(_Messagebox);
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_Messagebox, 30);
             Messagebox.Click();
             Messagebox.SendKeys(Keys.Enter);
             return this;

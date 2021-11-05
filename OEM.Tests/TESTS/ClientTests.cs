@@ -2,13 +2,7 @@
 using AutomatedProjectEPS.ClassHelpers;
 using AutomatedProjectEPS.PageObjects;
 using NUnit.Allure.Attributes;
-using NUnit.Allure.Core;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OEM.Tests
 {

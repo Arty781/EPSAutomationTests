@@ -1,0 +1,44 @@
+{
+  "uuid": "8e6b5e1c-3315-4215-9528-558008127277-tc-0-1002",
+  "name": "JHM.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "children": [
+    "0d466c24-79ac-45d8-b12f-34fb358310e1-tr-0-1003"
+  ],
+  "befores": [
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636118465125,
+      "stop": 1636118465125
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636118465126,
+      "stop": 1636118465126
+    }
+  ],
+  "links": [],
+  "start": 1636118386631,
+  "stop": 1636118465194
+}

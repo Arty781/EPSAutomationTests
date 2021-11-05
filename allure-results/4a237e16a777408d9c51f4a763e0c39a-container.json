@@ -1,0 +1,44 @@
+{
+  "uuid": "fe9e4500-f502-4a67-9b47-2c45c06fe668-tc-0-1002",
+  "name": "OEM.Tests.ClientTests.BaseEcuFlashing",
+  "children": [
+    "863d5a58-cd67-4cea-af7c-b99d38dc249b-tr-0-1003"
+  ],
+  "befores": [
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636108796334,
+      "stop": 1636108796334
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636108796334,
+      "stop": 1636108796334
+    }
+  ],
+  "links": [],
+  "start": 1636108405191,
+  "stop": 1636108796403
+}

@@ -1,4 +1,4 @@
-﻿/*using Allure.Commons;
+﻿using Allure.Commons;
 using AutomatedProjectEPS.ClassHelpers;
 using AutomatedProjectEPS.PageObjects;
 using NUnit.Allure.Attributes;
@@ -20,26 +20,35 @@ namespace OEM.Tests
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void UploadBaseBinary()
+        public void UploadBaseAndPerformanceBinaries()
         {
             Pages.Login
-                .Admin(Credentials.LoginClientOEM)
-                .AdminPass(Credentials.PasswordClientOEM)
-                .LogAdmin();
-            *//*Pages.Navigation
+                .EnterLogin(Credentials.LoginClientOEM)
+                .EnterPassword(Credentials.PasswordClientOEM)
+                .PressLoginButton();
+            Pages.Navigation
                 .GoToBinaryUpload()
                 .SelectBaseBinary(BinariesPuth.BaseSimos084)
                 .ChangeBinaryLabel()
-                .SelectPrice()*//*
-            Pages.BinaryUpload
+                .SelectPrice()
+                .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
+                .PressAddButton()
                 .UploadBinary();
             Pages.Common
                 .PressEnterKey();
-
-            string binaryName =
-                new AppDbContext().GetLastBinary();
-
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
             Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .MakeSureBinaryFound(binaryLabel);
+        }
+
+
+
+
+
+
+        /*Pages.Navigation
                 .GoToBinarySearch()
                 .SearchBinary(binaryName)
                 .SelectBinary()
@@ -56,11 +65,6 @@ namespace OEM.Tests
                 .PressRemoveBinaryButton();
             Pages.Common
                 .PressEnterKey()
-                .VerifyRemovedBinary(binaryName);
-
-
-
-        }
+                .VerifyRemovedBinary(binaryName);*/
     }
 }
-*/

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VWR.Tests.TESTS
+namespace VWR.Tests
 {
     class ClientTests : BaseClassClient
     {

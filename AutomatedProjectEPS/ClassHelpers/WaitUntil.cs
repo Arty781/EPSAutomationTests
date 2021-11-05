@@ -20,25 +20,14 @@ namespace AutomatedProjectEPS.ClassHelpers
         public static void WaitSecondWindowHandle(int seconds = 10) =>
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(d => d.WindowHandles.Count > 1);
 
+        public static void WaitDriverLoad(int seconds = 10) =>
+            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(d => d.WindowHandles.Count > 1);
 
-
-
-
-
-        /* public static void ElementIsVisible(By locator, int seconds = 10)
-         {
-             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.VisibilityOfAllElementsLocatedBy(locator));
-         }*/
-
-
-
-
-
-        /*public static void ElementIsClickable(By locator, int seconds = 10)
+        public static void VisibilityOfAllElementsLocatedBy(By locator, int seconds = 10)
         {
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.VisibilityOfAllElementsLocatedBy(locator));
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(locator));
-        }*/
+        }
 
 
 

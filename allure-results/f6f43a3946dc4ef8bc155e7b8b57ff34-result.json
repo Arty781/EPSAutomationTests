@@ -1,0 +1,166 @@
+{
+  "uuid": "08cc3760-e146-4eba-af9e-a84be4d076e9-tr-0-1003",
+  "historyId": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "fullName": "_034.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "WIN-U69L1JH2OL3"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadBaseAndPerformanceBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadBaseAndPerformanceBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : Currently selected window has been closed\r\nTearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.get_btnBaseBinary() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Elements.cs:line 14\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.SelectBaseBinary()\r\n   at _034.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 28\r\n--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 47\r\n   at _034.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+  },
+  "stage": "finished",
+  "description": "\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "UploadBaseAndPerformanceBinaries",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : Currently selected window has been closed\r\nTearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.get_btnBaseBinary() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Elements.cs:line 14\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.SelectBaseBinary()\r\n   at _034.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 28\r\n--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 47\r\n   at _034.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\034.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100116260,
+          "stop": 1636100119774
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100119775,
+          "stop": 1636100121276
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100121277,
+          "stop": 1636100122202
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100122203,
+          "stop": 1636100125132
+        },
+        {
+          "name": "Upload base binary - {0}",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Currently selected window has been closed",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.get_btnBaseBinary() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Elements.cs:line 14\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectBaseBinary_100663310_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636100125132,
+          "stop": 1636100127291
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "1e1d079c391d42d2812aeefa174a9610-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636100110322,
+      "stop": 1636100127336
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636100110322,
+  "stop": 1636100127346
+}

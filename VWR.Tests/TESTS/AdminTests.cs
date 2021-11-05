@@ -19,7 +19,7 @@ namespace VWR.Tests
         [AllureSuite("VWR")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void UploadBaseAndPerformanceBinaries()
+        public void UploadEcuBinaries()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginClientVWR)
@@ -31,6 +31,35 @@ namespace VWR.Tests
                 .ChangeBinaryLabel()
                 .SelectPrice()
                 .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
+                .PressAddButton()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .MakeSureBinaryFound(binaryLabel);
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("VWR")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void UploadTcuBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginClientVWR)
+                .EnterPassword(Credentials.PasswordClientVWR)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
+                .ChangeBinaryLabel()
+                .SelectPrice()
+                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common

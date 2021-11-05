@@ -19,7 +19,7 @@ namespace JHM.Tests
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void UploadBaseAndPerformanceBinaries()
+        public void UploadEcuBinaries()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginClientJHM)
@@ -32,6 +32,37 @@ namespace JHM.Tests
                 .SelectPrice()
                 .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
                 .PressAddButton()
+                .ScrollDown()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .MakeSureBinaryFound(binaryLabel);
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("JHM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void UploadTcuBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginClientJHM)
+                .EnterPassword(Credentials.PasswordClientJHM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
+                .ChangeBinaryLabel()
+                .SelectPrice()
+                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .PressAddButton()
+                .ScrollDown()
                 .UploadBinary();
             Pages.Common
                 .PressEnterKey();

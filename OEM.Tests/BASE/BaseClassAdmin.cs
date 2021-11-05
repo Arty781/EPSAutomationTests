@@ -16,7 +16,7 @@ namespace OEM.Tests
         public void Initialize() => Browser.Initialize(AppsPuth.AdminOEM);
 
         [OneTimeSetUp]
-        public static void OneTimeSetUp() { }// => process = Process.Start(Browser.RootPath() + DriverPuth.WinDriverPuth);
+        public static void OneTimeSetUp() => process = Process.Start(Browser.RootPath() + DriverPuth.WinDriverPuth);
 
 
         [OneTimeTearDown]

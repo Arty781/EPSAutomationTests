@@ -19,7 +19,7 @@ namespace _034.Tests
         [AllureSuite("034")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void UploadBaseAndPerformanceBinaries()
+        public void UploadEcuBinaries()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginClient034)
@@ -39,6 +39,36 @@ namespace _034.Tests
             Pages.Navigation
                 .GoToBinarySearch()
                 .SearchBinary(binaryLabel) 
+                .MakeSureBinaryFound(binaryLabel);
+        }
+
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("034")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void UploadTcuBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginClient034)
+                .EnterPassword(Credentials.PasswordClient034)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
+                .ChangeBinaryLabel()
+                .SelectPrice()
+                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .PressAddButton()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
                 .MakeSureBinaryFound(binaryLabel);
         }
     }

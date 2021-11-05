@@ -1,0 +1,76 @@
+{
+  "uuid": "06e580a0-5a8c-447d-ac94-718253292538-tc-0-1002",
+  "name": "VWR.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "children": [
+    "a4f49119-fa2b-4b83-91f9-c439f654fd98-tr-0-1003"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636127442056,
+      "stop": 1636127442056
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636127442056,
+      "stop": 1636127442056
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636127442057,
+      "stop": 1636127442057
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636127442057,
+      "stop": 1636127442057
+    }
+  ],
+  "links": [],
+  "start": 1636127376439,
+  "stop": 1636127442114
+}

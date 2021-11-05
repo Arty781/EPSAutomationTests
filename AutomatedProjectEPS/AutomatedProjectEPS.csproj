@@ -21,10 +21,4 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="WaitAutomatedLibrary">
-      <HintPath>..\..\WaitAutomatedLibrary\WaitAutomatedLibrary\bin\Debug\net5.0\ref\WaitAutomatedLibrary.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

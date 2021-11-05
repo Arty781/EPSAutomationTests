@@ -35,14 +35,14 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement inputFirstNameVWR => Browser._Driver.FindElement(_inputFirstNameVWR);
         public readonly By _inputFirstNameVWR = By.XPath("//*[contains(@AutomationId, 'FirstNameCtr')]/*[contains(@ClassName, 'TextBox')]");
 
-        public IWebElement inputLastNameVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'LastNameCtr')]/*[contains(@ClassName, 'TextBox')]");
+        public IWebElement inputLastNameVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'SecondNameCtr')]/*[contains(@ClassName, 'TextBox')]");
         public IWebElement inputAddressVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'StreetCtr')]/*[contains(@ClassName, 'TextBox')]");
         public IWebElement inputCityVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'CityCtr')]/*[contains(@ClassName, 'TextBox')]");
         public IWebElement inputStateVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'StateCtr')]/*[contains(@ClassName, 'TextBox')]");
-        public IWebElement inputZIPVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'ZipCodeCtr')]/*[contains(@ClassName, 'TextBox')]");
-        public IWebElement cbbxCountryVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'CountriesCbbx')]");
+        public IWebElement inputZIPVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'PostCodeCtr')]/*[contains(@ClassName, 'TextBox')]");
+        public IWebElement cbbxCountryVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'CountriesCbx')]");
         public IWebElement inputEmailVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'EmailCtr')]/*[contains(@ClassName, 'TextBox')]");
         public IWebElement inputPhoneVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'PhoneCtr')]/*[contains(@ClassName, 'TextBox')]");
-        public IWebElement inputNoteVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'HouseNumOrNameCtr')]/*[contains(@ClassName, 'TextBox')]");
+        public IWebElement inputNoteVWR => Browser._Driver.FindElementByXPath("//*[contains(@AutomationId, 'HouseCtr')]/*[contains(@ClassName, 'TextBox')]");
     }
 }

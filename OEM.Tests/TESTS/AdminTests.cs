@@ -20,7 +20,7 @@ namespace OEM.Tests
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void UploadBaseAndPerformanceBinaries()
+        public void UploadEcuBinaries()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginClientOEM)
@@ -44,7 +44,34 @@ namespace OEM.Tests
         }
 
 
-
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("OEM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void UploadTcuBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginClientSRT)
+                .EnterPassword(Credentials.PasswordClientSRT)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
+                .ChangeBinaryLabel()
+                .SelectPrice()
+                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .PressAddButton()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .MakeSureBinaryFound(binaryLabel);
+        }
 
 
 

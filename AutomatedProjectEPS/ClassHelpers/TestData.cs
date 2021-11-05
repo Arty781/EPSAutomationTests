@@ -52,6 +52,9 @@
         public const string BaseSimos084 = "Simos 084 - 8K0907551C S0005.bin";
         public const string PerformanceSimos084 = "Simos 084 - 8K0907551C S0005 - Performance.bin";
 
+        public const string BaseAisinAL1000 = "0C8927750AL S2447 AL1000.bin";
+        public const string PerformanceAisinAL1000 = "0C8927750AL S2447 Performance.bin";
+
     }
 
     public class DB
@@ -72,10 +75,5 @@
 
     }
 
-    public class Scripts
-    {
 
-        public const string SCRIPT = "var timeId=setInterval(function(){window.scrollY<document.body.scrollHeight-window.screen.availHeight?window.scrollTo(0,document.body.scrollHeight):(clearInterval(timeId),window.scrollTo(0,0))},500);";
-
-    }
 }

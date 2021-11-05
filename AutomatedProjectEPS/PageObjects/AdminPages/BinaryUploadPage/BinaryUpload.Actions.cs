@@ -75,7 +75,6 @@ namespace AutomatedProjectEPS.PageObjects
         {
             WaitUntil.ElementIsClickable(_btnEdit);
             btnEdit.Click();
-            // WaitUntil.WaitSomeInterval(1);
             return this;
         }
 
@@ -84,6 +83,16 @@ namespace AutomatedProjectEPS.PageObjects
         {
             string label = inputBinaryLabel.Text;
             return label;
+        }
+
+        public BinaryUpload ScrollDown()
+        {
+            new Actions(Browser._Driver)
+                .SendKeys(Keys.Control + Keys.End)
+                .Build()
+                .Perform();
+            WaitUntil.WaitSomeInterval(1);
+            return this;
         }
     }
 }

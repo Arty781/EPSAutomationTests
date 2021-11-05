@@ -1,0 +1,78 @@
+{
+  "uuid": "85d7884b-83a9-4f89-bfcb-9a2cd56cc755-tc-0-1002",
+  "name": "JHM.Tests.AdminTests.UploadBaseAndPerformanceBinaries",
+  "children": [
+    "aba1d665-3209-4af4-9e41-c521d6cca330-tr-0-1003"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636128988713,
+      "stop": 1636128988713
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636128988714,
+      "stop": 1636128988714
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : Currently selected window has been closed\r\nTearDown : OpenQA.Selenium.WebDriverException : Currently selected window has been closed",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass1_0.<CustomElementIsClickableByLocator>b__0(IWebDriver driver) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 23\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinarySearch_100663334_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\NavigationPage\\Navigation.Actions.cs:line 34\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinarySearch_100663334_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinarySearch_100663334_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Navigation.GoToBinarySearch()\r\n   at JHM.Tests.AdminTests.UploadBaseAndPerformanceBinaries() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\JHM.Tests\\TESTS\\AdminTests.cs:line 40\r\n--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 51\r\n   at JHM.Tests.BaseClassAdmin.TearDown() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\JHM.Tests\\BASE\\BaseClassAdmin.cs:line 25"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636128988714,
+      "stop": 1636128988714
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636128988714,
+      "stop": 1636128988714
+    }
+  ],
+  "links": [],
+  "start": 1636128930357,
+  "stop": 1636128988746
+}

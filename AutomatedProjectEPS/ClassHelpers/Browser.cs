@@ -28,12 +28,12 @@ namespace AutomatedProjectEPS.ClassHelpers
             AppiumOptions options = new AppiumOptions();
             options.AddAdditionalCapability("app", application);
             options.AddAdditionalCapability("deviceName", "WindowsPC");
-          /
+          
             windowsDriver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
             Assert.NotNull(windowsDriver);
             windowsDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(7);
 
-            windowsDriver.LaunchApp();
+            
 
             
 

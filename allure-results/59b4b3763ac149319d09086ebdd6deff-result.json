@@ -1,7 +1,7 @@
 {
-  "uuid": "863d5a58-cd67-4cea-af7c-b99d38dc249b-tr-0-1003",
-  "historyId": "OEM.Tests.ClientTests.BaseEcuFlashing",
-  "fullName": "OEM.Tests.ClientTests.BaseEcuFlashing",
+  "uuid": "2bc6c43f-4699-4c21-8524-2cb3b832c475-tr-0-1006",
+  "historyId": "VWR.Tests.ClientTests.BaseEcuFlashing",
+  "fullName": "VWR.Tests.ClientTests.BaseEcuFlashing",
   "labels": [
     {
       "name": "thread",
@@ -13,7 +13,7 @@
     },
     {
       "name": "testClass",
-      "value": "OEM.Tests.ClientTests"
+      "value": "VWR.Tests.ClientTests"
     },
     {
       "name": "testMethod",
@@ -21,7 +21,7 @@
     },
     {
       "name": "package",
-      "value": "OEM.Tests.ClientTests"
+      "value": "VWR.Tests.ClientTests"
     },
     {
       "name": "tag",
@@ -37,7 +37,7 @@
     },
     {
       "name": "suite",
-      "value": "OEM"
+      "value": "VWR"
     },
     {
       "name": "subSuite",
@@ -51,8 +51,8 @@
     "known": false,
     "muted": false,
     "flaky": false,
-    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 300 seconds",
-    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.WaitSecondWindowHandle(Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 21\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 29\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.CloseProgressBarAfterFlashing()\r\n   at OEM.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\ClientTests.cs:line 62"
+    "message": "  Expected string length 23 but was 21. Strings differ at index 21.\r\n  Expected: \"Programming completed\\r\\n\"\r\n  But was:  \"Programming completed\"\r\n  --------------------------------^\r\n",
+    "trace": "   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\FlashPage\\Flash.Assertions.cs:line 27\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Flash.CheckSuccessFlashingLogs()\r\n   at VWR.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\VWR.Tests\\TESTS\\ClientTests.cs:line 53\r\n"
   },
   "stage": "finished",
   "steps": [
@@ -63,13 +63,13 @@
         "known": false,
         "muted": false,
         "flaky": false,
-        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 300 seconds",
-        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.WaitSecondWindowHandle(Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 21\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 29\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.CloseProgressBarAfterFlashing()\r\n   at OEM.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\ClientTests.cs:line 62"
+        "message": "  Expected string length 23 but was 21. Strings differ at index 21.\r\n  Expected: \"Programming completed\\r\\n\"\r\n  But was:  \"Programming completed\"\r\n  --------------------------------^\r\n",
+        "trace": "   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\FlashPage\\Flash.Assertions.cs:line 27\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Flash.CheckSuccessFlashingLogs()\r\n   at VWR.Tests.ClientTests.BaseEcuFlashing() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\VWR.Tests\\TESTS\\ClientTests.cs:line 53\r\n"
       },
       "stage": "finished",
       "steps": [
         {
-          "name": "Enter user's email: oemAdmin",
+          "name": "Enter user's email: KevinVWR",
           "status": "passed",
           "statusDetails": {
             "known": false,
@@ -80,8 +80,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108410495,
-          "stop": 1636108413984
+          "start": 1636367792720,
+          "stop": 1636367795889
         },
         {
           "name": "Enter user's password: $c9YH=",
@@ -95,8 +95,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108413984,
-          "stop": 1636108415059
+          "start": 1636367795889,
+          "stop": 1636367796856
         },
         {
           "name": "Press login button",
@@ -110,23 +110,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108415060,
-          "stop": 1636108417738
-        },
-        {
-          "name": "Press next button",
-          "status": "passed",
-          "statusDetails": {
-            "known": false,
-            "muted": false,
-            "flaky": false
-          },
-          "stage": "finished",
-          "steps": [],
-          "attachments": [],
-          "parameters": [],
-          "start": 1636108417739,
-          "stop": 1636108420532
+          "start": 1636367796856,
+          "stop": 1636367799455
         },
         {
           "name": "Select controller for Engine",
@@ -140,11 +125,11 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108420533,
-          "stop": 1636108421765
+          "start": 1636367799456,
+          "stop": 1636367799992
         },
         {
-          "name": "Press next button",
+          "name": "Close message box",
           "status": "passed",
           "statusDetails": {
             "known": false,
@@ -155,23 +140,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108421765,
-          "stop": 1636108424277
-        },
-        {
-          "name": "Press checkId button",
-          "status": "passed",
-          "statusDetails": {
-            "known": false,
-            "muted": false,
-            "flaky": false
-          },
-          "stage": "finished",
-          "steps": [],
-          "attachments": [],
-          "parameters": [],
-          "start": 1636108424277,
-          "stop": 1636108426786
+          "start": 1636367799992,
+          "stop": 1636367814396
         },
         {
           "name": "Fill client info",
@@ -185,8 +155,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108455940,
-          "stop": 1636108458157
+          "start": 1636367814397,
+          "stop": 1636367834860
         },
         {
           "name": "Press Confirm button for client info",
@@ -200,8 +170,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108458157,
-          "stop": 1636108460796
+          "start": 1636367834860,
+          "stop": 1636367840338
         },
         {
           "name": "Close message box",
@@ -215,11 +185,11 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108460796,
-          "stop": 1636108466445
+          "start": 1636367840338,
+          "stop": 1636367852015
         },
         {
-          "name": "Press next button",
+          "name": "Select binary from the list - Simos 084 - 8K0907551C S0005 11/5/2021 5:49:58 PM",
           "status": "passed",
           "statusDetails": {
             "known": false,
@@ -230,38 +200,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108466445,
-          "stop": 1636108471397
-        },
-        {
-          "name": "Select binary from the list - Simos 084 - 8K0907551C S0005 02.11.2021 serie",
-          "status": "passed",
-          "statusDetails": {
-            "known": false,
-            "muted": false,
-            "flaky": false
-          },
-          "stage": "finished",
-          "steps": [],
-          "attachments": [],
-          "parameters": [],
-          "start": 1636108471399,
-          "stop": 1636108472770
-        },
-        {
-          "name": "Press next button",
-          "status": "passed",
-          "statusDetails": {
-            "known": false,
-            "muted": false,
-            "flaky": false
-          },
-          "stage": "finished",
-          "steps": [],
-          "attachments": [],
-          "parameters": [],
-          "start": 1636108472770,
-          "stop": 1636108475230
+          "start": 1636367853022,
+          "stop": 1636367864667
         },
         {
           "name": "Select calibration for selected binary - Serie emulation",
@@ -275,11 +215,11 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108475231,
-          "stop": 1636108486377
+          "start": 1636367864668,
+          "stop": 1636367875315
         },
         {
-          "name": "Press next button",
+          "name": "Press Confirm button for binary information",
           "status": "passed",
           "statusDetails": {
             "known": false,
@@ -290,38 +230,8 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108486377,
-          "stop": 1636108489231
-        },
-        {
-          "name": "Press the Calibrate button",
-          "status": "passed",
-          "statusDetails": {
-            "known": false,
-            "muted": false,
-            "flaky": false
-          },
-          "stage": "finished",
-          "steps": [],
-          "attachments": [],
-          "parameters": [],
-          "start": 1636108489231,
-          "stop": 1636108491552
-        },
-        {
-          "name": "Press next button",
-          "status": "passed",
-          "statusDetails": {
-            "known": false,
-            "muted": false,
-            "flaky": false
-          },
-          "stage": "finished",
-          "steps": [],
-          "attachments": [],
-          "parameters": [],
-          "start": 1636108491552,
-          "stop": 1636108494201
+          "start": 1636367875316,
+          "stop": 1636367881029
         },
         {
           "name": "Start the flashing vehicle",
@@ -335,41 +245,116 @@
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108494201,
-          "stop": 1636108495721
+          "start": 1636367881030,
+          "stop": 1636367886878
         },
         {
           "name": "Close message box",
-          "status": "failed",
+          "status": "passed",
           "statusDetails": {
             "known": false,
             "muted": false,
-            "flaky": false,
-            "message": "Timed out after 300 seconds",
-            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.WaitSecondWindowHandle(Int32 seconds) in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 21\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 29\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_CloseProgressBarAfterFlashing_100663400_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+            "flaky": false
           },
           "stage": "finished",
           "steps": [],
           "attachments": [],
           "parameters": [],
-          "start": 1636108495722,
-          "stop": 1636108796288
+          "start": 1636367886879,
+          "stop": 1636368169608
+        },
+        {
+          "name": "Wait fifteen seconds",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636368169608,
+          "stop": 1636368185610
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636368185610,
+          "stop": 1636368188382
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636368188382,
+          "stop": 1636368191050
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636368191050,
+          "stop": 1636368193715
+        },
+        {
+          "name": "Make sure the binary is installed successfully",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Expected string length 23 but was 21. Strings differ at index 21.\r\n  Expected: \"Programming completed\\r\\n\"\r\n  But was:  \"Programming completed\"\r\n  --------------------------------^\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual)\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_o() in C:\\Users\\User\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\FlashPage\\Flash.Assertions.cs:line 27\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashingLogs_100663396_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636368195844,
+          "stop": 1636368201794
         }
       ],
       "attachments": [
         {
           "name": "Console Output",
-          "source": "c0381aa631fa48c9851edead0bc0139f-attachment.txt",
+          "source": "0b95d6dd6ac346e5828763e2df5df226-attachment.txt",
           "type": "text/plain"
         }
       ],
       "parameters": [],
-      "start": 1636108405195,
-      "stop": 1636108796344
+      "start": 1636367788598,
+      "stop": 1636368201832
     }
   ],
   "attachments": [],
   "parameters": [],
-  "start": 1636108405194,
-  "stop": 1636108796352
+  "start": 1636367788598,
+  "stop": 1636368201840
 }

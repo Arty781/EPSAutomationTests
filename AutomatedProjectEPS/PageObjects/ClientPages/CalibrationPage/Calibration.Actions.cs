@@ -24,7 +24,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Select binary from the list - {0}")]
         public Calibration SelectBinary(string binaryName)
         {
-            WaitUntil.ElementIsClickable(_cbbxBinaries, 20);
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_cbbxBinaries, 20);
 
  
             cbbxBinaries.Click();

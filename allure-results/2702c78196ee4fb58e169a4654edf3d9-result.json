@@ -1,0 +1,270 @@
+{
+  "uuid": "177458b1-7e2b-4bce-b4a4-645452ce1567-tr-0-1010",
+  "historyId": "OEM.Tests.ClientTestsTCU.BaseTcuFlashing",
+  "fullName": "OEM.Tests.ClientTestsTCU.BaseTcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "OEM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseTcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "OEM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "OEM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseTcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : Missing Command Parameter: value",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_o(String binaryName) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 56\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectBinaryOEM(String binaryName)\r\n   at OEM.Tests.ClientTestsTCU.BaseTcuFlashing() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\ClientTestsTCU.cs:line 46"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseTcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : Missing Command Parameter: value",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_o(String binaryName) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 56\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectBinaryOEM(String binaryName)\r\n   at OEM.Tests.ClientTestsTCU.BaseTcuFlashing() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\ClientTestsTCU.cs:line 46"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: oemAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719615452,
+          "stop": 1636719618922
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719618923,
+          "stop": 1636719619867
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719619868,
+          "stop": 1636719622448
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719622450,
+          "stop": 1636719625060
+        },
+        {
+          "name": "Select controller for Transmission",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719625060,
+          "stop": 1636719626276
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719626276,
+          "stop": 1636719628680
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719628680,
+          "stop": 1636719631232
+        },
+        {
+          "name": "Fill client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719633234,
+          "stop": 1636719653248
+        },
+        {
+          "name": "Press Confirm button for client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719653248,
+          "stop": 1636719655622
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719655622,
+          "stop": 1636719660920
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719660920,
+          "stop": 1636719664656
+        },
+        {
+          "name": "Select binary from the list - ",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Missing Command Parameter: value",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_o(String binaryName) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 56\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinaryOEM_100663348_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719664657,
+          "stop": 1636719665630
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "74c53a3f8d4b4d318f219b155813aa33-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636719612378,
+      "stop": 1636719665663
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636719612377,
+  "stop": 1636719665667
+}

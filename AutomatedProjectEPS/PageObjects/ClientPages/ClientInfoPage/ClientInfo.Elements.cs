@@ -25,6 +25,10 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement inputNote => Browser._Driver.FindElementByAccessibilityId("NotesTbx");
 
 
+        //Only OEM
+        public IWebElement inputHouse => Browser._Driver.FindElementByAccessibilityId("AdressSecondTbx");
+
+
         //Commom button
         public IWebElement btnConfirmCustomerInfo => Browser._Driver.FindElement(_btnConfirmCustomerInfo);
         public readonly By _btnConfirmCustomerInfo = By.XPath("//*[contains(@AutomationId, 'ConfirmCustomerInfoBtn')]");

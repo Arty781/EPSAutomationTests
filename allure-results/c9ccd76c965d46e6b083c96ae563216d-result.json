@@ -1,0 +1,446 @@
+{
+  "uuid": "1c0d9c99-9a6d-4600-b78d-0fd3b16a0f8e-tr-0-1005",
+  "historyId": "_034.Tests.AdminTests.EditAndRemoveBinaries",
+  "fullName": "_034.Tests.AdminTests.EditAndRemoveBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditAndRemoveBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "EditAndRemoveBinaries",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "EditAndRemoveBinaries"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditAndRemoveBinaries",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974260686,
+          "stop": 1636974264670
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974264670,
+          "stop": 1636974265911
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974265911,
+          "stop": 1636974268603
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974268604,
+          "stop": 1636974270228
+        },
+        {
+          "name": "Upload base binary - Simos 084 - 8K0907551C S0005.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974270228,
+          "stop": 1636974277775
+        },
+        {
+          "name": "Change binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Get binary label",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1636974279375,
+              "stop": 1636974280848
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974277776,
+          "stop": 1636974286062
+        },
+        {
+          "name": "Select price from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974286062,
+          "stop": 1636974290367
+        },
+        {
+          "name": "Press the Upload button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974290367,
+          "stop": 1636974293494
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974293495,
+          "stop": 1636974305660
+        },
+        {
+          "name": "Get binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974305660,
+          "stop": 1636974307120
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974307121,
+          "stop": 1636974312244
+        },
+        {
+          "name": "Search the binary - Simos 084 - 8K0907551C S0005 034-QA-TEST 15.11.21 13:04:43",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974312245,
+          "stop": 1636974317841
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974317842,
+          "stop": 1636974328685
+        },
+        {
+          "name": "Press the EditBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974328685,
+          "stop": 1636974330591
+        },
+        {
+          "name": "Upload performance binary - Simos 084 - 8K0907551C S0005 - Performance.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974330591,
+          "stop": 1636974343238
+        },
+        {
+          "name": "Press the Edit button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974345164,
+          "stop": 1636974348672
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974348672,
+          "stop": 1636974372075
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974372075,
+          "stop": 1636974377555
+        },
+        {
+          "name": "Search the binary - Simos 084 - 8K0907551C S0005 034-QA-TEST 15.11.21 13:04:43",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974377555,
+          "stop": 1636974383138
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974383138,
+          "stop": 1636974394341
+        },
+        {
+          "name": "Press the RemoveBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974394342,
+          "stop": 1636974396272
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974396272,
+          "stop": 1636974399314
+        },
+        {
+          "name": "Make sure the removed binary 'Simos 084 - 8K0907551C S0005 034-QA-TEST 15.11.21 13:04:43' has status - 8",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636974399314,
+          "stop": 1636974404275
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "61bdd3357a944a039c34f1cc49c626e7-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636974256281,
+      "stop": 1636974409537
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636974256280,
+  "stop": 1636974409542
+}

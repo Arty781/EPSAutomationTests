@@ -12,11 +12,18 @@ namespace AutomatedProjectEPS.PageObjects
     public partial class Flash
     {
         [AllureStep("Make sure the binary is installed successfully")]
-        public Flash CheckSuccessFlashing()
+        public Flash CheckSuccessFlashing034()
         {
-            WaitUntil.ElementIsClickable(_btnNewFlash, 400);
-            Browser._Driver.GetScreenshot();
-            Assert.AreEqual(textboxResult.Text, "SuccessfulBurn");
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 400);
+            Assert.AreEqual(textboxResult034.Text, "SuccessfulBurn");
+            return this;
+        }
+
+        [AllureStep("Make sure the binary is installed successfully")]
+        public Flash CheckSuccessFlashingJHM()
+        {
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 400);
+            Assert.AreEqual(textboxResultJHM.Text, "SuccessfulBurn");
             return this;
         }
 
@@ -24,7 +31,7 @@ namespace AutomatedProjectEPS.PageObjects
         public Flash CheckSuccessFlashingLogs()
         {
             WaitUntil.ElementIsClickable(Pages.Calibration._btnConfirmEcuInformation);
-            Assert.AreEqual(logsResult.Text.Substring(2, 23), "Programming completed");
+            Assert.AreEqual(logsResult.Text.Substring(2, 21), "Programming completed");
             return this;
         }
     }

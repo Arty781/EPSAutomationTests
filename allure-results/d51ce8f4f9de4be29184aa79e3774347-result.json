@@ -1,0 +1,240 @@
+{
+  "uuid": "e4b68861-5501-4427-adeb-66a048188bdf-tr-0-1011",
+  "historyId": "JHM.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "fullName": "JHM.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "JHM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "testMethod",
+      "value": "PerformanceTcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "JHM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "JHM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "PerformanceTcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 40 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.PressNextButton()\r\n   at JHM.Tests.ClientTestsTCU.PerformanceTcuFlashing() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\JHM.Tests\\TESTS\\ClientTestsTCU.cs:line 75"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PerformanceTcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 40 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.PressNextButton()\r\n   at JHM.Tests.ClientTestsTCU.PerformanceTcuFlashing() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\JHM.Tests\\TESTS\\ClientTestsTCU.cs:line 75"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: KevinJHM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711552013,
+          "stop": 1636711556406
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711556406,
+          "stop": 1636711557998
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711557999,
+          "stop": 1636711560915
+        },
+        {
+          "name": "Select controller for Transmission",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711560915,
+          "stop": 1636711562352
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711562353,
+          "stop": 1636711563787
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711565311,
+          "stop": 1636711583565
+        },
+        {
+          "name": "Select binary from the list - 0C8927750AL S2447 AL1000 JHM- 11.11.21 18:17:59",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711583566,
+          "stop": 1636711591053
+        },
+        {
+          "name": "Select calibration for selected binary - Performance",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711591054,
+          "stop": 1636711602750
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711602750,
+          "stop": 1636711605609
+        },
+        {
+          "name": "Press next button",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 40 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711605610,
+          "stop": 1636711646032
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "11d8e704a71b40949f66f84383501682-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636711547868,
+      "stop": 1636711646095
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636711547868,
+  "stop": 1636711646099
+}

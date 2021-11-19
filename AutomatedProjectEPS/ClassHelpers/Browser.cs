@@ -2,13 +2,10 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
-using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Interactions;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AutomatedProjectEPS.ClassHelpers
 {
@@ -28,16 +25,9 @@ namespace AutomatedProjectEPS.ClassHelpers
             AppiumOptions options = new AppiumOptions();
             options.AddAdditionalCapability("app", application);
             options.AddAdditionalCapability("deviceName", "WindowsPC");
-          
+            options.AddAdditionalCapability("ms:waitForAppLaunch", 3);
             windowsDriver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
             Assert.NotNull(windowsDriver);
-            windowsDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(7);
-
-            
-
-            
-
-
         }
 
         public static string RootPath()
@@ -48,12 +38,30 @@ namespace AutomatedProjectEPS.ClassHelpers
 
         public static ISearchContext Driver { get { return windowsDriver; } }
         public static WindowsDriver<WindowsElement> _Driver { get { return windowsDriver; } }
-        public static void Close() { windowsDriver.Close(); }
+        public static void Close() => windowsDriver?.Close(); 
         public static Random Random { get { return new Random(); } }
 
-        
 
-       
+
+        public void SelectComboboxItem(AppiumWebElement element, int index)
+        {
+            while(element.Text == "Testing")
+            {
+                
+            }
+
+
+
+
+            element.Click();
+           
+            var comboBoxItems = element.FindElementByAccessibilityId
+                ("ListBoxItem");
+
+            //new Actions(element.WrappedDriver).MoveToElement(comboBoxItems[index]).Click().Perform();
+
+        }
+
 
     }
 }

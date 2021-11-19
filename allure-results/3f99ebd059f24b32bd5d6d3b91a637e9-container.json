@@ -1,0 +1,76 @@
+{
+  "uuid": "eca8d413-20a7-4585-a642-2d955c01625a-tc-0-1009",
+  "name": "OEM.Tests.ClientTestsTCU.BaseTcuFlashing",
+  "children": [
+    "177458b1-7e2b-4bce-b4a4-645452ce1567-tr-0-1010"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636719665657,
+      "stop": 1636719665657
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636719665657,
+      "stop": 1636719665657
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636719665657,
+      "stop": 1636719665657
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636719665657,
+      "stop": 1636719665657
+    }
+  ],
+  "links": [],
+  "start": 1636719612374,
+  "stop": 1636719665698
+}

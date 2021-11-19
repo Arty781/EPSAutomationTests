@@ -1,0 +1,331 @@
+{
+  "uuid": "7f4cd0db-14d4-4042-947a-93a71594ee0b-tr-0-1005",
+  "historyId": "_034.Tests.AdminTests.EditAndRemoveBinaries",
+  "fullName": "_034.Tests.AdminTests.EditAndRemoveBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditAndRemoveBinaries"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "EditAndRemoveBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_o(String puthBinary) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.SelectPerformanceBinary(String puthBinary)\r\n   at _034.Tests.AdminTests.EditAndRemoveBinaries() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 98"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditAndRemoveBinaries",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_o(String puthBinary) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.SelectPerformanceBinary(String puthBinary)\r\n   at _034.Tests.AdminTests.EditAndRemoveBinaries() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\034.Tests\\TESTS\\AdminTests.cs:line 98"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967383968,
+          "stop": 1636967387554
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967387555,
+          "stop": 1636967388569
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967388569,
+          "stop": 1636967391165
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967391165,
+          "stop": 1636967392534
+        },
+        {
+          "name": "Upload base binary - Simos 084 - 8K0907551C S0005.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967392535,
+          "stop": 1636967399250
+        },
+        {
+          "name": "Change binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Get binary label",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1636967400602,
+              "stop": 1636967401773
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967399250,
+          "stop": 1636967406359
+        },
+        {
+          "name": "Select price from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967406360,
+          "stop": 1636967410056
+        },
+        {
+          "name": "Press the Upload button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967410057,
+          "stop": 1636967412619
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967412620,
+          "stop": 1636967421313
+        },
+        {
+          "name": "Get binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967421313,
+          "stop": 1636967422490
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967422491,
+          "stop": 1636967427014
+        },
+        {
+          "name": "Search the binary - Simos 084 - 8K0907551C S0005 034-QA-TEST 15.11.21 11:10:04",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967427014,
+          "stop": 1636967432310
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967432311,
+          "stop": 1636967437720
+        },
+        {
+          "name": "Press the EditBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967437721,
+          "stop": 1636967439254
+        },
+        {
+          "name": "Upload performance binary - 8K2927156J S0005 Performance.bin",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 10 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_o(String puthBinary) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\BinaryUploadPage\\BinaryUpload.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.BinaryUpload.__a$_around_SelectPerformanceBinary_100663313_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636967439255,
+          "stop": 1636967449393
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "1e96dc05a2f94fe58c38aede06f8ec76-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636967380219,
+      "stop": 1636967449453
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636967380218,
+  "stop": 1636967449459
+}

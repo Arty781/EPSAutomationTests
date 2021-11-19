@@ -17,6 +17,7 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement btnPerformanceBinary => Browser._Driver.FindElement(_btnPerformanceBinary);
         public readonly By _btnPerformanceBinary = By.XPath("//*[contains(@AutomationId, 'BrowsePerformanceBinaryBtn')]");
 
+
         public IWebElement comboBoxPricing => Browser._Driver.FindElement(_comboBoxPricing);
         public readonly By _comboBoxPricing = By.XPath("//*[contains(@AutomationId, 'PricingCategoryCbbx')]");
 

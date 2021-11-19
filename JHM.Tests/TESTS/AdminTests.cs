@@ -22,15 +22,15 @@ namespace JHM.Tests
         public void UploadEcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientJHM)
-                .EnterPassword(Credentials.PasswordClientJHM)
+                .EnterLogin(Credentials.LoginAdminJHM)
+                .EnterPassword(Credentials.PasswordAdminJHM)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseSimos084)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseEcu)
+                .ChangeBinaryLabel(CompanyFilter.JHM)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceEcu)
                 .PressAddButton()
                 .ScrollDown()
                 .UploadBinary();
@@ -52,15 +52,15 @@ namespace JHM.Tests
         public void UploadTcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientJHM)
-                .EnterPassword(Credentials.PasswordClientJHM)
+                .EnterLogin(Credentials.LoginAdminJHM)
+                .EnterPassword(Credentials.PasswordAdminJHM)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseTcu)
+                .ChangeBinaryLabel(CompanyFilter.JHM)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceTcu)
                 .PressAddButton()
                 .ScrollDown()
                 .UploadBinary();
@@ -71,6 +71,70 @@ namespace JHM.Tests
                 .GoToBinarySearch()
                 .SearchBinary(binaryLabel)
                 .MakeSureBinaryFound(binaryLabel);
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("JHM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void EditAndRemoveBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminJHM)
+                .EnterPassword(Credentials.PasswordAdminJHM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseEcu)
+                .ChangeBinaryLabel(CompanyFilter.JHM)
+                .SelectPrice()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .SelectBinary()
+                .PressEditBinaryButton()
+                .BrowsePerformanceBinary(BinariesPuth.PerformanceEcu)
+                .PressAddPerfButton()
+                .EditBinary();
+            Pages.Common
+               .PressEnterKey();
+            Pages.Navigation
+               .GoToBinarySearch()
+               .SearchBinary(binaryLabel)
+               .SelectBinary()
+               .PressRemoveBinaryButton();
+            Pages.Common
+               .PressEnterKey()
+               .VerifyRemovedBinary(binaryLabel);
+
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("JHM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void CheckFlashHistory()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminJHM)
+                .EnterPassword(Credentials.PasswordAdminJHM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToFlashHistory()
+                .ChangeStartDate()
+                .SelectDistributor(Distributors.JHM)
+                .PressGetReportButton()
+                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.JHM));
+
+
         }
     }
 }

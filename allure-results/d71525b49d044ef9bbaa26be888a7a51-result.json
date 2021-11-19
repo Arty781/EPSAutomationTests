@@ -1,0 +1,190 @@
+{
+  "uuid": "a6f64670-7cb6-4108-8824-f3aa34306fb0-tr-0-1007",
+  "historyId": "JHM.Tests.AdminTests.CheckFlashHistory",
+  "fullName": "JHM.Tests.AdminTests.CheckFlashHistory",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "JHM.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFlashHistory"
+    },
+    {
+      "name": "package",
+      "value": "JHM.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "JHM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "CheckFlashHistory",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "CheckFlashHistory"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CheckFlashHistory",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: KevinJHM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164333778,
+          "stop": 1637164337330
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164337331,
+          "stop": 1637164338378
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164338379,
+          "stop": 1637164340998
+        },
+        {
+          "name": "Navigate to Flash History page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164340999,
+          "stop": 1637164342493
+        },
+        {
+          "name": "Change Start Date",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164342493,
+          "stop": 1637164348492
+        },
+        {
+          "name": "Select Distributor",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164348492,
+          "stop": 1637164351643
+        },
+        {
+          "name": "Press 'Get Report' button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164351643,
+          "stop": 1637164363516
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ff22a337cb254d848794137ffd9c451c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1637164329374,
+      "stop": 1637164369507
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1637164329373,
+  "stop": 1637164369515
+}

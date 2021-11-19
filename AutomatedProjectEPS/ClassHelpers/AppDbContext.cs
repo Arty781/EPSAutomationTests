@@ -57,5 +57,54 @@ namespace AutomatedProjectEPS.ClassHelpers
             }
             return status;
         }
+        public string GetDistributorId(string name)
+        {
+            string id = "";
+            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            {
+                SqlCommand command = new SqlCommand("SELECT Id FROM Distributors WHERE DistributorName = @name", db);
+                command.Parameters.AddWithValue("@name", DbType.String).Value = name;
+                db.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        id = Convert.ToString(reader.GetValue(0));
+                    }
+                }
+            }
+            return id;
+        }
+
+
+
+
+        public List<string> GetSerialNumbersList(string distributorId)
+        {
+            List<string> list = new List<string>();
+            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            {
+                SqlCommand command = new SqlCommand("SELECT TOP 5 SerialNumber FROM BurnInfoes " +
+                    "WHERE CAST(EndDate AS DATE) = CAST(GETDATE() AS DATE) " +
+                    "AND Distributor_Id = @distributorId " +
+                    "ORDER BY EndDate DESC", db);
+                command.Parameters.AddWithValue("@distributorId", DbType.String).Value = distributorId;
+                db.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(Convert.ToString(reader.GetValue(0)));
+                    }
+                }
+            }
+            return list;
+        }
+
+
     }
 }

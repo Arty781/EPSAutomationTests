@@ -23,6 +23,22 @@ namespace AutomatedProjectEPS.PageObjects
             return this;
         }
 
+        /*[AllureStep("Wait finish flashing")]
+        public Common WaitFinishFlasingOEM()
+        {
+            WaitUntil.WaitSecondWindowHandle(600);
+            SwitchWindow();
+            return this;
+        }
+
+        [AllureStep("Wait finish flashing")]
+        public Common WaitFinishFlasingOEM()
+        {
+            WaitUntil.WaitSecondWindowHandle(600);
+            SwitchWindow();
+            return this;
+        }*/
+
         [AllureStep("Close message box")]
         public Common CloseProgressBarAfterFlashing()
         {
@@ -34,6 +50,7 @@ namespace AutomatedProjectEPS.PageObjects
             progressBarBox.SendKeys(Keys.Enter);
             return this;
         }
+
         [AllureStep("Close message box")]
         public Common CloseProgressBar()
         {
@@ -82,6 +99,8 @@ namespace AutomatedProjectEPS.PageObjects
             Browser._Driver.SwitchTo().Window(Browser._Driver.WindowHandles.ToList().First());
             return this;
         }
+
+       
 
     }
 }

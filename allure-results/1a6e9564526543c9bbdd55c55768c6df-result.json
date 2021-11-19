@@ -1,0 +1,295 @@
+{
+  "uuid": "89de8eb3-510d-43dd-875b-33ec107f3dbb-tr-0-1011",
+  "historyId": "JHM.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "fullName": "JHM.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "JHM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "testMethod",
+      "value": "PerformanceTcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "JHM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "JHM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "PerformanceTcuFlashing",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "PerformanceTcuFlashing"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PerformanceTcuFlashing",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: KevinJHM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711810644,
+          "stop": 1636711814949
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711814950,
+          "stop": 1636711816506
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711816506,
+          "stop": 1636711819365
+        },
+        {
+          "name": "Select controller for Transmission",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711819366,
+          "stop": 1636711822009
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711822009,
+          "stop": 1636711823411
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711824198,
+          "stop": 1636711842988
+        },
+        {
+          "name": "Select binary from the list - 0C8927750AL S2447 AL1000 JHM- 11.11.21 18:17:59",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711842989,
+          "stop": 1636711850479
+        },
+        {
+          "name": "Select calibration for selected binary - Performance",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711850479,
+          "stop": 1636711857720
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711857720,
+          "stop": 1636711860724
+        },
+        {
+          "name": "Fill client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711860726,
+          "stop": 1636711872547
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711872547,
+          "stop": 1636711884004
+        },
+        {
+          "name": "Start the flashing vehicle",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711884005,
+          "stop": 1636711886453
+        },
+        {
+          "name": "Make sure the binary is installed successfully",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636711886453,
+          "stop": 1636712163255
+        },
+        {
+          "name": "Press NewFlash button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636712163255,
+          "stop": 1636712164944
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f8926b5c4c8a499b8cbd9c5fbeaeaa71-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636711807219,
+      "stop": 1636712164977
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636711807218,
+  "stop": 1636712164983
+}

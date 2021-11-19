@@ -1,1 +1,1 @@
-allure serve "C:\Users\User\source\repos\AutomatedProjectEPS\allure-results"
+allure serve "C:\Users\ribal\source\repos\AutomatedProjectEPS\allure-results"

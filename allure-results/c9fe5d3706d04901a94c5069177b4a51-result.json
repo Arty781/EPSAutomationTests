@@ -1,0 +1,446 @@
+{
+  "uuid": "b5dba77a-b685-42cf-927c-de47a376362a-tr-0-1006",
+  "historyId": "VWR.Tests.AdminTests.EditAndRemoveBinaries",
+  "fullName": "VWR.Tests.AdminTests.EditAndRemoveBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "VWR.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditAndRemoveBinaries"
+    },
+    {
+      "name": "package",
+      "value": "VWR.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "VWR"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "EditAndRemoveBinaries",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "EditAndRemoveBinaries"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditAndRemoveBinaries",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: KevinVWR",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981212294,
+          "stop": 1636981216103
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981216103,
+          "stop": 1636981217293
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981217293,
+          "stop": 1636981219977
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981219978,
+          "stop": 1636981221323
+        },
+        {
+          "name": "Upload base binary - 8K2927156J S0005.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981221323,
+          "stop": 1636981228037
+        },
+        {
+          "name": "Change binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Get binary label",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1636981229390,
+              "stop": 1636981230699
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981228037,
+          "stop": 1636981235049
+        },
+        {
+          "name": "Select price from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981235049,
+          "stop": 1636981238792
+        },
+        {
+          "name": "Press the Upload button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981238792,
+          "stop": 1636981241611
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981241612,
+          "stop": 1636981254477
+        },
+        {
+          "name": "Get binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981254477,
+          "stop": 1636981255803
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981255803,
+          "stop": 1636981260638
+        },
+        {
+          "name": "Search the binary - 8K2927156J S0005 VWR-QA-TEST 15.11.21 15:00:33",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981260638,
+          "stop": 1636981265350
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981265351,
+          "stop": 1636981270627
+        },
+        {
+          "name": "Press the EditBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981270628,
+          "stop": 1636981272104
+        },
+        {
+          "name": "Upload performance binary - 8K2927156J S0005 Performance.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981272104,
+          "stop": 1636981281733
+        },
+        {
+          "name": "Press the Edit button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981283441,
+          "stop": 1636981286766
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981286766,
+          "stop": 1636981305222
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981305222,
+          "stop": 1636981310559
+        },
+        {
+          "name": "Search the binary - 8K2927156J S0005 VWR-QA-TEST 15.11.21 15:00:33",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981310559,
+          "stop": 1636981315825
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981315825,
+          "stop": 1636981319881
+        },
+        {
+          "name": "Press the RemoveBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981319881,
+          "stop": 1636981321397
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981321397,
+          "stop": 1636981323763
+        },
+        {
+          "name": "Make sure the removed binary '8K2927156J S0005 VWR-QA-TEST 15.11.21 15:00:33' has status - 8",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636981323763,
+          "stop": 1636981328536
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "eaf904825d764df3b67ca98f2eff8cd8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636981207927,
+      "stop": 1636981328588
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636981207926,
+  "stop": 1636981328595
+}

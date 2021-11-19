@@ -1,0 +1,150 @@
+{
+  "uuid": "adbfcf80-d319-44ad-bf10-be7e07cdcaf2-tr-0-1010",
+  "historyId": "OEM.Tests.ClientTestsTCU.BaseTcuFlashing",
+  "fullName": "OEM.Tests.ClientTestsTCU.BaseTcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "OEM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseTcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "OEM.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "OEM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseTcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass1_0.<CustomElementIsClickableByLocator>b__0(IWebDriver driver) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 23\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.PressNextButton()\r\n   at OEM.Tests.ClientTestsTCU.BaseTcuFlashing() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\ClientTestsTCU.cs:line 28"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseTcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass1_0.<CustomElementIsClickableByLocator>b__0(IWebDriver driver) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 23\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.PressNextButton()\r\n   at OEM.Tests.ClientTestsTCU.BaseTcuFlashing() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\ClientTestsTCU.cs:line 28"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: oemAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719591857,
+          "stop": 1636719595409
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719595410,
+          "stop": 1636719596488
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719596488,
+          "stop": 1636719599117
+        },
+        {
+          "name": "Press next button",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass1_0.<CustomElementIsClickableByLocator>b__0(IWebDriver driver) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 23\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_PressNextButton_100663407_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636719599117,
+          "stop": 1636719599592
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "18ebac055f564a2595e2f3a9cd1de272-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636719588649,
+      "stop": 1636719599653
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636719588648,
+  "stop": 1636719599658
+}

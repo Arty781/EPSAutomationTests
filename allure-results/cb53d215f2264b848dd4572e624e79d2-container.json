@@ -1,0 +1,76 @@
+{
+  "uuid": "7ae3b031-6e2b-4ffe-93bc-d54c8c82d0ba-tc-0-1003",
+  "name": "OEM.Tests.AdminTests.UploadEcuBinaries",
+  "children": [
+    "f3849dfc-bf23-4cbe-8f7e-d9f43fd8eecf-tr-0-1004"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636647601087,
+      "stop": 1636647601087
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636647601088,
+      "stop": 1636647601088
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636647601088,
+      "stop": 1636647601088
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1636647601088,
+      "stop": 1636647601088
+    }
+  ],
+  "links": [],
+  "start": 1636647527474,
+  "stop": 1636647601159
+}

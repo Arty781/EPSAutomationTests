@@ -22,15 +22,15 @@ namespace VWR.Tests
         public void UploadEcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientVWR)
-                .EnterPassword(Credentials.PasswordClientVWR)
+                .EnterLogin(Credentials.LoginAdminVWR)
+                .EnterPassword(Credentials.PasswordAdminVWR)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseSimos084)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseEcu)
+                .ChangeBinaryLabel(CompanyFilter.VWR)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceEcu)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common
@@ -51,15 +51,15 @@ namespace VWR.Tests
         public void UploadTcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientVWR)
-                .EnterPassword(Credentials.PasswordClientVWR)
+                .EnterLogin(Credentials.LoginAdminVWR)
+                .EnterPassword(Credentials.PasswordAdminVWR)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseTcu)
+                .ChangeBinaryLabel(CompanyFilter.VWR)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceTcu)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common
@@ -69,6 +69,71 @@ namespace VWR.Tests
                 .GoToBinarySearch()
                 .SearchBinary(binaryLabel)
                 .MakeSureBinaryFound(binaryLabel);
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("VWR")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void EditAndRemoveBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminVWR)
+                .EnterPassword(Credentials.PasswordAdminVWR)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseTcu)
+                .ChangeBinaryLabel(CompanyFilter.VWR)
+                .SelectPrice()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .SelectBinary()
+                .PressEditBinaryButton()
+                .BrowsePerformanceBinary(BinariesPuth.PerformanceTcu)
+                .PressAddPerfButton()
+                .EditBinary();
+            Pages.Common
+               .PressEnterKey();
+            Pages.Navigation
+               .GoToBinarySearch()
+               .SearchBinary(binaryLabel)
+               .SelectBinary()
+               .PressRemoveBinaryButton();
+            Pages.Common
+               .PressEnterKey()
+               .VerifyRemovedBinary(binaryLabel);
+
+        }
+
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("VWR")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void CheckFlashHistory()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminVWR)
+                .EnterPassword(Credentials.PasswordAdminVWR)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToFlashHistory()
+                .ChangeStartDate()
+                .SelectDistributor(Distributors.VWR)
+                .PressGetReportButton()
+                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.VWR));
+
+
         }
     }
 }

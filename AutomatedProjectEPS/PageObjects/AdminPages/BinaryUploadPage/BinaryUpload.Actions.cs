@@ -27,27 +27,52 @@ namespace AutomatedProjectEPS.PageObjects
         {
             WaitUntil.ElementIsClickable(_btnPerformanceBinary);
             btnPerformanceBinary.SendKeys(Keys.Enter + Browser.RootPath() + "Binariki\\" + puthBinary + Keys.Enter);
-
             return this;
         }
 
+        #region beforeRefactoring
+        [AllureStep("Upload performance binary - {0}")]
+        public BinaryUpload BrowsePerformanceBinary(string puthBinary)
+        {
+            IWebElement btnBrowse = Browser._Driver.FindElementByAccessibilityId("BrowsePerfomanceBinaryBtn");
+            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'BrowsePerfomanceBinaryBtn')]"));
+            btnBrowse.SendKeys(Keys.Enter + Browser.RootPath() + "Binariki\\" + puthBinary + Keys.Enter);
+            return this;
+        }
+        public BinaryUpload PressAddPerfButton()
+        {
+            IWebElement btnAdd = Browser._Driver.FindElementByAccessibilityId("AddPerfomanceBinaryBtn");
+            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'AddPerfomanceBinaryBtn')]"));
+            btnAdd.Click();
+            return this;
+        }
+
+        #endregion
+
+
+
+
+
 
         [AllureStep("Change binary label")]
-        public BinaryUpload ChangeBinaryLabel()
+        public BinaryUpload ChangeBinaryLabel(string filter)
         {
             WaitUntil.ElementIsClickable(_inputBinaryLabel);
             string label = GetBinaryLabel();
             inputBinaryLabel.Clear();
-            inputBinaryLabel.SendKeys(label + " " + DateTime.Now );
+            inputBinaryLabel.SendKeys(label + " " + filter + "QA-TEST" +" "+ DateTime.Now);
             return this;
         }
+
+
+
 
         [AllureStep("Select price from the list")]
         public BinaryUpload SelectPrice()
         {
             WaitUntil.ElementIsClickable(_comboBoxPricing);
-            comboBoxPricing.Click();
-            comboBoxPricing.SendKeys(Keys.Down + Keys.Enter);
+            //comboBoxPricing.SendKeys("Testing");
+            comboBoxPricing.SendKeys(Keys.Down);
             WaitUntil.WaitSomeInterval(1);
 
             return this;
@@ -60,6 +85,15 @@ namespace AutomatedProjectEPS.PageObjects
             btnUploadBinary.Click();
             return this;
            
+        }
+
+        [AllureStep("Press the Edit button")]
+        public BinaryUpload EditBinary()
+        {
+            WaitUntil.ElementIsClickable(_btnEdit);
+            btnEdit.Click();
+            return this;
+
         }
 
         [AllureStep("Press the Add button")]

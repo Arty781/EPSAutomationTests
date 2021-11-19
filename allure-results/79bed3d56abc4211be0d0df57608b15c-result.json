@@ -1,0 +1,150 @@
+{
+  "uuid": "26d9f837-aae6-431d-a782-d6cb958d87a3-tr-0-1005",
+  "historyId": "OEM.Tests.AdminTests.UploadTcuBinaries",
+  "fullName": "OEM.Tests.AdminTests.UploadTcuBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "OEM.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadTcuBinaries"
+    },
+    {
+      "name": "package",
+      "value": "OEM.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "OEM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadTcuBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\NavigationPage\\Navigation.Actions.cs:line 42\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Navigation.GoToBinaryUpload()\r\n   at OEM.Tests.AdminTests.UploadTcuBinaries() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\AdminTests.cs:line 59"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "UploadTcuBinaries",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\NavigationPage\\Navigation.Actions.cs:line 42\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Navigation.GoToBinaryUpload()\r\n   at OEM.Tests.AdminTests.UploadTcuBinaries() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\OEM.Tests\\TESTS\\AdminTests.cs:line 59"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: BugsBunny",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636647605948,
+          "stop": 1636647609526
+        },
+        {
+          "name": "Enter user's password: 321654987",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636647609527,
+          "stop": 1636647610744
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636647610744,
+          "stop": 1636647613339
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 10 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_o() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\NavigationPage\\Navigation.Actions.cs:line 42\r\n   at AutomatedProjectEPS.PageObjects.Navigation.__a$_around_GoToBinaryUpload_100663335_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1636647613339,
+          "stop": 1636647623516
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5d2f56fa58bd4ed289f53255dda57d83-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1636647601183,
+      "stop": 1636647623587
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1636647601183,
+  "stop": 1636647623587
+}

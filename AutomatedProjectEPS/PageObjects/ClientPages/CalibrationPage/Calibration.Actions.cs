@@ -25,10 +25,7 @@ namespace AutomatedProjectEPS.PageObjects
         public Calibration SelectBinary(string binaryName)
         {
             WaitUntil.VisibilityOfAllElementsLocatedBy(_cbbxBinaries, 20);
-
- 
-            cbbxBinaries.Click();
-           
+            cbbxBinaries.Click();  
             cbbxBinaries.FindElement(By.Name(binaryName)).Click();
             return this;
         }

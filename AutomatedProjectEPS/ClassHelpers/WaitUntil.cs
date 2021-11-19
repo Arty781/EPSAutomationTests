@@ -26,6 +26,11 @@ namespace AutomatedProjectEPS.ClassHelpers
         public static void VisibilityOfAllElementsLocatedBy(By locator, int seconds = 10)
         {
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.VisibilityOfAllElementsLocatedBy(locator));
+        }
+
+        public static void VisibleAndClickable(By locator, int seconds = 10)
+        {
+            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.VisibilityOfAllElementsLocatedBy(locator));
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(locator));
         }
 

@@ -23,15 +23,15 @@ namespace OEM.Tests
         public void UploadEcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientOEM)
-                .EnterPassword(Credentials.PasswordClientOEM)
+                .EnterLogin(Credentials.LoginAdminOEM)
+                .EnterPassword(Credentials.PasswordAdminOEM)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseSimos084)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseEcu)
+                .ChangeBinaryLabel(CompanyFilter.OEM)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceEcu)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common
@@ -53,15 +53,15 @@ namespace OEM.Tests
         public void UploadTcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientSRT)
-                .EnterPassword(Credentials.PasswordClientSRT)
+                .EnterLogin(Credentials.LoginAdminOEM)
+                .EnterPassword(Credentials.PasswordAdminOEM)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseTcu)
+                .ChangeBinaryLabel(CompanyFilter.OEM)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceTcu)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common
@@ -74,24 +74,67 @@ namespace OEM.Tests
         }
 
 
-
-        /*Pages.Navigation
-                .GoToBinarySearch()
-                .SearchBinary(binaryName)
-                .SelectBinary()
-                .PressEditBinaryButton()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
-                .PressAddButton()
-                .PressEditButton();
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("OEM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void EditAndRemoveBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminOEM)
+                .EnterPassword(Credentials.PasswordAdminOEM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseTcu)
+                .ChangeBinaryLabel(CompanyFilter.OEM)
+                .SelectPrice()
+                .UploadBinary();
             Pages.Common
                 .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
             Pages.Navigation
                 .GoToBinarySearch()
-                .SearchBinary(binaryName)
+                .SearchBinary(binaryLabel)
                 .SelectBinary()
-                .PressRemoveBinaryButton();
+                .PressEditBinaryButton()
+                .BrowsePerformanceBinary(BinariesPuth.PerformanceTcu)
+                .PressAddPerfButton()
+                .UploadBinary();
             Pages.Common
-                .PressEnterKey()
-                .VerifyRemovedBinary(binaryName);*/
+               .PressEnterKey();
+            Pages.Navigation
+               .GoToBinarySearch()
+               .SearchBinary(binaryLabel)
+               .SelectBinary()
+               .PressRemoveBinaryButton();
+            Pages.Common
+               .PressEnterKey()
+               .VerifyRemovedBinary(binaryLabel);
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("OEM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void CheckFlashHistory()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminOEM)
+                .EnterPassword(Credentials.PasswordAdminOEM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToFlashHistory()
+                .ChangeStartDate()
+                .SelectDistributor(Distributors.OEM)
+                .PressGetReportButton()
+                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.OEM));
+            
+
+        }
     }
 }

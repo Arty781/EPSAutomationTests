@@ -1,0 +1,180 @@
+{
+  "uuid": "023d0eb2-2938-4d76-b4b3-07b7e8af1bb6-tr-0-1007",
+  "historyId": "JHM.Tests.AdminTests.CheckFlashHistory",
+  "fullName": "JHM.Tests.AdminTests.CheckFlashHistory",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-QP64O7J"
+    },
+    {
+      "name": "testClass",
+      "value": "JHM.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckFlashHistory"
+    },
+    {
+      "name": "package",
+      "value": "JHM.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Vladyslav Rybalka"
+    },
+    {
+      "name": "suite",
+      "value": "JHM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "CheckFlashHistory",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass2_0.<CustomElementIsVisibleByLocator>b__0(IWebDriver driver) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 47\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_o(String distributorName) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\HistoryPage\\History.Actions.cs:line 31\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.History.SelectDistributor(String distributorName)\r\n   at JHM.Tests.AdminTests.CheckFlashHistory() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\JHM.Tests\\TESTS\\AdminTests.cs:line 130"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CheckFlashHistory",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass2_0.<CustomElementIsVisibleByLocator>b__0(IWebDriver driver) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 47\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_o(String distributorName) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\HistoryPage\\History.Actions.cs:line 31\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.History.SelectDistributor(String distributorName)\r\n   at JHM.Tests.AdminTests.CheckFlashHistory() in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\JHM.Tests\\TESTS\\AdminTests.cs:line 130"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: KevinJHM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164170492,
+          "stop": 1637164174304
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164174304,
+          "stop": 1637164175361
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164175362,
+          "stop": 1637164177985
+        },
+        {
+          "name": "Navigate to Flash History page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164177986,
+          "stop": 1637164179509
+        },
+        {
+          "name": "Change Start Date",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164179510,
+          "stop": 1637164185351
+        },
+        {
+          "name": "Select Distributor",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass2_0.<CustomElementIsVisibleByLocator>b__0(IWebDriver driver) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 47\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_o(String distributorName) in C:\\Users\\ribal\\source\\repos\\AutomatedProjectEPS\\AutomatedProjectEPS\\PageObjects\\AdminPages\\HistoryPage\\History.Actions.cs:line 31\r\n   at AutomatedProjectEPS.PageObjects.History.__a$_around_SelectDistributor_100663333_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1637164185893,
+          "stop": 1637164188029
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "89e16efe657b489da632278d77fdf5cf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1637164162357,
+      "stop": 1637164193048
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1637164162357,
+  "stop": 1637164193052
+}

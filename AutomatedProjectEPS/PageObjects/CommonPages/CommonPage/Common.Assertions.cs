@@ -11,7 +11,7 @@ namespace AutomatedProjectEPS.PageObjects
 {
     public partial class Common
     {
-        [AllureStep("Make sure the removed binary has status - 8")]
+        [AllureStep("Make sure the removed binary '{0}' has status - 8")]
         public void VerifyRemovedBinary(string binaryName)
         {
             WaitUntil.WaitSomeInterval(4);

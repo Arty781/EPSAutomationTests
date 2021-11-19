@@ -22,15 +22,15 @@ namespace SRT.Tests
         public void UploadEcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientSRT)
-                .EnterPassword(Credentials.PasswordClientSRT)
+                .EnterLogin(Credentials.LoginAdminSRT)
+                .EnterPassword(Credentials.PasswordAdminSRT)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseSimos084)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseEcu)
+                .ChangeBinaryLabel(CompanyFilter.SRT)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceSimos084)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceEcu)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common
@@ -51,15 +51,15 @@ namespace SRT.Tests
         public void UploadTcuBinaries()
         {
             Pages.Login
-                .EnterLogin(Credentials.LoginClientSRT)
-                .EnterPassword(Credentials.PasswordClientSRT)
+                .EnterLogin(Credentials.LoginAdminSRT)
+                .EnterPassword(Credentials.PasswordAdminSRT)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToBinaryUpload()
-                .SelectBaseBinary(BinariesPuth.BaseAisinAL1000)
-                .ChangeBinaryLabel()
+                .SelectBaseBinary(BinariesPuth.BaseTcu)
+                .ChangeBinaryLabel(CompanyFilter.SRT)
                 .SelectPrice()
-                .SelectPerformanceBinary(BinariesPuth.PerformanceAisinAL1000)
+                .SelectPerformanceBinary(BinariesPuth.PerformanceTcu)
                 .PressAddButton()
                 .UploadBinary();
             Pages.Common
@@ -69,6 +69,70 @@ namespace SRT.Tests
                 .GoToBinarySearch()
                 .SearchBinary(binaryLabel)
                 .MakeSureBinaryFound(binaryLabel);
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("SRT")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void EditAndRemoveBinaries()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminSRT)
+                .EnterPassword(Credentials.PasswordAdminSRT)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToBinaryUpload()
+                .SelectBaseBinary(BinariesPuth.BaseEcu)
+                .ChangeBinaryLabel(CompanyFilter.SRT)
+                .SelectPrice()
+                .UploadBinary();
+            Pages.Common
+                .PressEnterKey();
+            string binaryLabel = Pages.BinaryUpload.GetBinaryLabel();
+            Pages.Navigation
+                .GoToBinarySearch()
+                .SearchBinary(binaryLabel)
+                .SelectBinary()
+                .PressEditBinaryButton()
+                .BrowsePerformanceBinary(BinariesPuth.PerformanceEcu)
+                .PressAddPerfButton()
+                .EditBinary();
+            Pages.Common
+               .PressEnterKey();
+            Pages.Navigation
+               .GoToBinarySearch()
+               .SearchBinary(binaryLabel)
+               .SelectBinary()
+               .PressRemoveBinaryButton();
+            Pages.Common
+               .PressEnterKey()
+               .VerifyRemovedBinary(binaryLabel);
+
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Vladyslav Rybalka")]
+        [AllureSuite("SRT")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void CheckFlashHistory()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminSRT)
+                .EnterPassword(Credentials.PasswordAdminSRT)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToFlashHistory()
+                .ChangeStartDate()
+                .SelectDistributor(Distributors.SRT)
+                .PressGetReportButton()
+                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.SRT));
+
+
         }
     }
 }

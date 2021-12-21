@@ -10,7 +10,7 @@ namespace JHM.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("JHM")]
         [AllureSubSuite("Client")]
         [Test]
@@ -45,7 +45,7 @@ namespace JHM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("JHM")]
         [AllureSubSuite("Client")]
         [Test]
@@ -77,6 +77,6 @@ namespace JHM.Tests
                 .PressNewFlashButton();
         }
 
-       
+
     }
 }

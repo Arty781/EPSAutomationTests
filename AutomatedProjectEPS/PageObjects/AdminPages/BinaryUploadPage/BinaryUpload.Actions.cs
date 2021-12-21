@@ -34,15 +34,15 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Upload performance binary - {0}")]
         public BinaryUpload BrowsePerformanceBinary(string puthBinary)
         {
-            IWebElement btnBrowse = Browser._Driver.FindElementByAccessibilityId("BrowsePerfomanceBinaryBtn");
-            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'BrowsePerfomanceBinaryBtn')]"));
+            IWebElement btnBrowse = Browser._Driver.FindElementByAccessibilityId("BrowsePerformanceBinaryBtn");
+            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'BrowsePerformanceBinaryBtn')]"));
             btnBrowse.SendKeys(Keys.Enter + Browser.RootPath() + "Binariki\\" + puthBinary + Keys.Enter);
             return this;
         }
         public BinaryUpload PressAddPerfButton()
         {
-            IWebElement btnAdd = Browser._Driver.FindElementByAccessibilityId("AddPerfomanceBinaryBtn");
-            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'AddPerfomanceBinaryBtn')]"));
+            IWebElement btnAdd = Browser._Driver.FindElementByAccessibilityId("AddPerformanceBinaryBtn");
+            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'AddPerformanceBinaryBtn')]"));
             btnAdd.Click();
             return this;
         }
@@ -60,7 +60,7 @@ namespace AutomatedProjectEPS.PageObjects
             WaitUntil.ElementIsClickable(_inputBinaryLabel);
             string label = GetBinaryLabel();
             inputBinaryLabel.Clear();
-            inputBinaryLabel.SendKeys(label + " " + filter + "QA-TEST" +" "+ DateTime.Now);
+            inputBinaryLabel.SendKeys(label + " " + filter + "QA-TEST" + " " + DateTime.Now);
             return this;
         }
 
@@ -84,7 +84,7 @@ namespace AutomatedProjectEPS.PageObjects
             WaitUntil.ElementIsClickable(_btnUploadBinary);
             btnUploadBinary.Click();
             return this;
-           
+
         }
 
         [AllureStep("Press the Edit button")]

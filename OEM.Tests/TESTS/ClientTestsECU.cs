@@ -10,7 +10,7 @@ namespace OEM.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Client")]
         [Test]
@@ -34,7 +34,7 @@ namespace OEM.Tests
 
             Pages.ClientInfo
                 .FillClientInfoOEM()
-                .PressConfirmButtonForClientInfo();    
+                .PressConfirmButtonForClientInfo();
             Pages.Common
                 .PressEnterKey()
                 .PressNextButton();
@@ -59,12 +59,12 @@ namespace OEM.Tests
                 .CloseProgressBar()
                 .CloseProgressBar()
                 .SwitchWindow()
-                .PressNextButton();  
+                .PressNextButton();
         }
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Client")]
         [Test]
@@ -116,7 +116,7 @@ namespace OEM.Tests
                 .PressNextButton();
         }
 
-        
+
 
 
 

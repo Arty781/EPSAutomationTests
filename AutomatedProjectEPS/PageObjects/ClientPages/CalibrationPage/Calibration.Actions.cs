@@ -24,8 +24,11 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Select binary from the list - {0}")]
         public Calibration SelectBinary(string binaryName)
         {
-            WaitUntil.VisibilityOfAllElementsLocatedBy(_cbbxBinaries, 20);
-            cbbxBinaries.Click();  
+            while (PresenceOfElement.IsElementPresent(By.Name(binaryName)) == false)
+            {
+                WaitUntil.WaitSomeInterval(5);
+                cbbxBinaries.Click();
+            }
             cbbxBinaries.FindElement(By.Name(binaryName)).Click();
             return this;
         }
@@ -34,8 +37,11 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Select calibration for selected binary - {0}")]
         public Calibration SelectCalibration(string calibration)
         {
-            WaitUntil.ElementIsVisible(_cbbxCalibrations);
-            cbbxCalibrations.Click();
+            while (PresenceOfElement.IsElementPresent(By.Name(calibration)) == false)
+            {
+                WaitUntil.WaitSomeInterval(5);
+                cbbxCalibrations.Click();
+            }
             cbbxCalibrations.FindElement(By.Name(calibration)).Click();
             return this;
         }
@@ -59,7 +65,10 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Select calibration for selected binary - {0}")]
         public Calibration SelectCalibrationOEM(string calibration)
         {
-            WaitUntil.ElementIsVisible(_lbCalibrations);
+            while (PresenceOfElement.IsElementPresent(By.Name(calibration)) == false)
+            {
+                WaitUntil.WaitSomeInterval(5);
+            }
             lbCalibrations.FindElement(By.Name(calibration)).Click();
             return this;
         }

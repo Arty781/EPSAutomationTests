@@ -4,13 +4,13 @@ using AutomatedProjectEPS.PageObjects;
 using NUnit.Allure.Attributes;
 using NUnit.Framework;
 
-namespace SRT.Tests 
+namespace SRT.Tests
 {
     class ClientTestsECU : BaseClassClientECU
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Client")]
         [Test]
@@ -53,7 +53,7 @@ namespace SRT.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Client")]
         [Test]
@@ -93,6 +93,6 @@ namespace SRT.Tests
         }
 
 
-        
+
     }
 }

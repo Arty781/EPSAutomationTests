@@ -15,7 +15,7 @@ namespace SRT.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -44,7 +44,7 @@ namespace SRT.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -73,7 +73,7 @@ namespace SRT.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -115,7 +115,7 @@ namespace SRT.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -129,10 +129,54 @@ namespace SRT.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.SRT)
-                .PressGetReportButton()
-                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.SRT));
+                .PressGetReportButton(Distributors.SRT)
+                .CheckIsflashingsDisplayed(Distributors.SRT);
 
 
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("SRT")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void AddNewUser()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminSRT)
+                .EnterPassword(Credentials.PasswordAdminSRT)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenTree()
+                .ScrollDown()
+                .PressAddUserBtn()
+                .EnterFirstName()
+                .EnterLastName()
+                .EnterEmail()
+                .EnterPhone()
+                .EnterFax()
+                .EnterAddress()
+                .EnterCity()
+                .EnterZip()
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn();
+            Pages.Common
+               .PressEnterKey();
+
+            Pages.Management
+             .SearchUser(userNameLabel)
+             .OpenTree()
+             .SelectUser()
+             .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
         }
     }
 }

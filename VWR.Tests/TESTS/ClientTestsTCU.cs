@@ -15,7 +15,7 @@ namespace VWR.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("VWR")]
         [AllureSubSuite("Client")]
         [Test]
@@ -58,7 +58,7 @@ namespace VWR.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("VWR")]
         [AllureSubSuite("Client")]
         [Test]

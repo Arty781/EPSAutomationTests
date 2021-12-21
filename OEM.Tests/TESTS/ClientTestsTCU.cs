@@ -15,7 +15,7 @@ namespace OEM.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Client")]
         [Test]
@@ -69,7 +69,7 @@ namespace OEM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Client")]
         [Test]

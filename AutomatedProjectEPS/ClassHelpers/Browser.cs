@@ -11,7 +11,7 @@ namespace AutomatedProjectEPS.ClassHelpers
 {
     public class Browser
     {
-        public WindowsDriver<WindowsElement> WindowsDriver { get; set; }   
+        public WindowsDriver<WindowsElement> WindowsDriver { get; set; }
         private static WindowsDriver<WindowsElement> windowsDriver;
 
 
@@ -28,6 +28,7 @@ namespace AutomatedProjectEPS.ClassHelpers
             options.AddAdditionalCapability("ms:waitForAppLaunch", 3);
             windowsDriver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
             Assert.NotNull(windowsDriver);
+            windowsDriver.Manage().Window.Maximize();
         }
 
         public static string RootPath()
@@ -38,23 +39,22 @@ namespace AutomatedProjectEPS.ClassHelpers
 
         public static ISearchContext Driver { get { return windowsDriver; } }
         public static WindowsDriver<WindowsElement> _Driver { get { return windowsDriver; } }
-        public static void Close() => windowsDriver?.Close(); 
+        public static void Close() => windowsDriver?.Close();
         public static Random Random { get { return new Random(); } }
-
 
 
         public void SelectComboboxItem(AppiumWebElement element, int index)
         {
-            while(element.Text == "Testing")
+            while (element.Text == "Testing")
             {
-                
+
             }
 
 
 
 
             element.Click();
-           
+
             var comboBoxItems = element.FindElementByAccessibilityId
                 ("ListBoxItem");
 

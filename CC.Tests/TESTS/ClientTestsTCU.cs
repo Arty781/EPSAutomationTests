@@ -6,11 +6,11 @@ using NUnit.Framework;
 
 namespace CC.Tests
 {
-     class ClientTestsTCU : BaseClassClientTCU
+    class ClientTestsTCU : BaseClassClientTCU
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("СС")]
         [AllureSubSuite("Client")]
         [Test]
@@ -53,7 +53,7 @@ namespace CC.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("СС")]
         [AllureSubSuite("Client")]
         [Test]

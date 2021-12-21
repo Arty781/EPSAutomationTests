@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutomatedProjectEPS.ClassHelpers;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +11,10 @@ namespace AutomatedProjectEPS.PageObjects
 {
     public partial class Management
     {
+        public void VerifyCreatedUser(string userNameLabel, string FirstName, string LastName)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            Assert.AreEqual(Browser._Driver.FindElementByXPath("//*[contains(@Name, 'Jane')]").Text, FirstName + " " + LastName + " - " + userNameLabel);
+        }
     }
 }

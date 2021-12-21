@@ -43,7 +43,7 @@ namespace AutomatedProjectEPS.PageObjects
         public readonly By _lbCalibrations = By.XPath("//*[contains(@AutomationId, 'CalibrationsLb')]");  //Name - e.g.'Serie emulation'         ClassName - ListBoxItem
 
         public IWebElement tbCalibrationName => Browser._Driver.FindElement(_tbCalibrationName);
-        public readonly By _tbCalibrationName = By.XPath("//*[contains(@AutomationId, 'tb_CalibrationName')]");     //Name - e.g.'Perf'       ClassName - ListBoxItem
+        public readonly By _tbCalibrationName = By.XPath("//*[contains(@AutomationId, 'CalibrationNameTb')]");     //Name - e.g.'Perf'       ClassName - ListBoxItem
 
     }
 }

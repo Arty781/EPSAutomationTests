@@ -15,7 +15,7 @@ namespace CC.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("СС")]
         [AllureSubSuite("Client")]
         [Test]
@@ -52,12 +52,12 @@ namespace CC.Tests
                 .SwitchWindow();
             Pages.Flash
                 .CheckSuccessFlashingLogs();
-                
+
         }
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("СС")]
         [AllureSubSuite("Client")]
         [Test]

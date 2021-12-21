@@ -14,8 +14,11 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Fill client info")]
         public ClientInfo FillClientInfo()
         {
-            WaitUntil.ElementIsVisible(_inputFirstName, 45);
-            if(inputFirstName.Text != "")
+            while (PresenceOfElement.IsElementPresent(_inputFirstName) == false)
+            {
+                WaitUntil.WaitSomeInterval(5);
+            }
+            if (inputFirstName.Text != "")
             {
                 return this;
             }
@@ -39,7 +42,10 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Fill client info")]
         public ClientInfo FillClientInfoOEM()
         {
-            WaitUntil.ElementIsVisible(_inputFirstName, 45);
+            while (PresenceOfElement.IsElementPresentAndDisplay(_inputFirstName) == false)
+            {
+                WaitUntil.WaitSomeInterval(5);
+            }
             if (inputFirstName.Text != "")
             {
                 return this;
@@ -66,7 +72,10 @@ namespace AutomatedProjectEPS.PageObjects
         public ClientInfo FillClientInfoVWR()
         {
 
-            WaitUntil.ElementIsVisible(_inputFirstNameVWR, 45);
+            while (PresenceOfElement.IsElementPresentAndDisplay(_inputFirstNameVWR) == false)
+            {
+                WaitUntil.WaitSomeInterval(5);
+            }
             if (inputFirstNameVWR.Text != "")
             {
                 return this;
@@ -78,8 +87,8 @@ namespace AutomatedProjectEPS.PageObjects
                 inputAddressVWR.SendKeys("qaaddress");
                 inputCityVWR.SendKeys("qacity");
                 inputStateVWR.SendKeys("UA");
-                 inputZIPVWR.SendKeys("123456");
-                 inputEmailVWR.SendKeys("auto@test.io");
+                inputZIPVWR.SendKeys("123456");
+                inputEmailVWR.SendKeys("auto@test.io");
                 inputPhoneVWR.SendKeys("1234567890");
                 inputNoteVWR.SendKeys("qanotes");
 

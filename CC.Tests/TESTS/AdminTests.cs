@@ -9,13 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CC.Tests 
+namespace CC.Tests
 {
     class AdminTests : BaseClassAdmin
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("CC")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -45,7 +45,7 @@ namespace CC.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("CC")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -74,7 +74,7 @@ namespace CC.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("CC")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -116,7 +116,7 @@ namespace CC.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("CC")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -130,10 +130,55 @@ namespace CC.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.CC)
-                .PressGetReportButton()
-                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.CC));
+                .PressGetReportButton(Distributors.CC)
+                .CheckIsflashingsDisplayed(Distributors.CC);
 
 
         }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("CC")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void AddNewUser()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminCC)
+                .EnterPassword(Credentials.PasswordAdminCC)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenTree()
+                .ScrollDown()
+                .PressAddUserBtn()
+                .EnterFirstName()
+                .EnterLastName()
+                .EnterEmail()
+                .EnterPhone()
+                .EnterFax()
+                .EnterAddress()
+                .EnterCity()
+                .EnterZip()
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn();
+            Pages.Common
+               .PressEnterKey();
+
+            Pages.Management
+             .SearchUser(userNameLabel)
+             .OpenTree()
+             .SelectUser()
+             .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
+        }
+
     }
 }

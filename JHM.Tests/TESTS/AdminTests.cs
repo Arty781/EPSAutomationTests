@@ -15,7 +15,7 @@ namespace JHM.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -45,7 +45,7 @@ namespace JHM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -75,7 +75,7 @@ namespace JHM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -90,6 +90,8 @@ namespace JHM.Tests
                 .SelectBaseBinary(BinariesPuth.BaseEcu)
                 .ChangeBinaryLabel(CompanyFilter.JHM)
                 .SelectPrice()
+                .PressAddButton()
+                .ScrollDown()
                 .UploadBinary();
             Pages.Common
                 .PressEnterKey();
@@ -100,7 +102,8 @@ namespace JHM.Tests
                 .SelectBinary()
                 .PressEditBinaryButton()
                 .BrowsePerformanceBinary(BinariesPuth.PerformanceEcu)
-                .PressAddPerfButton()
+                .PressAddButton()
+                .ScrollDown()
                 .EditBinary();
             Pages.Common
                .PressEnterKey();
@@ -117,7 +120,7 @@ namespace JHM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -131,9 +134,54 @@ namespace JHM.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.JHM)
-                .PressGetReportButton()
-                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.JHM));
+                .PressGetReportButton(Distributors.JHM)
+                .CheckIsflashingsDisplayed(Distributors.JHM);
+        }
 
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("JHM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void AddNewUser()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminJHM)
+                .EnterPassword(Credentials.PasswordAdminJHM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenTree()
+                .ScrollDown()
+                .PressAddUserBtn()
+                .EnterFirstName()
+                .EnterLastName()
+                .EnterEmail()
+                .EnterPhone()
+                .EnterFax()
+                .EnterAddress()
+                .EnterCity()
+                .EnterZip()
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn();
+
+            Pages.Common
+               .PressEnterKey();
+            /*.VerifyCreatedUser(UserData.userName, userNameLabel);*/
+            Pages.Management
+             .SearchUser034(userNameLabel)
+             .OpenTree()
+             .SelectUser()
+             .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
 
         }
     }

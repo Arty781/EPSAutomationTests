@@ -18,7 +18,7 @@ namespace AutomatedProjectEPS.ClassHelpers
                 SqlCommand command = new SqlCommand("SELECT TOP 1 * FROM ECUs" +
                     " WHERE PartNumber = @PartNumber " +
                     "AND Status = 1" +
-                    "AND CompanyCode = @CompanyCode" + 
+                    "AND CompanyCode = @CompanyCode" +
                     " ORDER By CreationDate desc", db);
                 command.Parameters.AddWithValue("@PartNumber", DbType.String).Value = partNumber;
                 command.Parameters.AddWithValue("@CompanyCode", DbType.Int32).Value = companyCode;
@@ -78,8 +78,47 @@ namespace AutomatedProjectEPS.ClassHelpers
             return id;
         }
 
+        public string GetLastUserName(string userName)
+        {
+            string UserName = "";
+            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            {
+                SqlCommand command = new SqlCommand("SELECT TOP 1 UserName FROM Users WHERE UserName LIKE @userName ORDER BY CreationDate DESC", db);
+                command.Parameters.AddWithValue("@userName", DbType.String).Value = userName + "%";
+                db.Open();
 
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        UserName = Convert.ToString(reader.GetValue(0));
+                    }
+                }
+            }
+            return UserName;
+        }
 
+        public string GetUserStatus(string Email)
+        {
+            string status = "";
+            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            {
+                SqlCommand command = new SqlCommand("SELECT TOP 1 Status FROM Users WHERE Email = @Email ORDER BY CreationDate DESC", db);
+                command.Parameters.AddWithValue("@Email", DbType.String).Value = Email;
+                db.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        status = Convert.ToString(reader.GetValue(0));
+                    }
+                }
+            }
+            return status;
+        }
 
         public List<string> GetSerialNumbersList(string distributorId)
         {
@@ -87,8 +126,7 @@ namespace AutomatedProjectEPS.ClassHelpers
             using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
             {
                 SqlCommand command = new SqlCommand("SELECT TOP 5 SerialNumber FROM BurnInfoes " +
-                    "WHERE CAST(EndDate AS DATE) = CAST(GETDATE() AS DATE) " +
-                    "AND Distributor_Id = @distributorId " +
+                    "WHERE Distributor_Id = @distributorId " +
                     "ORDER BY EndDate DESC", db);
                 command.Parameters.AddWithValue("@distributorId", DbType.String).Value = distributorId;
                 db.Open();
@@ -101,6 +139,7 @@ namespace AutomatedProjectEPS.ClassHelpers
                         list.Add(Convert.ToString(reader.GetValue(0)));
                     }
                 }
+
             }
             return list;
         }

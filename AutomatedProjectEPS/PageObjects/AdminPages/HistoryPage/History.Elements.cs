@@ -18,5 +18,14 @@ namespace AutomatedProjectEPS.PageObjects
 
         public IWebElement btnGetReport => Browser._Driver.FindElement(_btnGetReport);
         public readonly By _btnGetReport = By.XPath("//*[contains(@AutomationId, 'GetReportBtn')]");
+
+        public IWebElement gridCell => Browser._Driver.FindElement(_gridCell);
+        public readonly By _gridCell = By.XPath("//*[contains(@ClassName, 'DataGridCell')]");
+
+        public IWebElement gridTable => Browser._Driver.FindElement(_gridTable);
+        public readonly By _gridTable = By.XPath("//*[contains(@ClassName, 'ReportsGrid')]");
+
+        public IWebElement gridRow => Browser._Driver.FindElement(_gridRow);
+        public readonly By _gridRow = By.XPath("//*[contains(@ClassName, 'DataGridRow')]");
     }
 }

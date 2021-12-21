@@ -158,8 +158,8 @@
       <item name="vin">WAUZZZ8K09A080019</item>
     </ecu>
     <ecu type="DL501_G2">
-      <item name="boxcode">8K2927156J</item>
-      <item name="software">0005</item>
+      <item name="boxcode">8K5927156R</item>
+      <item name="software">0002</item>
       <item name="vin">WAUZZZ8K09A080019</item>
     </ecu>
     <ecu type="DL800_G1">
@@ -724,6 +724,20 @@
       <item name="software">1244</item>
       <item name="vin">WAUZZZ8K09A080012</item>
     </ecu>
+    <ecu type="MG1CP007">
+      <item name="boxcode">982906034AA </item>
+      <item name="software">0001</item>
+      <item name="vin">3VV3B7AX6JM182475</item>
+      <item name="hwboxcode">982907401</item>
+      <item name="hwversion">H01</item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">ZSC-86409.06.1878250096</item>
+      <item name="asamversion">001005</item>
+      <item name="asam">EV_ECM20TFS0115NA907115A</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01 00 01</item>
+      <item name="bootid">MDG1  CB.06.031.5 013.00</item>
+      <item name="ecutype">R4 2.0l TFSI</item>
+    </ecu>
     <ecu type="MG1CS001">
       <item name="boxcode">5NA907115A </item>
       <item name="software">0004</item>
@@ -739,9 +753,19 @@
       <item name="ecutype">R4 2.0l TFSI</item>
     </ecu>
     <ecu type="MG1CS002_D">
-      <item name="boxcode">8W0907559G</item>
-      <item name="software">0008</item>
-      <item name="vin">WAUZZZ8K09A080012</item>
+      <item name="boxcode">8A0907559X</item>
+      <item name="software">0004</item>
+      <item name="vin">3VV3B7AX6JM182475</item>
+      <item name="hwboxcode">06M907309D</item>
+      <item name="hwversion">H20</item>
+      <item name="vwsystemname">J623</item>
+      <item name="vwfazzit">BPG-81014.02.1612220021</item>
+      <item name="asamversion">001008</item>
+      <item name="asam">EV_ECM30TFS01180A907559C</item>
+      <item name="fcnt-attempted">00 01 00 01 00 01 00 01 00 01</item>
+      <item name="bootid">MDG1  CB.06.034.3 016.00</item>
+      <item name="ecutype">V6 3.0l TFSI</item>
+      <item name="engine">CWGD</item>
     </ecu>
     <ecu type="MG1CS002_F">
       <item name="boxcode">8W0907551J</item>
@@ -783,6 +807,20 @@
       <item name="boxcode">8W0907115R</item>
       <item name="software">0004</item>
       <item name="vin">WAUZZZ8K09A080012</item>
+    </ecu>
+    <ecu type="MG1CS047">
+      <item name="boxcode">9P1906033Q </item>
+      <item name="software">0001</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">9P1906033A</item>
+      <item name="hwversion">H01</item>
+    </ecu>
+    <ecu type="MG1CS163">
+      <item name="boxcode">07P906030B </item>
+      <item name="software">4747</item>
+      <item name="vin">WA1LFAFP3CA020080</item>
+      <item name="hwboxcode">07P907309J</item>
+      <item name="hwversion">H01</item>
     </ecu>
     <ecu type="MG1CS211">
       <item name="boxcode">04E906034AB</item>

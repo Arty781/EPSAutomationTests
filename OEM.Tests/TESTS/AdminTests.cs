@@ -16,7 +16,7 @@ namespace OEM.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -46,7 +46,7 @@ namespace OEM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -76,7 +76,7 @@ namespace OEM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -102,7 +102,7 @@ namespace OEM.Tests
                 .PressEditBinaryButton()
                 .BrowsePerformanceBinary(BinariesPuth.PerformanceTcu)
                 .PressAddPerfButton()
-                .UploadBinary();
+                .EditBinary();
             Pages.Common
                .PressEnterKey();
             Pages.Navigation
@@ -117,7 +117,7 @@ namespace OEM.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
@@ -131,9 +131,105 @@ namespace OEM.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.OEM)
-                .PressGetReportButton()
-                .CompareFlashHistory(new AppDbContext().GetDistributorId(Distributors.OEM));
-            
+                .PressGetReportButton(Distributors.OEM)
+                .CheckIsflashingsDisplayed(Distributors.OEM);
+
+
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("OEM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void AddNewUser()
+        {
+            Pages.Login
+                .EnterLogin(Credentials.LoginAdminOEM)
+                .EnterPassword(Credentials.PasswordAdminOEM)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenTree()
+                .ScrollDown()
+                .PressAddUserBtn()
+                .EnterFirstName()
+                .EnterLastName()
+                .EnterEmail()
+                .EnterPhone()
+                .EnterFax()
+                .EnterAddress()
+                .EnterCity()
+                .EnterZip()
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn();
+            Pages.Common
+               .PressEnterKey();
+
+            Pages.Management
+             .SearchUser(userNameLabel)
+             .OpenTree()
+             .SelectUser()
+             .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
+
+
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("OEM")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void DeleteUser()
+        {
+            Pages.Login
+               .EnterLogin(Credentials.LoginAdminOEM)
+               .EnterPassword(Credentials.PasswordAdminOEM)
+               .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenTree()
+                .ScrollDown()
+                .PressAddUserBtn()
+                .EnterFirstName()
+                .EnterLastName()
+                .EnterEmail()
+                .EnterPhone()
+                .EnterFax()
+                .EnterAddress()
+                .EnterCity()
+                .EnterZip()
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn();
+            Pages.Common
+               .PressEnterKey();
+
+            Pages.Management
+             .SearchUser(userNameLabel)
+             .OpenTree()
+             .SelectUser()
+             .ClickToScroll()
+             .ClickDeleteUserBtn();
+            Pages.Common
+               .PressEnterKey()
+               .PressEnterKey();
+            /*.VerifyDeleteUser(userNameLabel);*/
+
 
         }
     }

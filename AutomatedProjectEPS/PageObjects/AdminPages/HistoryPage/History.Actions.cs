@@ -1,6 +1,8 @@
 ﻿using AutomatedProjectEPS.ClassHelpers;
 using NUnit.Allure.Steps;
+using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,32 +16,73 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Change Start Date")]
         public History ChangeStartDate()
         {
-            WaitUntil.WaitSomeInterval(3);
-            WaitUntil.ElementIsVisible(_datePicker);
+            PresenceOfElement.IsLoaderDisplay();
+            WaitUntil.ElementIsClickable(_datePicker);
             datePicker.Clear();
-            datePicker.SendKeys(DateTime.Today.ToString("dd.MM.yy"));
+            datePicker.SendKeys(DateTime.UtcNow.AddMonths(-1).ToShortDateString());
 
             return this;
         }
 
+
         [AllureStep("Select Distributor")]
         public History SelectDistributor(string distributorName)
         {
-            
-            WaitUntil.ElementIsClickable(_cbbxDistributor);
-            cbbxDistributor.Click();
-            WaitUntil.ElementIsVisible(By.Name(distributorName));
-            cbbxDistributor.FindElement(By.Name(distributorName)).Click();
+            PresenceOfElement.IsLoaderDisplay();
+            WaitUntil.VisibleAndClickable(_cbbxDistributor);
+            new Actions(Browser._Driver)
+                 .Click(cbbxDistributor)
+                 .Build()
+                 .Perform();
+
+            IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElementsByAccessibilityId("DistributorNameTb");
+            IWebElement selectedDistr = null;
+
+
+            foreach (var item in treeItems)
+            {
+                if (!item.Selected && PresenceOfElement.IsElementPresent(By.Name(distributorName)) == true)
+                {
+                    selectedDistr = item;
+
+                    if (selectedDistr.Enabled && selectedDistr.Text == distributorName)
+                    {
+                        new Actions(Browser._Driver)
+                        .SendKeys(Keys.ArrowUp)
+                        .Click(selectedDistr)
+                        .Build()
+                        .Perform();
+                        break;
+                    }
+                    new Actions(Browser._Driver)
+                    .SendKeys(Keys.ArrowDown)
+                    .Build()
+                    .Perform();
+
+                }
+                CatchException(distributorName);
+
+            }
 
             return this;
         }
 
         [AllureStep("Press 'Get Report' button")]
-        public History PressGetReportButton()
+        public History PressGetReportButton(string distributorName)
         {
             WaitUntil.ElementIsClickable(_btnGetReport);
             btnGetReport.Click();
-            
+
+            return this;
+        }
+
+        public History ScrollDown()
+        {
+            new Actions(Browser._Driver)
+                .SendKeys(Keys.Control + Keys.End)
+                .Build()
+                .Perform();
+            WaitUntil.WaitSomeInterval(1);
             return this;
         }
     }

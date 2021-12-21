@@ -30,7 +30,7 @@ namespace AutomatedProjectEPS.ClassHelpers
                         return null;
                     }
                 }
-                catch (StaleElementReferenceException)
+                catch (Exception)
                 {
                     return null;
                 }
@@ -51,8 +51,8 @@ namespace AutomatedProjectEPS.ClassHelpers
                     }
                     else
                         return null;
-                   
-                    
+
+
                 }
                 catch (StaleElementReferenceException)
                 {
@@ -62,6 +62,6 @@ namespace AutomatedProjectEPS.ClassHelpers
         }
 
 
-       
+
     }
 }

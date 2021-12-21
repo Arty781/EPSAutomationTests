@@ -10,7 +10,7 @@ namespace SRT.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Client")]
         [Test]
@@ -53,7 +53,7 @@ namespace SRT.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("SRT")]
         [AllureSubSuite("Client")]
         [Test]

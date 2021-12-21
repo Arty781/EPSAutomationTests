@@ -13,7 +13,7 @@ namespace AutomatedProjectEPS.PageObjects
 {
     public partial class Common
     {
-       
+
         [AllureStep("Press next button")]
         public Common PressNextButton()
         {
@@ -66,7 +66,9 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common PressEnterKey()
         {
-            WaitUntil.VisibilityOfAllElementsLocatedBy(_Messagebox, 30);
+            /*WaitUntil.VisibilityOfAllElementsLocatedBy(_Messagebox, 60);*/
+            PresenceOfElement.IsLoaderDisplay();
+            PresenceOfElement.IsMessageBoxDisplay();
             Messagebox.Click();
             Messagebox.SendKeys(Keys.Enter);
             return this;
@@ -100,7 +102,7 @@ namespace AutomatedProjectEPS.PageObjects
             return this;
         }
 
-       
+
 
     }
 }

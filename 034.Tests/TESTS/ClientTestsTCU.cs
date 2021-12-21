@@ -11,7 +11,7 @@ namespace _034.Tests
     {
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("034")]
         [AllureSubSuite("Client")]
         [Test]
@@ -47,7 +47,7 @@ namespace _034.Tests
 
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Vladyslav Rybalka")]
+        [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("034")]
         [AllureSubSuite("Client")]
         [Test]

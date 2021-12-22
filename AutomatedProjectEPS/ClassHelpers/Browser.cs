@@ -22,13 +22,14 @@ namespace AutomatedProjectEPS.ClassHelpers
 
         public static void Initialize(string application)
         {
-            AppiumOptions options = new AppiumOptions();
+            AppiumOptions options = new();
             options.AddAdditionalCapability("app", application);
             options.AddAdditionalCapability("deviceName", "WindowsPC");
             options.AddAdditionalCapability("ms:waitForAppLaunch", 3);
             windowsDriver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
             Assert.NotNull(windowsDriver);
             windowsDriver.Manage().Window.Maximize();
+            windowsDriver?.Dispose();
         }
 
         public static string RootPath()
@@ -43,7 +44,7 @@ namespace AutomatedProjectEPS.ClassHelpers
         public static Random Random { get { return new Random(); } }
 
 
-        public void SelectComboboxItem(AppiumWebElement element, int index)
+        /*public void SelectComboboxItem(AppiumWebElement element, int index)
         {
             while (element.Text == "Testing")
             {
@@ -60,7 +61,7 @@ namespace AutomatedProjectEPS.ClassHelpers
 
             //new Actions(element.WrappedDriver).MoveToElement(comboBoxItems[index]).Click().Perform();
 
-        }
+        }*/
 
 
     }

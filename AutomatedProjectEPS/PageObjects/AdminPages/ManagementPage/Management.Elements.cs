@@ -16,7 +16,7 @@ namespace AutomatedProjectEPS.PageObjects
         public readonly By _ExpanderBtn = By.XPath("//*[contains(@AutomationId, 'Expander')]");
         public IWebElement AddUserBtn => Browser._Driver.FindElement(_addUserBtn);
         public readonly By _addUserBtn = By.XPath("//*[contains(@AutomationId, 'AddUserBtn')]");
-        public IWebElement firstNameFld => Browser._Driver.FindElement(_firstNameFld);
+       /* public IWebElement firstNameFld => Browser._Driver.FindElement(_firstNameFld);
         public readonly By _firstNameFld = By.XPath("//*[contains(@AutomationId, 'UserFirstNameTbx')]");
         public IWebElement lastNameFld => Browser._Driver.FindElement(_lastNameFld);
         public readonly By _lastNameFld = By.XPath("//*[contains(@AutomationId, 'UserLastNameTbx')]");
@@ -31,7 +31,7 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement cityFld => Browser._Driver.FindElement(_cityFld);
         public readonly By _cityFld = By.XPath("//*[contains(@AutomationId, 'CityTbx')]");
         public IWebElement zipFld => Browser._Driver.FindElement(_zipFld);
-        public readonly By _zipFld = By.XPath("//*[contains(@AutomationId, 'ZipCodeTbx')]");
+        public readonly By _zipFld = By.XPath("//*[contains(@AutomationId, 'ZipCodeTbx')]");*/
         public IWebElement countryCbbx => Browser._Driver.FindElement(_countryCbbx);
         public readonly By _countryCbbx = By.XPath("//*[contains(@AutomationId, 'CountryCbbx')]");
         public IWebElement roleCbbx => Browser._Driver.FindElement(_roleCbbx);
@@ -40,7 +40,7 @@ namespace AutomatedProjectEPS.PageObjects
         public readonly By _accStatusBtn = By.XPath("//*[contains(@AutomationId, 'AccountStatusTbtn')]");
         public IWebElement accNotesBtn => Browser._Driver.FindElement(_accNotesBtn);
         public readonly By _accNotesBtn = By.XPath("//*[contains(@AutomationId, 'EditNotesBtn')]");
-        public IWebElement flashCountBtn => Browser._Driver.FindElement(_flashCountBtn);
+       /* public IWebElement flashCountBtn => Browser._Driver.FindElement(_flashCountBtn);
         public readonly By _flashCountBtn = By.XPath("//*[contains(@AutomationId, 'FlashCountSwitcherTbtn')]");
         public IWebElement flashCountFld => Browser._Driver.FindElement(_flashCountFld);
         public readonly By _flashCountFld = By.XPath("//*[contains(@AutomationId, 'FlashCountValueTbx')]");
@@ -63,25 +63,25 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement testFilterBtn => Browser._Driver.FindElement(_testFilterBtn);
         public readonly By _testFilterBtn = By.XPath("//*[contains(@AutomationId, 'TestFilterBtn')]");
         public IWebElement removeFilterBtn => Browser._Driver.FindElement(_removeFilterBtn);
-        public readonly By _removeFilterBtn = By.XPath("//*[contains(@AutomationId, 'RemoveFilterBtn')]");
+        public readonly By _removeFilterBtn = By.XPath("//*[contains(@AutomationId, 'RemoveFilterBtn')]");*/
         public IWebElement usernameFld => Browser._Driver.FindElement(_usernameFld);
         public readonly By _usernameFld = By.XPath("//*[contains(@AutomationId, 'UserNameTbx')]");
-        public IWebElement userPasswordFld => Browser._Driver.FindElement(_userPasswordFld);
-        public readonly By _userPasswordFld = By.XPath("//*[contains(@AutomationId, 'UserPasswordPbx')]");
+       /* public IWebElement userPasswordFld => Browser._Driver.FindElement(_userPasswordFld);
+        public readonly By _userPasswordFld = By.XPath("//*[contains(@AutomationId, 'UserPasswordPbx')]");*/
         public IWebElement saveUserBtn => Browser._Driver.FindElement(_saveUserBtn);
         public readonly By _saveUserBtn = By.XPath("//*[contains(@AutomationId, 'SaveUserBtn')]");
-        public IWebElement clickToScroll => Browser._Driver.FindElement(_clickToScroll);
+       /* public IWebElement clickToScroll => Browser._Driver.FindElement(_clickToScroll);
         public readonly By _clickToScroll = By.XPath("//*[contains(@ClassName, 'Image')]");
         public IWebElement refreshBtn => Browser._Driver.FindElement(_refreshBtn);
-        public readonly By _refreshBtn = By.XPath("//*[contains(@ClassName, 'RefreshActivityLogBtn')]");
+        public readonly By _refreshBtn = By.XPath("//*[contains(@ClassName, 'RefreshActivityLogBtn')]");*/
 
         #endregion
         #region Edit user locators
         public IWebElement searchFld => Browser._Driver.FindElement(_searchFld);
         public readonly By _searchFld = By.XPath("//*[contains(@AutomationId, 'SearchTextTbx')]");
         /*locators for CC, SRT, VWR, OEM browsers*/
-        public IWebElement searchBtn => Browser._Driver.FindElement(_searchBtn);
-        public readonly By _searchBtn = By.XPath("//*[contains(@Name, 'SEARCH')]");
+      /*  public IWebElement searchBtn => Browser._Driver.FindElement(_searchBtn);
+        public readonly By _searchBtn = By.XPath("//*[contains(@Name, 'SEARCH')]");*/
         /*locators for 034, JHM browsers*/
         public IWebElement searchBtn034 => Browser._Driver.FindElement(_searchBtn034);
         public readonly By _searchBtn034 = By.XPath("//*[@AutomationId='SearchBtn']");
@@ -91,11 +91,17 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement userDeleteBtn => Browser._Driver.FindElement(_userDeleteBtn);
         public readonly By _userDeleteBtn = By.XPath("//*[contains(@AutomationId, 'DeleteUserBtn')]");
 
-        public IWebElement treeItemBtn => Browser._Driver.FindElement(_treeItemBtn);
+        /*public IWebElement treeItemBtn => Browser._Driver.FindElement(_treeItemBtn);
         public readonly By _treeItemBtn = By.XPath("//*[contains(@AutomationId, 'TreeItemBtn')]");
 
         public IWebElement clickImg => Browser._Driver.FindElement(_clickImg);
-        public readonly By _clickImg = By.XPath("//*[contains(@ClassName, 'Image')]");
+        public readonly By _clickImg = By.XPath("//*[contains(@ClassName, 'Image')]");*/
+
+        public IWebElement noteTextArea => Browser._Driver.FindElement(_noteTextArea);
+        public readonly By _noteTextArea = By.XPath("//Window[@AutomationId=\"Messagebox\"][@Name=\"Edit Note\"]/Edit[@ClassName=\"TextBox\"]");
+        public IWebElement noteSaveBtn => Browser._Driver.FindElement(_noteSaveBtn);
+        public readonly By _noteSaveBtn = By.XPath("//Window[@AutomationId=\"Messagebox\"][@Name=\"Edit Note\"]/Button[@Name=\"Save\"][@ClassName=\"Button\"]");
+
         #endregion
     }
 }

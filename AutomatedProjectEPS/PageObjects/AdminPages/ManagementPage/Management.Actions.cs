@@ -59,12 +59,20 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Press \"Add User\" Button")]
         public Management PressAddUserBtn()
         {
-            refreshBtn.SendKeys(Keys.Control);
-            new Actions(Browser._Driver)
-               .Release(refreshBtn)
-               .Build()
-               .Perform();
-            AddUserBtn.Click();
+            IReadOnlyCollection<IWebElement> addBtnCollection = Browser._Driver.FindElementsByAccessibilityId("AddUserBtn");
+            foreach (var item in addBtnCollection)
+            {
+                if (item.Displayed == true)
+                {
+                    item.SendKeys(Keys.Control);
+                    new Actions(Browser._Driver)
+                        .Release(item)
+                        .Build()
+                        .Perform();
+                    item.Click();
+                }
+
+            }
 
             return this;
         }
@@ -73,26 +81,23 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user First Name")]
         public Management EnterFirstName()
         {
-            firstNameFld.SendKeys(Keys.Control);
-            new Actions(Browser._Driver)
-               .Release()
-               .Build()
-               .Perform();
+            IWebElement firstNameFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'UserFirstNameTbx')]"));
+            
             firstNameFld.SendKeys("Jane");
-            lastNameFld.SendKeys("Doe");
+            /*lastNameFld.SendKeys("Doe");
             emailFld.SendKeys("qatester91311@gmail.com");
             phoneFld.SendKeys("+123654789");
             faxFld.SendKeys("+1365477984");
             addressFld.SendKeys("9 County Road CC 3/10");
             cityFld.SendKeys("Wray");
-            zipFld.SendKeys("80358");
+            zipFld.SendKeys("80358");*/
 
             return this;
         }
         [AllureStep("Enter the user Last Name")]
         public Management EnterLastName()
         {
-
+            IWebElement lastNameFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'UserLastNameTbx')]"));
             lastNameFld.SendKeys("Doe");
 
             return this;
@@ -101,6 +106,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user Email")]
         public Management EnterEmail()
         {
+            IWebElement emailFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'EmailTbx')]"));
             emailFld.SendKeys("qatester91311@gmail.com");
 
             return this;
@@ -108,6 +114,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user Phone")]
         public Management EnterPhone()
         {
+            IWebElement phoneFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'PhoneTbx')]"));
             phoneFld.SendKeys("+123654789");
 
             return this;
@@ -115,6 +122,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user Fax")]
         public Management EnterFax()
         {
+            IWebElement faxFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'FaxTbx')]"));
             faxFld.SendKeys("+1365477984");
 
             return this;
@@ -122,6 +130,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user Address")]
         public Management EnterAddress()
         {
+            IWebElement addressFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'Address1Tbx')]"));
             addressFld.SendKeys("9 County Road CC 3/10");
 
             return this;
@@ -129,6 +138,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user City")]
         public Management EnterCity()
         {
+            IWebElement cityFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'CityTbx')]"));
             cityFld.SendKeys("Wray");
 
             return this;
@@ -136,7 +146,85 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user Zip")]
         public Management EnterZip()
         {
+            IWebElement zipFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'ZipCodeTbx')]"));
             zipFld.SendKeys("80358");
+
+            return this;
+        }
+
+        [AllureStep("Activate User")]
+        public Management ActivateUser()
+        {
+            accStatusBtn.SendKeys(Keys.Control);
+            new Actions(Browser._Driver)
+                .Release(accStatusBtn)
+                .Build()
+                .Perform();
+            accStatusBtn.Click();
+            return this;
+        }
+
+        [AllureStep("Open User notes modal")]
+        public Management OpenUserNotesModal()
+        {
+            accNotesBtn.SendKeys(Keys.Control);
+            new Actions(Browser._Driver)
+                .Release(accNotesBtn)
+                .Build()
+                .Perform();
+            accNotesBtn.Click();
+            return this;
+        }
+
+        [AllureStep("Add User notes and Save")]
+        public Management AddUserNotes()
+        {
+            Pages.Common.SwitchWindow();
+
+            noteTextArea.SendKeys("Lorem ipsum");
+            noteSaveBtn.Click();
+            return this;
+        }
+
+        [AllureStep("Add filters")]
+        public Management AddFilters()
+        {
+            IWebElement filterFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'CalibrationFilterTbx')]"));
+            IWebElement filterDescrFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'DescriptionFilterTbx')]"));
+            IWebElement andRadioBtn = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'AndOperationRbtn')]"));
+            IWebElement orRadioBtn = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'OrOperationRbtn')]"));
+            IWebElement addFilterBtn = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'AddFilterBtn')]"));
+
+            filterFld.SendKeys("034");
+            filterDescrFld.SendKeys("034");
+            andRadioBtn.Click();
+            addFilterBtn.Click();
+            filterFld.Clear();
+            filterDescrFld.Clear();
+            filterFld.SendKeys("Qa");
+            filterDescrFld.SendKeys("Qa");
+            andRadioBtn.Click();
+            addFilterBtn.Click();
+            filterFld.Clear();
+            filterDescrFld.Clear();
+            filterFld.SendKeys("Test");
+            filterDescrFld.SendKeys("Test");
+            andRadioBtn.Click();
+            addFilterBtn.Click();
+            filterFld.Clear();
+            filterDescrFld.Clear();
+            filterFld.SendKeys("123");
+            filterDescrFld.SendKeys("123");
+            orRadioBtn.Click();
+            addFilterBtn.Click();
+            filterFld.Clear();
+            filterDescrFld.Clear();
+            filterFld.SendKeys("Test");
+            filterDescrFld.SendKeys("Test");
+            andRadioBtn.Click();
+            addFilterBtn.Click();
+            filterFld.Clear();
+            filterDescrFld.Clear();
 
             return this;
         }
@@ -152,24 +240,6 @@ namespace AutomatedProjectEPS.PageObjects
                .Perform();
             countryCbbx.Click();
             countryCbbx.FindElement(By.Name(Country)).Click();
-            /* IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElements(_countryCbbx);
-             IWebElement countryInput = null;
-             foreach (var item in treeItems)
-             {
-                 new Actions(Browser._Driver)
-                .SendKeys(Keys.Tab)
-                .Build()
-                .Perform();
-                 countryInput = item;
-
-                 if (item.Displayed)
-                 {
-                     countryInput.Click();
-                     countryCbbx.FindElement(By.Name(Country)).Click();
-                     break;
-                 }
-
-             }*/
 
             return this;
         }
@@ -184,25 +254,6 @@ namespace AutomatedProjectEPS.PageObjects
                .Perform();
             roleCbbx.Click();
             roleCbbx.FindElement(By.Name(Role)).Click();
-            /*IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElements(_roleCbbx);
-            IWebElement Item = null;
-            foreach (var item in treeItems)
-            {
-                new Actions(Browser._Driver)
-               .SendKeys(Keys.Tab)
-               .Build()
-               .Perform();
-                Item = item;
-
-                if (item.Displayed)
-                {
-                    Item.Click();
-                   *//* WaitUntil.ElementIsVisible(By.Name(Role));*//*
-                    roleCbbx.FindElement(By.Name(Role)).Click();
-                    break;
-                }
-
-            }*/
 
             return this;
         }
@@ -216,24 +267,6 @@ namespace AutomatedProjectEPS.PageObjects
                .Build()
                .Perform();
             usernameFld.SendKeys(userName + DateTimeOffset.Now.ToUnixTimeMilliseconds());
-            /* IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElements(_usernameFld);
-             IWebElement Item = null;
-             foreach (var item in treeItems)
-             {
-                 new Actions(Browser._Driver)
-                   .SendKeys(Keys.Tab)
-                   .Build()
-                   .Perform();
-                 Item = item;
-
-                 if (item.Displayed)
-                 {
-                     Item.Click();
-                     usernameFld.SendKeys(userName + DateTimeOffset.Now.ToUnixTimeMilliseconds());
-                     break;
-                 }
-
-             }*/
 
             return this;
         }
@@ -247,24 +280,6 @@ namespace AutomatedProjectEPS.PageObjects
                .Build()
                .Perform();
             userConfPasswordFld.SendKeys(Password);
-            /*IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElements(_userConfPasswordFld);
-            IWebElement Item = null;
-            foreach (var item in treeItems)
-            {
-                new Actions(Browser._Driver)
-                   .SendKeys(Keys.Tab)
-                   .Build()
-                   .Perform();
-                Item = item;
-
-                if (item.Displayed)
-                {
-                    Item.Click();
-                    userConfPasswordFld.SendKeys(Password);
-                    break;
-                }
-                
-            }*/
 
             return this;
         }
@@ -278,24 +293,7 @@ namespace AutomatedProjectEPS.PageObjects
                .Build()
                .Perform();
             saveUserBtn.Click();
-            /*IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElements(_saveUserBtn);
-            IWebElement Item = null;
-            foreach (var item in treeItems)
-            {
-                new Actions(Browser._Driver)
-                   .SendKeys(Keys.Tab)
-                   .Build()
-                   .Perform();
-                Item = item;
 
-                if (item.Displayed)
-                {
-                    Item.Click();
-                    break;
-                }
-                
-            }
-            */
             return this;
         }
 
@@ -308,34 +306,6 @@ namespace AutomatedProjectEPS.PageObjects
                .Build()
                .Perform();
             userDeleteBtn.Click();
-            /*WaitUntil.VisibleAndClickable(_clickImg);
-            IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElements(_userDeleteBtn);
-            IWebElement Item = null;
-            foreach (var item in treeItems)
-            {
-
-                if (!item.Selected)
-                {
-                    new Actions(Browser._Driver)
-                        .MoveToElement(clickImg)
-                        .Click()
-                        .Release()
-                        .Build()
-                        .Perform();
-                    new Actions(Browser._Driver)
-                        .SendKeys(Keys.Control + Keys.End)
-                        .Build()
-                        .Perform();
-                    new Actions(Browser._Driver)
-                        .SendKeys(Keys.Control)
-                        .Build()
-                        .Perform();
-                    Item = item;
-                    *//* Item.Click();*//*
-                    break;
-                }
-
-            }*/
 
             return this;
         }

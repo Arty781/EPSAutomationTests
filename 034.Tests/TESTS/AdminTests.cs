@@ -132,7 +132,7 @@ namespace _034.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors._034)
-                .PressGetReportButton(Distributors._034)
+                .PressGetReportButton()
                 .CheckIsflashingsDisplayed(Distributors._034);
 
 
@@ -164,6 +164,10 @@ namespace _034.Tests
                 .EnterAddress()
                 .EnterCity()
                 .EnterZip()
+                .ActivateUser()
+                .OpenUserNotesModal()
+                .AddUserNotes()
+                .AddFilters()
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);

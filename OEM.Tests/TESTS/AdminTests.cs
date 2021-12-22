@@ -131,7 +131,7 @@ namespace OEM.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.OEM)
-                .PressGetReportButton(Distributors.OEM)
+                .PressGetReportButton()
                 .CheckIsflashingsDisplayed(Distributors.OEM);
 
 
@@ -156,13 +156,13 @@ namespace OEM.Tests
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterFirstName()
-                .EnterLastName()
+                /*.EnterLastName()
                 .EnterEmail()
                 .EnterPhone()
                 .EnterFax()
                 .EnterAddress()
                 .EnterCity()
-                .EnterZip()
+                .EnterZip()*/
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -202,13 +202,13 @@ namespace OEM.Tests
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterFirstName()
-                .EnterLastName()
+                /*.EnterLastName()
                 .EnterEmail()
                 .EnterPhone()
                 .EnterFax()
                 .EnterAddress()
                 .EnterCity()
-                .EnterZip()
+                .EnterZip()*/
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);

@@ -134,7 +134,7 @@ namespace JHM.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.JHM)
-                .PressGetReportButton(Distributors.JHM)
+                .PressGetReportButton()
                 .CheckIsflashingsDisplayed(Distributors.JHM);
         }
 
@@ -157,13 +157,13 @@ namespace JHM.Tests
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterFirstName()
-                .EnterLastName()
+                /*.EnterLastName()
                 .EnterEmail()
                 .EnterPhone()
                 .EnterFax()
                 .EnterAddress()
                 .EnterCity()
-                .EnterZip()
+                .EnterZip()*/
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);

@@ -130,7 +130,7 @@ namespace CC.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.CC)
-                .PressGetReportButton(Distributors.CC)
+                .PressGetReportButton()
                 .CheckIsflashingsDisplayed(Distributors.CC);
 
 
@@ -155,13 +155,13 @@ namespace CC.Tests
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterFirstName()
-                .EnterLastName()
+                /*.EnterLastName()
                 .EnterEmail()
                 .EnterPhone()
                 .EnterFax()
                 .EnterAddress()
                 .EnterCity()
-                .EnterZip()
+                .EnterZip()*/
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);

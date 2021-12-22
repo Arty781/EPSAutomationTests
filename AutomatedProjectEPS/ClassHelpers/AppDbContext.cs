@@ -13,9 +13,9 @@ namespace AutomatedProjectEPS.ClassHelpers
         public string GetLastBinary(string partNumber, int companyCode)
         {
             string binaryLabel = "";
-            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            using (SqlConnection db = new(DB.GetConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT TOP 1 * FROM ECUs" +
+                SqlCommand command = new("SELECT TOP 1 * FROM ECUs" +
                     " WHERE PartNumber = @PartNumber " +
                     "AND Status = 1" +
                     "AND CompanyCode = @CompanyCode" +
@@ -40,9 +40,9 @@ namespace AutomatedProjectEPS.ClassHelpers
         public string GetBinaryStatus(string binaryName)
         {
             string status = "";
-            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            using (SqlConnection db = new(DB.GetConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT TOP 1 * FROM ECUs WHERE Name = @binaryName ", db);
+                SqlCommand command = new("SELECT TOP 1 * FROM ECUs WHERE Name = @binaryName ", db);
                 command.Parameters.AddWithValue("@binaryName", DbType.String).Value = binaryName;
                 db.Open();
 
@@ -60,9 +60,9 @@ namespace AutomatedProjectEPS.ClassHelpers
         public string GetDistributorId(string name)
         {
             string id = "";
-            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            using (SqlConnection db = new(DB.GetConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT Id FROM Distributors WHERE DistributorName = @name", db);
+                SqlCommand command = new("SELECT Id FROM Distributors WHERE DistributorName = @name", db);
                 command.Parameters.AddWithValue("@name", DbType.String).Value = name;
                 db.Open();
 
@@ -81,9 +81,9 @@ namespace AutomatedProjectEPS.ClassHelpers
         public string GetLastUserName(string userName)
         {
             string UserName = "";
-            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            using (SqlConnection db = new(DB.GetConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT TOP 1 UserName FROM Users WHERE UserName LIKE @userName ORDER BY CreationDate DESC", db);
+                SqlCommand command = new("SELECT TOP 1 UserName FROM Users WHERE UserName LIKE @userName ORDER BY CreationDate DESC", db);
                 command.Parameters.AddWithValue("@userName", DbType.String).Value = userName + "%";
                 db.Open();
 
@@ -102,9 +102,9 @@ namespace AutomatedProjectEPS.ClassHelpers
         public string GetUserStatus(string Email)
         {
             string status = "";
-            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            using (SqlConnection db = new(DB.GetConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT TOP 1 Status FROM Users WHERE Email = @Email ORDER BY CreationDate DESC", db);
+                SqlCommand command = new("SELECT TOP 1 Status FROM Users WHERE Email = @Email ORDER BY CreationDate DESC", db);
                 command.Parameters.AddWithValue("@Email", DbType.String).Value = Email;
                 db.Open();
 
@@ -122,10 +122,10 @@ namespace AutomatedProjectEPS.ClassHelpers
 
         public List<string> GetSerialNumbersList(string distributorId)
         {
-            List<string> list = new List<string>();
-            using (SqlConnection db = new SqlConnection(DB.GetConnectionString))
+            List<string> list = new();
+            using (SqlConnection db = new(DB.GetConnectionString))
             {
-                SqlCommand command = new SqlCommand("SELECT TOP 5 SerialNumber FROM BurnInfoes " +
+                SqlCommand command = new("SELECT TOP 5 SerialNumber FROM BurnInfoes " +
                     "WHERE Distributor_Id = @distributorId " +
                     "ORDER BY EndDate DESC", db);
                 command.Parameters.AddWithValue("@distributorId", DbType.String).Value = distributorId;

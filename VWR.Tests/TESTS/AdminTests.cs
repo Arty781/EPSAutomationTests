@@ -130,7 +130,7 @@ namespace VWR.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.VWR)
-                .PressGetReportButton(Distributors.VWR)
+                .PressGetReportButton()
                 .CheckIsflashingsDisplayed(Distributors.VWR);
 
 
@@ -155,13 +155,13 @@ namespace VWR.Tests
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterFirstName()
-                .EnterLastName()
+                /*.EnterLastName()
                 .EnterEmail()
                 .EnterPhone()
                 .EnterFax()
                 .EnterAddress()
                 .EnterCity()
-                .EnterZip()
+                .EnterZip()*/
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);

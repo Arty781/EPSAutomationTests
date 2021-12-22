@@ -129,7 +129,7 @@ namespace SRT.Tests
                 .GoToFlashHistory()
                 .ChangeStartDate()
                 .SelectDistributor(Distributors.SRT)
-                .PressGetReportButton(Distributors.SRT)
+                .PressGetReportButton()
                 .CheckIsflashingsDisplayed(Distributors.SRT);
 
 
@@ -154,13 +154,13 @@ namespace SRT.Tests
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterFirstName()
-                .EnterLastName()
+                /*.EnterLastName()
                 .EnterEmail()
                 .EnterPhone()
                 .EnterFax()
                 .EnterAddress()
                 .EnterCity()
-                .EnterZip()
+                .EnterZip()*/
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);

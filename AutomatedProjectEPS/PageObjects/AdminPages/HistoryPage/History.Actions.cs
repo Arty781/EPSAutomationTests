@@ -36,14 +36,11 @@ namespace AutomatedProjectEPS.PageObjects
                  .Perform();
 
             IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElementsByAccessibilityId("DistributorNameTb");
-            IWebElement selectedDistr = null;
-
-
             foreach (var item in treeItems)
             {
                 if (!item.Selected && PresenceOfElement.IsElementPresent(By.Name(distributorName)) == true)
                 {
-                    selectedDistr = item;
+                    IWebElement selectedDistr = item;
 
                     if (selectedDistr.Enabled && selectedDistr.Text == distributorName)
                     {
@@ -68,7 +65,7 @@ namespace AutomatedProjectEPS.PageObjects
         }
 
         [AllureStep("Press 'Get Report' button")]
-        public History PressGetReportButton(string distributorName)
+        public History PressGetReportButton()
         {
             WaitUntil.ElementIsClickable(_btnGetReport);
             btnGetReport.Click();

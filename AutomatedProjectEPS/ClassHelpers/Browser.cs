@@ -29,7 +29,6 @@ namespace AutomatedProjectEPS.ClassHelpers
             windowsDriver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
             Assert.NotNull(windowsDriver);
             windowsDriver.Manage().Window.Maximize();
-            windowsDriver?.Dispose();
         }
 
         public static string RootPath()

@@ -1,0 +1,106 @@
+{
+  "uuid": "63b5bf69-2def-4c28-a2e4-4302ab7ad191-tr-0-1007",
+  "historyId": "_034.Tests.AdminTests.AddNewUser",
+  "fullName": "_034.Tests.AdminTests.AddNewUser",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddNewUser"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "AddNewUser",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : No active session with ID element\r\nTearDown : OpenQA.Selenium.WebDriverException : No active session with ID window",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass2_0.<CustomElementIsVisibleByLocator>b__0(IWebDriver driver) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 47\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_o(String email) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\CommonPages\\LoginPage\\Login.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Login.EnterLogin(String email)\r\n   at _034.Tests.AdminTests.AddNewUser() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\AdminTests.cs:line 149\r\n--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 43\r\n   at AutomatedProjectEPS.ClassHelpers.BaseAdmin.TearDown() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\BaseAdmin.cs:line 36"
+  },
+  "stage": "finished",
+  "description": "\nTearDown TearDown method failed\n",
+  "steps": [
+    {
+      "name": "AddNewUser",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : No active session with ID element\r\nTearDown : OpenQA.Selenium.WebDriverException : No active session with ID window",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass2_0.<CustomElementIsVisibleByLocator>b__0(IWebDriver driver) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 47\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_o(String email) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\CommonPages\\LoginPage\\Login.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Login.EnterLogin(String email)\r\n   at _034.Tests.AdminTests.AddNewUser() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\AdminTests.cs:line 149\r\n--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Close()\r\n   at AutomatedProjectEPS.ClassHelpers.Browser.Close() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\Browser.cs:line 43\r\n   at AutomatedProjectEPS.ClassHelpers.BaseAdmin.TearDown() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\BaseAdmin.cs:line 36"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "No active session with ID element",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at AutomatedProjectEPS.ClassHelpers.CustomWait.<>c__DisplayClass2_0.<CustomElementIsVisibleByLocator>b__0(IWebDriver driver) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\CustomWait.cs:line 47\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsVisible(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_o(String email) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\CommonPages\\LoginPage\\Login.Actions.cs:line 20\r\n   at AutomatedProjectEPS.PageObjects.Login.__a$_around_EnterLogin_100663480_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640169854768,
+          "stop": 1640169867743
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c606de8b874c49d6b501ede7e2c552f5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640169823307,
+      "stop": 1640169870087
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640169823307,
+  "stop": 1640169870091
+}

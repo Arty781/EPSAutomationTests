@@ -10,22 +10,22 @@ namespace AutomatedProjectEPS.PageObjects
 {
     public partial class Navigation
     {
-        public IWebElement tabHome => Browser._Driver.FindElement(_tabHome);
+        public IWebElement tabHome => Browser._Driver.FindElementByAccessibilityId("HomeTb");
         public readonly By _tabHome = By.XPath("//*[contains(@AutomationId, 'HomeTb')]");
 
-        public IWebElement tabAccessManagement => Browser._Driver.FindElement(_tabAccessManagement);
+        public IWebElement tabAccessManagement => Browser._Driver.FindElementByAccessibilityId("AccessManagementTb");
         public readonly By _tabAccessManagement = By.XPath("//*[contains(@AutomationId, 'AccessManagementTb')]");
 
-        public IWebElement tabBinarySearch => Browser._Driver.FindElement(_tabBinarySearch);
+        public IWebElement tabBinarySearch => Browser._Driver.FindElementByAccessibilityId("BinarySearchTb");
         public readonly By _tabBinarySearch = By.XPath("//*[contains(@AutomationId, 'BinarySearchTb')]");
 
-        public IWebElement tabBinaryUpload => Browser._Driver.FindElement(_tabBinaryUpload);
+        public IWebElement tabBinaryUpload => Browser._Driver.FindElementByAccessibilityId("BinaryUploadTb");
         public readonly By _tabBinaryUpload = By.XPath("//*[contains(@AutomationId, 'BinaryUploadTb')]");
 
-        public IWebElement tabFlashHistory => Browser._Driver.FindElement(_tabFlashHistory);
+        public IWebElement tabFlashHistory => Browser._Driver.FindElementByAccessibilityId("FlashHistoryTb");
         public readonly By _tabFlashHistory = By.XPath("//*[contains(@AutomationId, 'FlashHistoryTb')]");
 
-        public IWebElement tabLogout => Browser._Driver.FindElement(_tabLogout);
+        public IWebElement tabLogout => Browser._Driver.FindElementByAccessibilityId("LogoutTb");
         public readonly By _tabLogout = By.XPath("//*[contains(@AutomationId, 'LogoutTb')]");
 
 

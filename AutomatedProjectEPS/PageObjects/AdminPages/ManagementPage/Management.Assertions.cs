@@ -16,5 +16,11 @@ namespace AutomatedProjectEPS.PageObjects
             WaitUntil.WaitSomeInterval(1);
             Assert.AreEqual(Browser._Driver.FindElementByXPath("//*[contains(@Name, 'Jane')]").Text, FirstName + " " + LastName + " - " + userNameLabel);
         }
+
+        public void VerifyDeleteUser(string userNameLabel)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            Assert.AreEqual(false, PresenceOfElement.IsElementPresent(By.Name(userNameLabel)));
+        }
     }
 }

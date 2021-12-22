@@ -33,15 +33,14 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Search User")]
         public Management SearchUser(string userName)
         {
+            searchFld.Clear();
             searchFld.SendKeys(userName);
             PresenceOfElement.IsLoaderDisplay();
             new Actions(Browser._Driver)
             .Click(searchBtn034)
             .Build()
             .Perform();
-            WaitUntil.VisibleAndClickable(_ExpanderBtn);
-
-
+            
             return this;
         }
 
@@ -49,10 +48,9 @@ namespace AutomatedProjectEPS.PageObjects
         public Management OpenTree()
         {
             PresenceOfElement.IsLoaderDisplay();
-            WaitUntil.VisibleAndClickable(_ExpanderBtn);
+            /*WaitUntil.VisibleAndClickable(_ExpanderBtn);*/
             ExpanderBtn.Click();
-            /*IWebElement userName = Browser._Driver.FindElementByXPath("//*[contains(@Name, 'testautomation')]");*/
-
+            
             return this;
         }
 
@@ -78,80 +76,21 @@ namespace AutomatedProjectEPS.PageObjects
         }
 
 
-        [AllureStep("Enter the user First Name")]
-        public Management EnterFirstName()
+        [AllureStep("Enter the user Data")]
+        public Management EnterUserData()
         {
-            IWebElement firstNameFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'UserFirstNameTbx')]"));
-            
             firstNameFld.SendKeys("Jane");
-            /*lastNameFld.SendKeys("Doe");
-            emailFld.SendKeys("qatester91311@gmail.com");
-            phoneFld.SendKeys("+123654789");
-            faxFld.SendKeys("+1365477984");
-            addressFld.SendKeys("9 County Road CC 3/10");
-            cityFld.SendKeys("Wray");
-            zipFld.SendKeys("80358");*/
-
-            return this;
-        }
-        [AllureStep("Enter the user Last Name")]
-        public Management EnterLastName()
-        {
-            IWebElement lastNameFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'UserLastNameTbx')]"));
             lastNameFld.SendKeys("Doe");
-
-            return this;
-        }
-
-        [AllureStep("Enter the user Email")]
-        public Management EnterEmail()
-        {
-            IWebElement emailFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'EmailTbx')]"));
             emailFld.SendKeys("qatester91311@gmail.com");
-
-            return this;
-        }
-        [AllureStep("Enter the user Phone")]
-        public Management EnterPhone()
-        {
-            IWebElement phoneFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'PhoneTbx')]"));
             phoneFld.SendKeys("+123654789");
-
-            return this;
-        }
-        [AllureStep("Enter the user Fax")]
-        public Management EnterFax()
-        {
-            IWebElement faxFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'FaxTbx')]"));
             faxFld.SendKeys("+1365477984");
-
-            return this;
-        }
-        [AllureStep("Enter the user Address")]
-        public Management EnterAddress()
-        {
-            IWebElement addressFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'Address1Tbx')]"));
             addressFld.SendKeys("9 County Road CC 3/10");
-
-            return this;
-        }
-        [AllureStep("Enter the user City")]
-        public Management EnterCity()
-        {
-            IWebElement cityFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'CityTbx')]"));
             cityFld.SendKeys("Wray");
-
-            return this;
-        }
-        [AllureStep("Enter the user Zip")]
-        public Management EnterZip()
-        {
-            IWebElement zipFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'ZipCodeTbx')]"));
             zipFld.SendKeys("80358");
 
             return this;
         }
-
+        
         [AllureStep("Activate User")]
         public Management ActivateUser()
         {
@@ -187,14 +126,8 @@ namespace AutomatedProjectEPS.PageObjects
         }
 
         [AllureStep("Add filters")]
-        public Management AddFilters()
+        public Management AddMultipleFilters()
         {
-            IWebElement filterFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'CalibrationFilterTbx')]"));
-            IWebElement filterDescrFld = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'DescriptionFilterTbx')]"));
-            IWebElement andRadioBtn = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'AndOperationRbtn')]"));
-            IWebElement orRadioBtn = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'OrOperationRbtn')]"));
-            IWebElement addFilterBtn = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'AddFilterBtn')]"));
-
             filterFld.SendKeys("034");
             filterDescrFld.SendKeys("034");
             andRadioBtn.Click();
@@ -302,7 +235,7 @@ namespace AutomatedProjectEPS.PageObjects
         {
             userDeleteBtn.SendKeys(Keys.Control);
             new Actions(Browser._Driver)
-               .Release()
+               .Release(userDeleteBtn)
                .Build()
                .Perform();
             userDeleteBtn.Click();
@@ -311,19 +244,7 @@ namespace AutomatedProjectEPS.PageObjects
         }
 
         #endregion
-        public Management ClickToScroll()
-        {
-            userDeleteBtn.SendKeys(Keys.Control);
-            new Actions(Browser._Driver)
-                .SendKeys(Keys.PageDown)
-                .Release()
-                .Build()
-                .Perform();
-            WaitUntil.WaitSomeInterval(1);
-
-            return this;
-        }
-
+        
         [AllureStep("Select user")]
         public Management SelectUser()
         {
@@ -351,23 +272,13 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Click \"Delete User\" button")]
         public Management ClickDeleteUserBtn()
         {
-            /*IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElementsByXPath("//*[contains(@Name, 'DELETE USER')]");
-            IWebElement selectUser = null;
-
-            foreach (var item in treeItems)
-            {
-
-                if (!item.Enabled)
-                {
-                    new Actions(Browser._Driver)
-                        .SendKeys(Keys.Tab);
-                    break;
-                }
-                selectUser = item;
-                selectUser.Click();
-
-            }*/
-            WaitUntil.VisibleAndClickable(_userDeleteBtn);
+            userDeleteBtn.SendKeys(Keys.Control);
+            new Actions(Browser._Driver)
+                .SendKeys(Keys.PageDown)
+                .Release()
+                .Build()
+                .Perform();
+            WaitUntil.WaitSomeInterval(1);
             userDeleteBtn.Click();
 
             return this;

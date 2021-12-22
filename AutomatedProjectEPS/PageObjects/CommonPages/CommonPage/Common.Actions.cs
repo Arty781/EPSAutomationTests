@@ -66,9 +66,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common PressEnterKey()
         {
-            /*WaitUntil.VisibilityOfAllElementsLocatedBy(_Messagebox, 60);*/
-            PresenceOfElement.IsLoaderDisplay();
-            PresenceOfElement.IsMessageBoxDisplay();
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_Messagebox, 30);
+
             Messagebox.Click();
             Messagebox.SendKeys(Keys.Enter);
             return this;

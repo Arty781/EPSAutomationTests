@@ -48,10 +48,10 @@ namespace AutomatedProjectEPS.ClassHelpers
         {
             try
             {
-                element = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'Loader')]")); ;
+                element = Browser._Driver.FindElementByAccessibilityId("Loader"); ;
                 while (element.Displayed == true)
                 {
-                    WaitUntil.WaitSomeInterval(5);
+                    WaitUntil.WaitSomeInterval(1);
                 }
                 return false;
             }
@@ -65,10 +65,10 @@ namespace AutomatedProjectEPS.ClassHelpers
         {
             try
             {
-                element = Browser._Driver.FindElement(By.XPath("//*[contains(@AutomationId, 'Messagebox')]")); ;
+                element = Browser._Driver.FindElementByAccessibilityId("Messagebox"); ;
                 while (element.Displayed == false)
                 {
-                    WaitUntil.WaitSomeInterval(5);
+                    WaitUntil.WaitSomeInterval(1);
                 }
                 return true;
             }

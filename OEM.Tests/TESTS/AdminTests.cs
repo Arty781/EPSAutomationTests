@@ -155,14 +155,11 @@ namespace OEM.Tests
                 .OpenTree()
                 .ScrollDown()
                 .PressAddUserBtn()
-                .EnterFirstName()
-                /*.EnterLastName()
-                .EnterEmail()
-                .EnterPhone()
-                .EnterFax()
-                .EnterAddress()
-                .EnterCity()
-                .EnterZip()*/
+                .EnterUserData()
+                .ActivateUser()
+                .OpenUserNotesModal()
+                .AddUserNotes()
+                .AddMultipleFilters()
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -171,15 +168,15 @@ namespace OEM.Tests
             Pages.Management
                 .FindPasswordInput(UserData.Password)
                 .FindSaveUserBtn();
+
             Pages.Common
                .PressEnterKey();
-
+            /*.VerifyCreatedUser(UserData.userName, userNameLabel);*/
             Pages.Management
-             .SearchUser(userNameLabel)
+             .SearchUser034(userNameLabel)
              .OpenTree()
              .SelectUser()
              .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
-
 
         }
 
@@ -189,29 +186,23 @@ namespace OEM.Tests
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void DeleteUser()
+        public void DeleteUserOn034()
         {
             Pages.Login
-               .EnterLogin(Credentials.LoginAdminOEM)
-               .EnterPassword(Credentials.PasswordAdminOEM)
-               .PressLoginButton();
+              .EnterLogin(Credentials.LoginAdminOEM)
+              .EnterPassword(Credentials.PasswordAdminOEM)
+              .PressLoginButton();
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
                 .OpenTree()
-                .ScrollDown()
                 .PressAddUserBtn()
-                .EnterFirstName()
-                /*.EnterLastName()
-                .EnterEmail()
-                .EnterPhone()
-                .EnterFax()
-                .EnterAddress()
-                .EnterCity()
-                .EnterZip()*/
+                .EnterUserData()
+                .AddMultipleFilters()
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
+
             string userNameLabel = Pages.Management.GetUserNameLabel();
             Pages.Management
                 .FindPasswordInput(UserData.Password)
@@ -223,12 +214,13 @@ namespace OEM.Tests
              .SearchUser(userNameLabel)
              .OpenTree()
              .SelectUser()
-             .ClickToScroll()
              .ClickDeleteUserBtn();
             Pages.Common
                .PressEnterKey()
                .PressEnterKey();
-            /*.VerifyDeleteUser(userNameLabel);*/
+            Pages.Management
+            .SearchUser(userNameLabel)
+            .VerifyDeleteUser(userNameLabel);
 
 
         }

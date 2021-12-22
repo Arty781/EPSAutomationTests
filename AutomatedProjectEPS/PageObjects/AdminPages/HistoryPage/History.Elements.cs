@@ -10,13 +10,13 @@ namespace AutomatedProjectEPS.PageObjects
 {
     public partial class History
     {
-        public IWebElement datePicker => Browser._Driver.FindElement(_datePicker);
+        public IWebElement datePicker => Browser._Driver.FindElementByAccessibilityId("DistributorCbbx");
         public readonly By _datePicker = By.XPath("//*[contains(@AutomationId, 'StartDateDp')]");
 
-        public IWebElement cbbxDistributor => Browser._Driver.FindElement(_cbbxDistributor);
+        public IWebElement cbbxDistributor => Browser._Driver.FindElementByAccessibilityId("DistributorCbbx");
         public readonly By _cbbxDistributor = By.XPath("//*[contains(@AutomationId, 'DistributorCbbx')]");
 
-        public IWebElement btnGetReport => Browser._Driver.FindElement(_btnGetReport);
+        public IWebElement btnGetReport => Browser._Driver.FindElementByAccessibilityId("GetReportBtn");
         public readonly By _btnGetReport = By.XPath("//*[contains(@AutomationId, 'GetReportBtn')]");
 
         public IWebElement gridCell => Browser._Driver.FindElement(_gridCell);

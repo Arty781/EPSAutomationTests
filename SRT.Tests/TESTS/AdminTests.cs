@@ -153,14 +153,49 @@ namespace SRT.Tests
                 .OpenTree()
                 .ScrollDown()
                 .PressAddUserBtn()
-                .EnterFirstName()
-                /*.EnterLastName()
-                .EnterEmail()
-                .EnterPhone()
-                .EnterFax()
-                .EnterAddress()
-                .EnterCity()
-                .EnterZip()*/
+                .EnterUserData()
+                .ActivateUser()
+                .OpenUserNotesModal()
+                .AddUserNotes()
+                .AddMultipleFilters()
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn();
+
+            Pages.Common
+               .PressEnterKey();
+            Pages.Management
+             .SearchUser034(userNameLabel)
+             .OpenTree()
+             .SelectUser()
+             .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
+
+        }
+
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("034")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void DeleteUserOn034()
+        {
+            Pages.Login
+              .EnterLogin(Credentials.LoginAdminSRT)
+              .EnterPassword(Credentials.PasswordAdminSRT)
+              .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenTree()
+                .PressAddUserBtn()
+                .EnterUserData()
+                .AddMultipleFilters()
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -176,7 +211,15 @@ namespace SRT.Tests
              .SearchUser(userNameLabel)
              .OpenTree()
              .SelectUser()
-             .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
+             .ClickDeleteUserBtn();
+            Pages.Common
+               .PressEnterKey()
+               .PressEnterKey();
+            Pages.Management
+            .SearchUser(userNameLabel)
+            .VerifyDeleteUser(userNameLabel);
+
+
         }
     }
 }

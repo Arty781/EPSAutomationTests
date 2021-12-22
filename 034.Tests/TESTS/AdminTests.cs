@@ -156,18 +156,11 @@ namespace _034.Tests
                 .OpenTree()
                 .ScrollDown()
                 .PressAddUserBtn()
-                .EnterFirstName()
-                .EnterLastName()
-                .EnterEmail()
-                .EnterPhone()
-                .EnterFax()
-                .EnterAddress()
-                .EnterCity()
-                .EnterZip()
+                .EnterUserData()
                 .ActivateUser()
                 .OpenUserNotesModal()
                 .AddUserNotes()
-                .AddFilters()
+                .AddMultipleFilters()
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -202,11 +195,11 @@ namespace _034.Tests
               .PressLoginButton();
             Pages.Navigation
                 .GoToAccessManagement();
-            /*Pages.Management
+            Pages.Management
                 .OpenTree()
-                .ScrollDown()
                 .PressAddUserBtn()
                 .EnterUserData()
+                .AddMultipleFilters()
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -216,22 +209,19 @@ namespace _034.Tests
                 .FindPasswordInput(UserData.Password)
                 .FindSaveUserBtn();
             Pages.Common
-               .PressEnterKey();*/
+               .PressEnterKey();
 
             Pages.Management
-             .SearchUser("testautomationQA1640025418297")
+             .SearchUser(userNameLabel)
              .OpenTree()
              .SelectUser()
-             .ClickToScroll()
              .ClickDeleteUserBtn();
-            /*.FindDeleteUserBtn()
-            .ClickDeleteUserBtn();*/
-            Pages.Management
-             .SearchUser("testautomationQA1640025418297");
             Pages.Common
                .PressEnterKey()
                .PressEnterKey();
-            /*.VerifyDeleteUser(userNameLabel);*/
+            Pages.Management
+            .SearchUser(userNameLabel)
+            .VerifyDeleteUser(userNameLabel);
 
 
         }

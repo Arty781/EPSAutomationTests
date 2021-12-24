@@ -1,0 +1,165 @@
+{
+  "uuid": "7b13ff59-fa0e-4978-8fc9-5b88a2e9ec4b-tr-0-1012",
+  "historyId": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "fullName": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "14"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ControllerPage\\Controller.Actions.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Controller.PressCheckIdButton()\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 26"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ControllerPage\\Controller.Actions.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Controller.PressCheckIdButton()\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 26"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: Client034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640343192782,
+          "stop": 1640343193845
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640343193846,
+          "stop": 1640343194346
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640343194347,
+          "stop": 1640343196779
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640343196779,
+          "stop": 1640343197900
+        },
+        {
+          "name": "Press checkId button",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 10 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.ElementIsClickable(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ControllerPage\\Controller.Actions.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_PressCheckIdButton_100663479_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640343199094,
+          "stop": 1640343266965
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c07c37f515324e0f80f00ea9bcfc1eea-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640343189685,
+      "stop": 1640343282051
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640343189684,
+  "stop": 1640343282055
+}

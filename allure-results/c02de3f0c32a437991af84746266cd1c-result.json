@@ -1,0 +1,326 @@
+{
+  "uuid": "b0ea257b-9fa1-4aa7-b9b6-471e4eeae75a-tr-0-1004",
+  "historyId": "OEM.Tests.AdminTests.UploadEcuBinaries",
+  "fullName": "OEM.Tests.AdminTests.UploadEcuBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "OEM.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UploadEcuBinaries"
+    },
+    {
+      "name": "package",
+      "value": "OEM.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "OEM"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "UploadEcuBinaries",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "UploadEcuBinaries"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "UploadEcuBinaries",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: oemAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335857440,
+          "stop": 1640335858282
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335858282,
+          "stop": 1640335858668
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335858668,
+          "stop": 1640335860946
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335860947,
+          "stop": 1640335861619
+        },
+        {
+          "name": "Upload base binary - 8A0907559X S0004.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335861619,
+          "stop": 1640335866664
+        },
+        {
+          "name": "Change binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Get binary label",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1640335867591,
+              "stop": 1640335867726
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335866664,
+          "stop": 1640335869298
+        },
+        {
+          "name": "Select price from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335869298,
+          "stop": 1640335871398
+        },
+        {
+          "name": "Upload performance binary - 8A0907559X S0004 - Performance.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335871399,
+          "stop": 1640335876155
+        },
+        {
+          "name": "Press the Add button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335876156,
+          "stop": 1640335877450
+        },
+        {
+          "name": "Press the Upload button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335877450,
+          "stop": 1640335878769
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335878770,
+          "stop": 1640335883682
+        },
+        {
+          "name": "Get binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335883682,
+          "stop": 1640335883818
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335883818,
+          "stop": 1640335886994
+        },
+        {
+          "name": "Search the binary - 8A0907559X S0004 OEM-QA-TEST 10:51 AM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335886994,
+          "stop": 1640335890219
+        },
+        {
+          "name": "Make Sure that created binary found",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335890219,
+          "stop": 1640335890655
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7b373de6297344129a6251e56902f18e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640335854374,
+      "stop": 1640335890684
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640335854374,
+  "stop": 1640335890686
+}

@@ -143,7 +143,7 @@ namespace OEM.Tests
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void AddNewUser()
+        public void AddNewUserInRootDealer()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginAdminOEM)
@@ -152,14 +152,14 @@ namespace OEM.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenNestedTree()
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterUserData()
                 .ActivateUser()
                 .OpenUserNotesModal()
                 .AddUserNotes()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.OEM)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -171,10 +171,9 @@ namespace OEM.Tests
 
             Pages.Common
                .PressEnterKey();
-            /*.VerifyCreatedUser(UserData.userName, userNameLabel);*/
             Pages.Management
-             .SearchUser034(userNameLabel)
-             .OpenTree()
+             .SearchUser(userNameLabel)
+             .OpenNestedTree()
              .SelectUser()
              .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
 
@@ -186,7 +185,7 @@ namespace OEM.Tests
         [AllureSuite("OEM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void DeleteUserOn034()
+        public void DeleteUser()
         {
             Pages.Login
               .EnterLogin(Credentials.LoginAdminOEM)
@@ -195,10 +194,10 @@ namespace OEM.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenNestedTree()
                 .PressAddUserBtn()
                 .EnterUserData()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.OEM)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -212,7 +211,7 @@ namespace OEM.Tests
 
             Pages.Management
              .SearchUser(userNameLabel)
-             .OpenTree()
+             .OpenNestedTree()
              .SelectUser()
              .ClickDeleteUserBtn();
             Pages.Common

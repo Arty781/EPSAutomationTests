@@ -13,10 +13,6 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter user's email: {0}")]
         public Login EnterLogin(string email)
         {
-            WaitUntil.WaitSomeInterval();
-            
-
-
             WaitUntil.ElementIsVisible(_inputUserName);
             inputUserName.Clear();
             inputUserName.SendKeys(email);

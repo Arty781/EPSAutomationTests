@@ -39,7 +39,7 @@ namespace OEM.Tests
                 .PressEnterKey()
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinaryOEM(binaryName);
+                .SelectBinaryOEM();
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
@@ -93,7 +93,7 @@ namespace OEM.Tests
                 .PressEnterKey()
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinaryOEM(binaryName);
+                .SelectBinaryOEM();
             Pages.Common
                 .PressNextButton();
             Pages.Calibration

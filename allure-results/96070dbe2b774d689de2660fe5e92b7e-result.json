@@ -1,0 +1,415 @@
+{
+  "uuid": "53cf2944-0aac-4794-b7be-9c44f09e78eb-tr-0-1008",
+  "historyId": "SRT.Tests.AdminTests.AddNewUserInRootDealer",
+  "fullName": "SRT.Tests.AdminTests.AddNewUserInRootDealer",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "SRT.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddNewUserInRootDealer"
+    },
+    {
+      "name": "package",
+      "value": "SRT.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "SRT"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "AddNewUserInRootDealer",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "AddNewUserInRootDealer"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddNewUserInRootDealer",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: BugsBunny",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358483374,
+          "stop": 1640358484326
+        },
+        {
+          "name": "Enter user's password: 321654987",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358484326,
+          "stop": 1640358484983
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358484983,
+          "stop": 1640358487285
+        },
+        {
+          "name": "Navigate to Access Management page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358487285,
+          "stop": 1640358488030
+        },
+        {
+          "name": "Open Root Tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358488031,
+          "stop": 1640358488476
+        },
+        {
+          "name": "Press \"Add User\" Button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358489660,
+          "stop": 1640358490912
+        },
+        {
+          "name": "Enter the user Data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358490912,
+          "stop": 1640358496341
+        },
+        {
+          "name": "Activate User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358496342,
+          "stop": 1640358497642
+        },
+        {
+          "name": "Open User notes modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358497642,
+          "stop": 1640358498903
+        },
+        {
+          "name": "Add User notes and Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358498904,
+          "stop": 1640358510062
+        },
+        {
+          "name": "Add filters",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358510063,
+          "stop": 1640358519502
+        },
+        {
+          "name": "Find and select country from list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358519502,
+          "stop": 1640358522136
+        },
+        {
+          "name": "Find and select user role",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358522136,
+          "stop": 1640358523529
+        },
+        {
+          "name": "Find and Enter the Username",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358523530,
+          "stop": 1640358525481
+        },
+        {
+          "name": "Get UserName label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358525481,
+          "stop": 1640358525720
+        },
+        {
+          "name": "Find and Enter the Password",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358525720,
+          "stop": 1640358526835
+        },
+        {
+          "name": "Click \"Save\" button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358526836,
+          "stop": 1640358530043
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358530043,
+          "stop": 1640358535556
+        },
+        {
+          "name": "Search User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358535556,
+          "stop": 1640358537459
+        },
+        {
+          "name": "Open Nested Tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358537459,
+          "stop": 1640358542677
+        },
+        {
+          "name": "Select user",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358542678,
+          "stop": 1640358552634
+        },
+        {
+          "name": "Verify that User testautomationQA1640358524238 is displayed in tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640358552634,
+          "stop": 1640358556432
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "369afb127725418393840b637e6f90b3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640358480250,
+      "stop": 1640358556474
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640358480250,
+  "stop": 1640358556479
+}

@@ -3,6 +3,7 @@ using AutomatedProjectEPS.ClassHelpers;
 using AutomatedProjectEPS.PageObjects;
 using NUnit.Allure.Attributes;
 using NUnit.Framework;
+using OpenQA.Selenium;
 
 namespace _034.Tests
 {
@@ -23,13 +24,13 @@ namespace _034.Tests
                 .PressLoginButton()
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 5);
-
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 5);*/
+            
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Base);
             Pages.Common
                 .PressNextButton();
@@ -55,16 +56,17 @@ namespace _034.Tests
             Pages.Login
                 .EnterLogin(Credentials.LoginClient034)
                 .EnterPassword(Credentials.PasswordClient)
-                .PressLoginButton()
+                .PressLoginButton();
+            Pages.Controller
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 5);
+           /* string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 5);*/
 
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Performance);
             Pages.Common
                 .PressNextButton();

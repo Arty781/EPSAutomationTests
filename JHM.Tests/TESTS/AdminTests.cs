@@ -144,7 +144,7 @@ namespace JHM.Tests
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void AddNewUser()
+        public void AddNewUserInRootDealer()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginAdminJHM)
@@ -153,14 +153,14 @@ namespace JHM.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenRootTree()
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterUserData()
                 .ActivateUser()
                 .OpenUserNotesModal()
                 .AddUserNotes()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.JHM)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -173,8 +173,8 @@ namespace JHM.Tests
             Pages.Common
                .PressEnterKey();
             Pages.Management
-             .SearchUser034(userNameLabel)
-             .OpenTree()
+             .SearchUser(userNameLabel)
+             .OpenNestedTree()
              .SelectUser()
              .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
 
@@ -186,7 +186,7 @@ namespace JHM.Tests
         [AllureSuite("JHM")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void DeleteUserOn034()
+        public void DeleteUser()
         {
             Pages.Login
               .EnterLogin(Credentials.LoginAdminJHM)
@@ -195,10 +195,10 @@ namespace JHM.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenRootTree()
                 .PressAddUserBtn()
                 .EnterUserData()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.JHM)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -212,7 +212,7 @@ namespace JHM.Tests
 
             Pages.Management
              .SearchUser(userNameLabel)
-             .OpenTree()
+             .OpenNestedTree()
              .SelectUser()
              .ClickDeleteUserBtn();
             Pages.Common

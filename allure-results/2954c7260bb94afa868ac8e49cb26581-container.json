@@ -1,0 +1,76 @@
+{
+  "uuid": "361a1a2f-abff-4a0e-8493-8154d2d0bf24-tc-0-1011",
+  "name": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "children": [
+    "42d39a6c-abfe-49dc-9b5b-3a15e7e8cb58-tr-0-1012"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1640348771497,
+      "stop": 1640348771497
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1640348771497,
+      "stop": 1640348771497
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1640348771497,
+      "stop": 1640348771497
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1640348771497,
+      "stop": 1640348771497
+    }
+  ],
+  "links": [],
+  "start": 1640348723877,
+  "stop": 1640348771546
+}

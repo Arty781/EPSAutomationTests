@@ -141,7 +141,7 @@ namespace SRT.Tests
         [AllureSuite("SRT")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void AddNewUser()
+        public void AddNewUserInRootDealer()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginAdminSRT)
@@ -150,14 +150,14 @@ namespace SRT.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenRootTree()
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterUserData()
                 .ActivateUser()
                 .OpenUserNotesModal()
                 .AddUserNotes()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.SRT)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -170,8 +170,8 @@ namespace SRT.Tests
             Pages.Common
                .PressEnterKey();
             Pages.Management
-             .SearchUser034(userNameLabel)
-             .OpenTree()
+             .SearchUser(userNameLabel)
+             .OpenNestedTree()
              .SelectUser()
              .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
 
@@ -183,7 +183,7 @@ namespace SRT.Tests
         [AllureSuite("034")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void DeleteUserOn034()
+        public void DeleteUser()
         {
             Pages.Login
               .EnterLogin(Credentials.LoginAdminSRT)
@@ -192,10 +192,10 @@ namespace SRT.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenRootTree()
                 .PressAddUserBtn()
                 .EnterUserData()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.SRT)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -209,7 +209,7 @@ namespace SRT.Tests
 
             Pages.Management
              .SearchUser(userNameLabel)
-             .OpenTree()
+             .OpenNestedTree()
              .SelectUser()
              .ClickDeleteUserBtn();
             Pages.Common

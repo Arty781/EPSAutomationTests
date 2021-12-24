@@ -200,7 +200,7 @@
         public const string City = "Salt Lake City";
         public const string Zip = "84116";
         public const string userName = "testautomationQA";
-        public const string Password = "qwe123!";
+        public const string Password = "Test123!";
     }
 
     public class Countries
@@ -212,4 +212,6 @@
     {
         public const string Role = "Client";
     }
+
 }
+

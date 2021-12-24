@@ -1,0 +1,405 @@
+{
+  "uuid": "c5765179-3c58-4854-9c51-8308dd1c1dff-tr-0-1008",
+  "historyId": "CC.Tests.AdminTests.AddNewUserInRootDealer",
+  "fullName": "CC.Tests.AdminTests.AddNewUserInRootDealer",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "CC.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddNewUserInRootDealer"
+    },
+    {
+      "name": "package",
+      "value": "CC.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "CC"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "AddNewUserInRootDealer",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByXPath(String xpath)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 249\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Management.SelectUser()\r\n   at CC.Tests.AdminTests.AddNewUserInRootDealer() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\CC.Tests\\TESTS\\AdminTests.cs:line 174"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddNewUserInRootDealer",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByXPath(String xpath)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 249\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Management.SelectUser()\r\n   at CC.Tests.AdminTests.AddNewUserInRootDealer() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\CC.Tests\\TESTS\\AdminTests.cs:line 174"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: KevinCC",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338629618,
+          "stop": 1640338630465
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338630466,
+          "stop": 1640338630934
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338630935,
+          "stop": 1640338633259
+        },
+        {
+          "name": "Navigate to Access Management page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338633259,
+          "stop": 1640338634010
+        },
+        {
+          "name": "Open Root Tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338634010,
+          "stop": 1640338634448
+        },
+        {
+          "name": "Press \"Add User\" Button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338635633,
+          "stop": 1640338636867
+        },
+        {
+          "name": "Enter the user Data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338636867,
+          "stop": 1640338642326
+        },
+        {
+          "name": "Activate User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338642326,
+          "stop": 1640338643598
+        },
+        {
+          "name": "Open User notes modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338643599,
+          "stop": 1640338644895
+        },
+        {
+          "name": "Add User notes and Save",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338644896,
+          "stop": 1640338656200
+        },
+        {
+          "name": "Add filters",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338656200,
+          "stop": 1640338665444
+        },
+        {
+          "name": "Find and select country from list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338665444,
+          "stop": 1640338668062
+        },
+        {
+          "name": "Find and select user role",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338668062,
+          "stop": 1640338669449
+        },
+        {
+          "name": "Find and Enter the Username",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338669450,
+          "stop": 1640338670495
+        },
+        {
+          "name": "Get UserName label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338670495,
+          "stop": 1640338670728
+        },
+        {
+          "name": "Find and Enter the Password",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338670728,
+          "stop": 1640338671803
+        },
+        {
+          "name": "Click \"Save\" button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338671804,
+          "stop": 1640338674966
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338674966,
+          "stop": 1640338680065
+        },
+        {
+          "name": "Search User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338680065,
+          "stop": 1640338681091
+        },
+        {
+          "name": "Open Nested Tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338681091,
+          "stop": 1640338686274
+        },
+        {
+          "name": "Select user",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByXPath(String xpath)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 249\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_SelectUser_100663360_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640338686274,
+          "stop": 1640338696484
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "abf7305947d74920bdd085a579965d7b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640338626494,
+      "stop": 1640338696556
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640338626493,
+  "stop": 1640338696559
+}

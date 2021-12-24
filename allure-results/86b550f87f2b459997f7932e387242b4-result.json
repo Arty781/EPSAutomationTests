@@ -1,0 +1,180 @@
+{
+  "uuid": "4657a43f-bdc5-4a0b-bd49-103273c6a5a0-tr-0-1015",
+  "historyId": "CC.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "fullName": "CC.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "CC.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "testMethod",
+      "value": "PerformanceTcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "CC.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "СС"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "PerformanceTcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.get_inputFirstNameVWR() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Elements.cs:line 39\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Actions.cs:line 70\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.FillClientInfoVWR()\r\n   at CC.Tests.ClientTestsTCU.PerformanceTcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\CC.Tests\\TESTS\\ClientTestsTCU.cs:line 69"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PerformanceTcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.get_inputFirstNameVWR() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Elements.cs:line 39\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Actions.cs:line 70\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.FillClientInfoVWR()\r\n   at CC.Tests.ClientTestsTCU.PerformanceTcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\CC.Tests\\TESTS\\ClientTestsTCU.cs:line 69"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: ClientCC",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640351479837,
+          "stop": 1640351480598
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640351480598,
+          "stop": 1640351481099
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640351481099,
+          "stop": 1640351483369
+        },
+        {
+          "name": "Select controller for Transmission",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640351483369,
+          "stop": 1640351484053
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640351484053,
+          "stop": 1640351485221
+        },
+        {
+          "name": "Fill client info",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.get_inputFirstNameVWR() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Elements.cs:line 39\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ClientInfoPage\\ClientInfo.Actions.cs:line 70\r\n   at AutomatedProjectEPS.PageObjects.ClientInfo.__a$_around_FillClientInfoVWR_100663455_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640351485221,
+          "stop": 1640351486735
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "81203da64dd54071938ef5ff048e8284-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640351476789,
+      "stop": 1640351491740
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640351476789,
+  "stop": 1640351491740
+}

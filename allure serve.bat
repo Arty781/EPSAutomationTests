@@ -1,1 +1,1 @@
-allure serve "C:\Users\Anuitex-84\source\repos\AutomatedProjectEPS\allure-results"
+allure serve "C:\Users\Anuitex-84\source\repos\EPSAutomationTests\allure-results"

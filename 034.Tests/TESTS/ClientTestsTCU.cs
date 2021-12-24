@@ -30,7 +30,7 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Base);
             Pages.Common
                 .PressNextButton();
@@ -66,7 +66,7 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Performance);
             Pages.Common
                 .PressNextButton();

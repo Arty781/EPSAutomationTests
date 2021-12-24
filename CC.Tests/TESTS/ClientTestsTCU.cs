@@ -33,7 +33,7 @@ namespace CC.Tests
                 .GetLastBinary(BinaryPartNumbers.TCU, 2);
 
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Base)
                 .PressConfirmButtonForBinaryInfo();
             Pages.Flash
@@ -76,7 +76,7 @@ namespace CC.Tests
                 .GetLastBinary(BinaryPartNumbers.TCU, 2);
 
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Performance)
                 .PressConfirmButtonForBinaryInfo();
             Pages.Flash

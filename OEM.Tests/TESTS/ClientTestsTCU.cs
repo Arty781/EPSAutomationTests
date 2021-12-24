@@ -34,8 +34,8 @@ namespace OEM.Tests
             Pages.Controller
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.TCU, 10);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.TCU, 10);*/
 
             Pages.ClientInfo
                 .FillClientInfoOEM()
@@ -44,7 +44,7 @@ namespace OEM.Tests
                 .PressEnterKey()
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinaryOEM(binaryName);
+                .SelectBinaryOEM();
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
@@ -88,8 +88,8 @@ namespace OEM.Tests
             Pages.Controller
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.TCU, 10);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.TCU, 10);*/
 
             Pages.ClientInfo
                 .FillClientInfoOEM()
@@ -98,7 +98,7 @@ namespace OEM.Tests
                 .PressEnterKey()
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinaryOEM(binaryName);
+                .SelectBinaryOEM();
             Pages.Common
                 .PressNextButton();
             Pages.Calibration

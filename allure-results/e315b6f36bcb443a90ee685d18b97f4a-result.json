@@ -1,0 +1,270 @@
+{
+  "uuid": "42d39a6c-abfe-49dc-9b5b-3a15e7e8cb58-tr-0-1012",
+  "historyId": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "fullName": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 14 but was 20. Strings differ at index 0.\r\n  Expected: \"SuccessfulBurn\"\r\n  But was:  \"Flash Not Successful\"\r\n  -----------^\r\n",
+    "trace": "   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\FlashPage\\Flash.Assertions.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Flash.CheckSuccessFlashing034()\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 41\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 14 but was 20. Strings differ at index 0.\r\n  Expected: \"SuccessfulBurn\"\r\n  But was:  \"Flash Not Successful\"\r\n  -----------^\r\n",
+        "trace": "   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\FlashPage\\Flash.Assertions.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Flash.CheckSuccessFlashing034()\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 41\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: Client034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348726942,
+          "stop": 1640348727998
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348727999,
+          "stop": 1640348728512
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348728513,
+          "stop": 1640348730807
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348730807,
+          "stop": 1640348731953
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348731953,
+          "stop": 1640348748526
+        },
+        {
+          "name": "Select binary from the list - {0}",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348748528,
+          "stop": 1640348750769
+        },
+        {
+          "name": "Select calibration for selected binary - Serie emulation",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348750770,
+          "stop": 1640348752532
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348752532,
+          "stop": 1640348754459
+        },
+        {
+          "name": "Fill client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348754459,
+          "stop": 1640348755323
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348755323,
+          "stop": 1640348757533
+        },
+        {
+          "name": "Start the flashing vehicle",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348757534,
+          "stop": 1640348759015
+        },
+        {
+          "name": "Make sure the binary is installed successfully",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Expected string length 14 but was 20. Strings differ at index 0.\r\n  Expected: \"SuccessfulBurn\"\r\n  But was:  \"Flash Not Successful\"\r\n  -----------^\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual)\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\FlashPage\\Flash.Assertions.cs:line 18\r\n   at AutomatedProjectEPS.PageObjects.Flash.__a$_around_CheckSuccessFlashing034_100663491_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640348759015,
+          "stop": 1640348771445
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dd9a863315404f4d8d793dd65abd9550-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640348723879,
+      "stop": 1640348771500
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640348723879,
+  "stop": 1640348771508
+}

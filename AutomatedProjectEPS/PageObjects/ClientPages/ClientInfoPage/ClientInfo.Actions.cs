@@ -14,10 +14,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Fill client info")]
         public ClientInfo FillClientInfo()
         {
-            while (PresenceOfElement.IsElementPresent(_inputFirstName) == false)
-            {
-                WaitUntil.WaitSomeInterval(5);
-            }
+            WaitUntil.InvisibilityOfLoader();
             if (inputFirstName.Text != "")
             {
                 return this;
@@ -42,10 +39,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Fill client info")]
         public ClientInfo FillClientInfoOEM()
         {
-            while (PresenceOfElement.IsElementPresentAndDisplay(_inputFirstName) == false)
-            {
-                WaitUntil.WaitSomeInterval(5);
-            }
+            
+            WaitUntil.ElementIsVisible(_inputFirstName);
             if (inputFirstName.Text != "")
             {
                 return this;
@@ -71,12 +66,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Fill client info")]
         public ClientInfo FillClientInfoVWR()
         {
-
-            while (PresenceOfElement.IsElementPresentAndDisplay(_inputFirstNameVWR) == false)
-            {
-                WaitUntil.WaitSomeInterval(5);
-            }
-            if (inputFirstNameVWR.Text != "")
+            WaitUntil.VisibleAndClickable(_inputFirstNameVWR, 20);
+           if (inputFirstNameVWR.Text != "")
             {
                 return this;
             }

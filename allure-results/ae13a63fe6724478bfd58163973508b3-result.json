@@ -1,0 +1,150 @@
+{
+  "uuid": "5d3f8810-aea9-421b-9a97-90a83eb2cbef-tr-0-1015",
+  "historyId": "SRT.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "fullName": "SRT.Tests.ClientTestsTCU.PerformanceTcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "SRT.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "testMethod",
+      "value": "PerformanceTcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "SRT.Tests.ClientTestsTCU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "SRT"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "PerformanceTcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ControllerPage\\Controller.Actions.cs:line 36\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Controller.SelectTransmissionController()\r\n   at SRT.Tests.ClientTestsTCU.PerformanceTcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\SRT.Tests\\TESTS\\ClientTestsTCU.cs:line 62"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PerformanceTcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ControllerPage\\Controller.Actions.cs:line 36\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Controller.SelectTransmissionController()\r\n   at SRT.Tests.ClientTestsTCU.PerformanceTcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\SRT.Tests\\TESTS\\ClientTestsTCU.cs:line 62"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: ClientSRT",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640355080095,
+          "stop": 1640355080851
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640355080851,
+          "stop": 1640355081348
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640355081348,
+          "stop": 1640355083610
+        },
+        {
+          "name": "Select controller for Transmission",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 10 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.VisibilityOfAllElementsLocatedBy(By locator, Int32 seconds) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\ControllerPage\\Controller.Actions.cs:line 36\r\n   at AutomatedProjectEPS.PageObjects.Controller.__a$_around_SelectTransmissionController_100663482_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640355083610,
+          "stop": 1640355093881
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "430456f18be64b7c8f0002bf006edaf7-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640355077039,
+      "stop": 1640355093913
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640355077039,
+  "stop": 1640355093913
+}

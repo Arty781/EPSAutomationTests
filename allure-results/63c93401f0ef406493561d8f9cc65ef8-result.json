@@ -1,0 +1,165 @@
+{
+  "uuid": "566d2098-d73f-49c9-8f53-ec96b59a410f-tr-0-1007",
+  "historyId": "_034.Tests.AdminTests.AddNewUserInRootDealer",
+  "fullName": "_034.Tests.AdminTests.AddNewUserInRootDealer",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddNewUserInRootDealer"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "AddNewUserInRootDealer",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(String by, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByAccessibilityId(String selector)\r\n   at AutomatedProjectEPS.PageObjects.Management.get_ExpanderBtn() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Elements.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 44\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Management.OpenRootTree()\r\n   at _034.Tests.AdminTests.AddNewUserInRootDealer() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\AdminTests.cs:line 161"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddNewUserInRootDealer",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(String by, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByAccessibilityId(String selector)\r\n   at AutomatedProjectEPS.PageObjects.Management.get_ExpanderBtn() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Elements.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 44\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Management.OpenRootTree()\r\n   at _034.Tests.AdminTests.AddNewUserInRootDealer() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\AdminTests.cs:line 161"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640269598118,
+          "stop": 1640269599006
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640269599007,
+          "stop": 1640269599478
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640269599478,
+          "stop": 1640269601795
+        },
+        {
+          "name": "Navigate to Access Management page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640269601795,
+          "stop": 1640269602621
+        },
+        {
+          "name": "Open Root Tree",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElement(String by, String value)\r\n   at OpenQA.Selenium.Appium.AppiumDriver`1.FindElementByAccessibilityId(String selector)\r\n   at AutomatedProjectEPS.PageObjects.Management.get_ExpanderBtn() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Elements.cs:line 15\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_o() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 44\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_OpenRootTree_100663346_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640269602621,
+          "stop": 1640269602819
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "4af7ce4bc6c643788582cadce7b5edb2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640269594966,
+      "stop": 1640269602866
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640269594965,
+  "stop": 1640269602871
+}

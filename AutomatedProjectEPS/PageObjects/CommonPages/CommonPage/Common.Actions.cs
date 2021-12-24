@@ -18,6 +18,7 @@ namespace AutomatedProjectEPS.PageObjects
         public Common PressNextButton()
         {
             WaitUntil.ElementIsClickable(_btnNext, 40);
+            
             WaitUntil.WaitSomeInterval(1);
             btnNext.Click();
             return this;
@@ -98,6 +99,13 @@ namespace AutomatedProjectEPS.PageObjects
         {
             WaitUntil.WaitSomeInterval();
             Browser._Driver.SwitchTo().Window(Browser._Driver.WindowHandles.ToList().First());
+            return this;
+        }
+
+        [AllureStep("Wait until loader is closed")]
+        public Common LoaderIsClosed()
+        {
+            WaitUntil.InvisibilityOfLoader();
             return this;
         }
 

@@ -1,6 +1,7 @@
 ﻿using AutomatedProjectEPS.ClassHelpers;
 using NUnit.Allure.Steps;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -22,14 +23,25 @@ namespace AutomatedProjectEPS.PageObjects
         }
 
         [AllureStep("Select binary from the list - {0}")]
-        public Calibration SelectBinary(string binaryName)
+        public Calibration SelectBinary()
         {
-            while (PresenceOfElement.IsElementPresent(By.Name(binaryName)) == false)
+            WaitUntil.InvisibilityOfLoader();
+            cbbxBinaries.Click();
+            WaitUntil.ElementIsVisible(_EcuNameTb, 15);
+            IReadOnlyCollection<IWebElement> ucuList = Browser._Driver.FindElementsByAccessibilityId("EcuNameTb");
+            foreach(var binary in ucuList)
             {
-                WaitUntil.WaitSomeInterval(5);
-                cbbxBinaries.Click();
+                if (binary.Displayed == true && binary.Text != "You must select a tune to continue")
+                {
+                    binary.Click();
+                    break;
+                }
+                new Actions(Browser._Driver)
+                    .SendKeys(Keys.ArrowDown)
+                    .Build()
+                    .Perform();
             }
-            cbbxBinaries.FindElement(By.Name(binaryName)).Click();
+            
             return this;
         }
 
@@ -37,11 +49,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Select calibration for selected binary - {0}")]
         public Calibration SelectCalibration(string calibration)
         {
-            while (PresenceOfElement.IsElementPresent(By.Name(calibration)) == false)
-            {
-                WaitUntil.WaitSomeInterval(5);
-                cbbxCalibrations.Click();
-            }
+            WaitUntil.InvisibilityOfLoader();
+            cbbxCalibrations.Click();
             cbbxCalibrations.FindElement(By.Name(calibration)).Click();
             return this;
         }
@@ -55,20 +64,31 @@ namespace AutomatedProjectEPS.PageObjects
         }
 
         [AllureStep("Select binary from the list - {0}")]
-        public Calibration SelectBinaryOEM(string binaryName)
+        public Calibration SelectBinaryOEM()
         {
             WaitUntil.ElementIsVisible(_lbEcus);
-            lbEcus.FindElement(By.Name(binaryName)).Click();
+            
+            IReadOnlyCollection<IWebElement> ucuList = Browser._Driver.FindElementsByAccessibilityId("EcusLb");
+            foreach (var binary in ucuList)
+            {
+                if (binary.Displayed == true && binary.Text != "You must select a tune to continue")
+                {
+                    binary.Click();
+                    break;
+                }
+                new Actions(Browser._Driver)
+                    .SendKeys(Keys.ArrowDown)
+                    .Build()
+                    .Perform();
+            }
+
             return this;
         }
 
         [AllureStep("Select calibration for selected binary - {0}")]
         public Calibration SelectCalibrationOEM(string calibration)
         {
-            while (PresenceOfElement.IsElementPresent(By.Name(calibration)) == false)
-            {
-                WaitUntil.WaitSomeInterval(5);
-            }
+            WaitUntil.InvisibilityOfLoader();
             lbCalibrations.FindElement(By.Name(calibration)).Click();
             return this;
         }

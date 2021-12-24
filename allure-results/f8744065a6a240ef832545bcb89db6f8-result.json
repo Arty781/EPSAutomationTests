@@ -1,0 +1,180 @@
+{
+  "uuid": "89e0021d-dde3-4b89-ac2b-3e8a04e5b5b3-tr-0-1012",
+  "historyId": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "fullName": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_o(String binaryName) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectBinary(String binaryName)\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 31"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_o(String binaryName) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectBinary(String binaryName)\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 31"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: Client034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640340071321,
+          "stop": 1640340072426
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640340072426,
+          "stop": 1640340072927
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640340072927,
+          "stop": 1640340075211
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640340075212,
+          "stop": 1640340076390
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640340077366,
+          "stop": 1640340094917
+        },
+        {
+          "name": "Select binary from the list - 8A0907559X S0004 034-QA-TEST 12/15/2021 12:09:04 PM",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_o(String binaryName) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663438_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640340094918,
+          "stop": 1640340096242
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5db3c33e12244b798c0aaf94b1de36c0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640340068256,
+      "stop": 1640340096293
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640340068255,
+  "stop": 1640340096297
+}

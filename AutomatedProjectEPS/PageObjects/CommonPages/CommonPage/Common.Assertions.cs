@@ -14,11 +14,14 @@ namespace AutomatedProjectEPS.PageObjects
 {
     public partial class Common
     {
-        [AllureStep("Make sure the removed binary '{0}' has status - 8")]
+        [AllureStep("Make sure the removed binary '{0}' is not displayed")]
         public void VerifyRemovedBinary(string binaryName)
         {
-            WaitUntil.WaitSomeInterval(4);
-            Assert.AreEqual(new AppDbContext().GetBinaryStatus(binaryName), "8");
+            /*WaitUntil.WaitSomeInterval(4);
+            Assert.AreEqual(new AppDbContext().GetBinaryStatus(binaryName), "8");*/
+
+            WaitUntil.InvisibilityOfLoader();
+            Assert.AreEqual(false, PresenceOfElement.IsElementPresent(By.Name(binaryName)));
         }
 
         [AllureStep("Make sure the User '{0}' created")]

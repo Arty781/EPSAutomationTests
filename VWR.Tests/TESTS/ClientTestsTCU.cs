@@ -38,7 +38,7 @@ namespace VWR.Tests
                 .GetLastBinary(BinaryPartNumbers.TCU, 4);
 
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Base)
                 .PressConfirmButtonForBinaryInfo();
             Pages.Flash
@@ -81,7 +81,7 @@ namespace VWR.Tests
                 .GetLastBinary(BinaryPartNumbers.TCU, 4);
 
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Performance)
                 .PressConfirmButtonForBinaryInfo();
             Pages.Flash

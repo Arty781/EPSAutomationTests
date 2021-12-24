@@ -13,9 +13,9 @@ namespace AutomatedProjectEPS.PageObjects
     {
         #region Create User locators
         public IWebElement ExpanderBtn => Browser._Driver.FindElementByAccessibilityId("Expander");
-        public readonly By _ExpanderBtn = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'Expander')]");
+        public readonly By _ExpanderBtn = By.XPath("//*[contains(@AutomationId, 'Expander')]");
         public IWebElement AddUserBtn => Browser._Driver.FindElementByAccessibilityId("AddUserBtn");
-        public readonly By _addUserBtn = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'AddUserBtn')]");
+        public readonly By _addUserBtn = By.XPath("//*[contains(@AutomationId, 'AddUserBtn')]");
         public IWebElement firstNameFld => Browser._Driver.FindElementByAccessibilityId("UserFirstNameTbx");
         public readonly By _firstNameFld = By.XPath("//*[contains(@AutomationId, 'UserFirstNameTbx')]");
         public IWebElement lastNameFld => Browser._Driver.FindElementByAccessibilityId("UserLastNameTbx");
@@ -33,13 +33,13 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement zipFld => Browser._Driver.FindElementByAccessibilityId("ZipCodeTbx");
         public readonly By _zipFld = By.XPath("//*[contains(@AutomationId, 'ZipCodeTbx')]");
         public IWebElement countryCbbx => Browser._Driver.FindElementByAccessibilityId("CountryCbbx");
-        public readonly By _countryCbbx = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'CountryCbbx')]");
+        public readonly By _countryCbbx = By.XPath("//*[contains(@AutomationId, 'CountryCbbx')]");
         public IWebElement roleCbbx => Browser._Driver.FindElementByAccessibilityId("RoleCbbx");
-        public readonly By _roleCbbx = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'RoleCbbx')]");
+        public readonly By _roleCbbx = By.XPath("//*[contains(@AutomationId, 'RoleCbbx')]");
         public IWebElement accStatusBtn => Browser._Driver.FindElementByAccessibilityId("AccountStatusTbtn");
-        public readonly By _accStatusBtn = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'AccountStatusTbtn')]");
+        public readonly By _accStatusBtn = By.XPath("//*[contains(@AutomationId, 'AccountStatusTbtn')]");
         public IWebElement accNotesBtn => Browser._Driver.FindElementByAccessibilityId("EditNotesBtn");
-        public readonly By _accNotesBtn = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'EditNotesBtn')]");
+        public readonly By _accNotesBtn = By.XPath("//*[contains(@AutomationId, 'EditNotesBtn')]");
         public IWebElement flashCountBtn => Browser._Driver.FindElementByAccessibilityId("FlashCountSwitcherTbtn");
         public readonly By _flashCountBtn = By.XPath("//*[contains(@AutomationId, 'FlashCountSwitcherTbtn')]");
         public IWebElement flashCountFld => Browser._Driver.FindElementByAccessibilityId("FlashCountValueTbx");
@@ -65,11 +65,11 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement removeFilterBtn => Browser._Driver.FindElementByAccessibilityId("RemoveFilterBtn");
         public readonly By _removeFilterBtn = By.XPath("//*[contains(@AutomationId, 'RemoveFilterBtn')]");
         public IWebElement usernameFld => Browser._Driver.FindElementByAccessibilityId("UserNameTbx");
-        public readonly By _usernameFld = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'UserNameTbx')]");
+        public readonly By _usernameFld = By.XPath("//*[contains(@AutomationId, 'UserNameTbx')]");
         public IWebElement userPasswordFld => Browser._Driver.FindElementByAccessibilityId("UserPasswordPbx");
         public readonly By _userPasswordFld = By.XPath("//*[contains(@AutomationId, 'UserPasswordPbx')]");
         public IWebElement saveUserBtn => Browser._Driver.FindElementByAccessibilityId("SaveUserBtn");
-        public readonly By _saveUserBtn = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'SaveUserBtn')]");
+        public readonly By _saveUserBtn = By.XPath("//*[contains(@AutomationId, 'SaveUserBtn')]");
         public IWebElement clickToScroll => Browser._Driver.FindElementByAccessibilityId("Image");
         public readonly By _clickToScroll = By.XPath("//*[contains(@ClassName, 'Image')]");
         public IWebElement refreshBtn => Browser._Driver.FindElementByAccessibilityId("RefreshActivityLogBtn");
@@ -78,9 +78,9 @@ namespace AutomatedProjectEPS.PageObjects
         #endregion
         #region Edit user locators
         public IWebElement searchFld => Browser._Driver.FindElementByAccessibilityId("SearchTextTbx");
-        public readonly By _searchFld = By.XPath("//Window[contains(@Name, 'Admin App')]//*[contains(@AutomationId, 'SearchTextTbx')]");
+        public readonly By _searchFld = By.XPath("//*[contains(@AutomationId, 'SearchTextTbx')]");
         /*locators for CC, SRT, VWR, OEM browsers*/
-        public IWebElement searchBtn => Browser._Driver.FindElement(_searchBtn);
+        public IWebElement searchBtn => Browser._Driver.FindElementByAccessibilityId("SearchBtn");
         public readonly By _searchBtn = By.XPath("//*[contains(@Name, 'SEARCH')]");
         /*locators for 034, JHM browsers*/
         public IWebElement searchBtn034 => Browser._Driver.FindElementByAccessibilityId("SearchBtn");
@@ -91,7 +91,7 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement userDeleteBtn => Browser._Driver.FindElementByAccessibilityId("DeleteUserBtn");
         public readonly By _userDeleteBtn = By.XPath("//*[contains(@AutomationId, 'DeleteUserBtn')]");
 
-        public IWebElement treeItemBtn => Browser._Driver.FindElementByAccessibilityId("TreeItemBtn");
+        public IWebElement treeItemBtn => Browser._Driver.FindElementByAccessibilityId("TreeItemDescriptionTb");
         public readonly By _treeItemBtn = By.XPath("//*[contains(@AutomationId, 'TreeItemBtn')]");
 
         public IWebElement clickImg => Browser._Driver.FindElement(_clickImg);
@@ -102,6 +102,24 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement noteSaveBtn => Browser._Driver.FindElement(_noteSaveBtn);
         public readonly By _noteSaveBtn = By.XPath("//Window[@AutomationId=\"Messagebox\"][@Name=\"Edit Note\"]/Button[@Name=\"Save\"][@ClassName=\"Button\"]");
 
+        #endregion
+        #region Add Dealer Locators
+        public IWebElement AddDealerBtn => Browser._Driver.FindElementByAccessibilityId("AddDealerBtn");
+        public readonly By _AddDealerBtn = By.XPath("//*[contains(@AutomationId, 'AddDealerBtn')]");
+        public IWebElement SaveDistributorBtn => Browser._Driver.FindElementByAccessibilityId("SaveDistributorBtn");
+        public readonly By _SaveDistributorBtn = By.XPath("//*[contains(@AutomationId, 'SaveDistributorBtn')]");
+        public IWebElement RegionsCbbx => Browser._Driver.FindElementByAccessibilityId("RegionsCbbx");
+        public readonly By _RegionsCbbx = By.XPath("//*[contains(@AutomationId, 'RegionsCbbx')]");
+        public IWebElement ContactNameTbx => Browser._Driver.FindElementByAccessibilityId("ContactNameTbx");
+        public readonly By _ContactNameTbx = By.XPath("//*[contains(@AutomationId, 'ContactNameTbx')]");
+        public IWebElement CompanyNameTbx => Browser._Driver.FindElementByAccessibilityId("CompanyNameTbx");
+        public readonly By _CompanyNameTbx = By.XPath("//*[contains(@AutomationId, 'CompanyNameTbx')]");
+        public IWebElement SendingEmailTbtn => Browser._Driver.FindElementByAccessibilityId("SendingEmailTbtn");
+        public readonly By _SendingEmailTbtn = By.XPath("//*[contains(@AutomationId, 'SendingEmailTbtn')]");
+        public IWebElement AddressTbx => Browser._Driver.FindElementByAccessibilityId("AddressTbx");
+        public readonly By _AddressTbx = By.XPath("//*[contains(@AutomationId, 'AddressTbx')]");
+        public IWebElement StateCbbx => Browser._Driver.FindElementByAccessibilityId("StateCbbx");
+        public readonly By _StateCbbx = By.XPath("//*[contains(@AutomationId, 'StateCbbx')]");
         #endregion
     }
 }

@@ -15,7 +15,7 @@ namespace AutomatedProjectEPS.PageObjects
         public Flash CheckSuccessFlashing034()
         {
             WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 600);
-            Assert.AreEqual(textboxResult034.Text, "SuccessfulBurn");
+            Assert.AreEqual("SuccessfulBurn", textboxResult034.Text);
             return this;
         }
 

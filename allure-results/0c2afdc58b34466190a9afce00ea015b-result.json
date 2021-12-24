@@ -1,0 +1,451 @@
+{
+  "uuid": "e67db647-babd-48bf-97b5-11c7d95191a2-tr-0-1006",
+  "historyId": "SRT.Tests.AdminTests.EditAndRemoveBinaries",
+  "fullName": "SRT.Tests.AdminTests.EditAndRemoveBinaries",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "SRT.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditAndRemoveBinaries"
+    },
+    {
+      "name": "package",
+      "value": "SRT.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "SRT"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "EditAndRemoveBinaries",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 0 but was 1. Strings differ at index 0.\r\n  Expected: <string.Empty>\r\n  But was:  \"8\"\r\n  -----------^\r\n",
+    "trace": "   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_o(String binaryName) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Assertions.cs:line 21\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.VerifyRemovedBinary(String binaryName)\r\n   at SRT.Tests.AdminTests.EditAndRemoveBinaries() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\SRT.Tests\\TESTS\\AdminTests.cs:line 110\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditAndRemoveBinaries",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 0 but was 1. Strings differ at index 0.\r\n  Expected: <string.Empty>\r\n  But was:  \"8\"\r\n  -----------^\r\n",
+        "trace": "   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_o(String binaryName) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Assertions.cs:line 21\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Common.VerifyRemovedBinary(String binaryName)\r\n   at SRT.Tests.AdminTests.EditAndRemoveBinaries() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\SRT.Tests\\TESTS\\AdminTests.cs:line 110\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: BugsBunny",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335930823,
+          "stop": 1640335931749
+        },
+        {
+          "name": "Enter user's password: 321654987",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335931749,
+          "stop": 1640335932400
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335932400,
+          "stop": 1640335934695
+        },
+        {
+          "name": "Navigate to Binary Upload page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335934695,
+          "stop": 1640335935456
+        },
+        {
+          "name": "Upload base binary - 8A0907559X S0004.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335935456,
+          "stop": 1640335940615
+        },
+        {
+          "name": "Change binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Get binary label",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1640335941679,
+              "stop": 1640335941837
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335940616,
+          "stop": 1640335943473
+        },
+        {
+          "name": "Select price from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335943474,
+          "stop": 1640335945662
+        },
+        {
+          "name": "Press the Upload button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335945663,
+          "stop": 1640335946925
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335946926,
+          "stop": 1640335951542
+        },
+        {
+          "name": "Get binary label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335951542,
+          "stop": 1640335951707
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335951707,
+          "stop": 1640335954889
+        },
+        {
+          "name": "Search the binary - 8A0907559X S0004 SRT-QA-TEST 10:52 AM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335954890,
+          "stop": 1640335958253
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335958253,
+          "stop": 1640335961935
+        },
+        {
+          "name": "Press the EditBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335961935,
+          "stop": 1640335962791
+        },
+        {
+          "name": "Upload performance binary - 8A0907559X S0004 - Performance.bin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335962792,
+          "stop": 1640335967587
+        },
+        {
+          "name": "Press the Edit button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335968970,
+          "stop": 1640335970294
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335970294,
+          "stop": 1640335981376
+        },
+        {
+          "name": "Navigate to Binary Search page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335981376,
+          "stop": 1640335984649
+        },
+        {
+          "name": "Search the binary - 8A0907559X S0004 SRT-QA-TEST 10:52 AM",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335984649,
+          "stop": 1640335988008
+        },
+        {
+          "name": "Press the found binary",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335988008,
+          "stop": 1640335991660
+        },
+        {
+          "name": "Press the RemoveBinary button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335991660,
+          "stop": 1640335992553
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335992553,
+          "stop": 1640335993436
+        },
+        {
+          "name": "Make sure the removed binary '8A0907559X S0004 SRT-QA-TEST 10:52 AM' has status - 8",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Expected string length 0 but was 1. Strings differ at index 0.\r\n  Expected: <string.Empty>\r\n  But was:  \"8\"\r\n  -----------^\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual)\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_o(String binaryName) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\CommonPages\\CommonPage\\Common.Assertions.cs:line 21\r\n   at AutomatedProjectEPS.PageObjects.Common.__a$_around_VerifyRemovedBinary_100663508_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640335993437,
+          "stop": 1640335998936
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a51874a9691d45a2b08015090f6da93d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640335926901,
+      "stop": 1640335998993
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640335926900,
+  "stop": 1640335998999
+}

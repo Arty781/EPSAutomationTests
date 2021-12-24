@@ -11,10 +11,10 @@ namespace AutomatedProjectEPS.ClassHelpers
         public static void WaitSomeInterval(int seconds = 2) => 
             Task.Delay(TimeSpan.FromSeconds(seconds)).Wait();
 
-        public static void ElementIsVisible(By locator, int seconds = 10) =>
+        public static void ElementIsVisible(By locator, int seconds = 30) =>
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(CustomWait.CustomElementIsVisibleByLocator(locator));
         
-        public static void ElementIsClickable(By locator, int seconds = 10) =>
+        public static void ElementIsClickable(By locator, int seconds = 20) =>
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(CustomWait.CustomElementIsClickableByLocator(locator));
 
         public static void WaitSecondWindowHandle(int seconds = 10) =>
@@ -34,7 +34,13 @@ namespace AutomatedProjectEPS.ClassHelpers
             new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(locator));
         }
 
-
+        public static void InvisibilityOfLoader(int seconds = 180)
+        {
+           new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(CustomWait.InvisibilityOfLoader());
+        }
+        public static void IsLoadreVisible1(By locator, int seconds = 30) =>
+            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds))
+            .Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(locator));
 
     }
 }

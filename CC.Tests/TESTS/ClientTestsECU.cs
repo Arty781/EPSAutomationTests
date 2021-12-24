@@ -38,7 +38,7 @@ namespace CC.Tests
                 .GetLastBinary(BinaryPartNumbers.ECU, 2);
 
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Base)
                 .PressConfirmButtonForBinaryInfo();
             Pages.Flash
@@ -80,7 +80,7 @@ namespace CC.Tests
                 .GetLastBinary(BinaryPartNumbers.ECU, 2);
 
             Pages.Calibration
-                .SelectBinary(binaryName)
+                .SelectBinary()
                 .SelectCalibration(BinaryType.Performance)
                 .PressConfirmButtonForBinaryInfo();
             Pages.Flash

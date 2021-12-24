@@ -1,0 +1,195 @@
+{
+  "uuid": "8cc62dce-d2e4-4978-9de8-f5481602dbfa-tr-0-1012",
+  "historyId": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "fullName": "_034.Tests.ClientTestsECU.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.ClientTestsECU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_o(String calibration) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 53\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectCalibration(String calibration)\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 32"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An element could not be located on the page using the given search parameters.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_o(String calibration) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 53\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectCalibration(String calibration)\r\n   at _034.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\034.Tests\\TESTS\\ClientTestsECU.cs:line 32"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: Client034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346859505,
+          "stop": 1640346860587
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346860587,
+          "stop": 1640346861092
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346861092,
+          "stop": 1640346863527
+        },
+        {
+          "name": "Press checkId button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346863527,
+          "stop": 1640346864652
+        },
+        {
+          "name": "Press next button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346864652,
+          "stop": 1640346883029
+        },
+        {
+          "name": "Select binary from the list - {0}",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346883029,
+          "stop": 1640346884042
+        },
+        {
+          "name": "Select calibration for selected binary - Serie emulation",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "An element could not be located on the page using the given search parameters.",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Appium.AppiumWebElement.OpenQA.Selenium.Internal.IFindsByName.FindElementByName(String name)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass18_0.<Name>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_o(String calibration) in C:\\Users\\Anuitex-84\\source\\repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 53\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectCalibration_100663439_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1640346884042,
+          "stop": 1640346885480
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "d43967e44ae549bf8ba2dc198b0ce4d1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1640346855408,
+      "stop": 1640346890504
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1640346855408,
+  "stop": 1640346890507
+}

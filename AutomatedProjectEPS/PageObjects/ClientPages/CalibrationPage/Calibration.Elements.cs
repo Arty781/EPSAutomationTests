@@ -12,6 +12,8 @@ namespace AutomatedProjectEPS.PageObjects
     {
         public IWebElement cbbxBinaries => Browser._Driver.FindElement(_cbbxBinaries);
         public readonly By _cbbxBinaries = By.XPath("//*[contains(@AutomationId, 'BinariesCbbx')]");
+        public IWebElement EcuNameTb => Browser._Driver.FindElementByAccessibilityId("EcuNameTb");
+        public readonly By _EcuNameTb = By.XPath("//*[contains(@AutomationId, 'EcuNameTb')]");
 
         public IWebElement cbbxCalibrations => Browser._Driver.FindElement(_cbbxCalibrations);
         public readonly By _cbbxCalibrations = By.XPath("//*[contains(@AutomationId, 'CalibrationsCbbx')]");

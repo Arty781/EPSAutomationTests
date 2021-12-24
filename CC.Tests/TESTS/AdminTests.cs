@@ -142,7 +142,7 @@ namespace CC.Tests
         [AllureSuite("CC")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void AddNewUser()
+        public void AddNewUserInRootDealer()
         {
             Pages.Login
                 .EnterLogin(Credentials.LoginAdminCC)
@@ -151,14 +151,14 @@ namespace CC.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenRootTree()
                 .ScrollDown()
                 .PressAddUserBtn()
                 .EnterUserData()
                 .ActivateUser()
                 .OpenUserNotesModal()
                 .AddUserNotes()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.CC)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -172,8 +172,8 @@ namespace CC.Tests
                .PressEnterKey();
             /*.VerifyCreatedUser(UserData.userName, userNameLabel);*/
             Pages.Management
-             .SearchUser034(userNameLabel)
-             .OpenTree()
+             .SearchUser(userNameLabel)
+             .OpenNestedTree()
              .SelectUser()
              .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
 
@@ -185,7 +185,7 @@ namespace CC.Tests
         [AllureSuite("034")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void DeleteUserOn034()
+        public void DeleteUser()
         {
             Pages.Login
               .EnterLogin(Credentials.LoginAdminCC)
@@ -194,10 +194,10 @@ namespace CC.Tests
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .OpenTree()
+                .OpenRootTree()
                 .PressAddUserBtn()
                 .EnterUserData()
-                .AddMultipleFilters()
+                .AddMultipleFilters(CompanyFilter.CC)
                 .FindCountryInput(Countries.Country)
                 .FindRoleInput(Roles.Role)
                 .FindUserNameInput(UserData.userName);
@@ -211,7 +211,7 @@ namespace CC.Tests
 
             Pages.Management
              .SearchUser(userNameLabel)
-             .OpenTree()
+             .OpenNestedTree()
              .SelectUser()
              .ClickDeleteUserBtn();
             Pages.Common

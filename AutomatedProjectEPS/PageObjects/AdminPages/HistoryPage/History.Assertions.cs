@@ -33,15 +33,11 @@ namespace AutomatedProjectEPS.PageObjects
              Assert.IsTrue(PresenceOfElement.IsElementPresent(By.Name(flashitem)));
         }*/
 
-        public void CatchException(string locator)
-        {
-            Assert.IsTrue(PresenceOfElement.IsElementPresent(By.Name(locator)));
-        }
-
+        
         public void CheckIsflashingsDisplayed(string distributor)
         {
-            PresenceOfElement.IsLoaderDisplay();
-            IReadOnlyCollection<IWebElement> report = Browser._Driver.FindElements(By.XPath("//Custom[@ClassName=\"DataGridCell\"][3]"));
+            WaitUntil.InvisibilityOfLoader();
+            IReadOnlyCollection<IWebElement> report = Browser._Driver.FindElements(_gridCell);
             IWebElement row = null;
 
             foreach (var item in report)

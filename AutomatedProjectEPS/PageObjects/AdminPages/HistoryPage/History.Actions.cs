@@ -16,10 +16,10 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Change Start Date")]
         public History ChangeStartDate()
         {
-            PresenceOfElement.IsLoaderDisplay();
+            WaitUntil.InvisibilityOfLoader();
             WaitUntil.ElementIsClickable(_datePicker);
             datePicker.Clear();
-            datePicker.SendKeys(DateTime.UtcNow.AddMonths(-1).ToShortDateString());
+            datePicker.SendKeys(DateTime.UtcNow.AddMonths(-3).ToShortDateString());
 
             return this;
         }
@@ -28,17 +28,13 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Select Distributor")]
         public History SelectDistributor(string distributorName)
         {
-            PresenceOfElement.IsLoaderDisplay();
-            WaitUntil.VisibleAndClickable(_cbbxDistributor);
-            new Actions(Browser._Driver)
-                 .Click(cbbxDistributor)
-                 .Build()
-                 .Perform();
+           
+            cbbxDistributor.Click();
 
             IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElementsByAccessibilityId("DistributorNameTb");
             foreach (var item in treeItems)
             {
-                if (!item.Selected && PresenceOfElement.IsElementPresent(By.Name(distributorName)) == true)
+                if (!item.Selected)
                 {
                     IWebElement selectedDistr = item;
 
@@ -57,8 +53,7 @@ namespace AutomatedProjectEPS.PageObjects
                     .Perform();
 
                 }
-                CatchException(distributorName);
-
+               
             }
 
             return this;
@@ -73,14 +68,5 @@ namespace AutomatedProjectEPS.PageObjects
             return this;
         }
 
-        public History ScrollDown()
-        {
-            new Actions(Browser._Driver)
-                .SendKeys(Keys.Control + Keys.End)
-                .Build()
-                .Perform();
-            WaitUntil.WaitSomeInterval(1);
-            return this;
-        }
     }
 }

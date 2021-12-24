@@ -37,7 +37,6 @@ namespace AutomatedProjectEPS.ClassHelpers
             };
         }
 
-
         public static Func<IWebDriver, IWebElement> CustomElementIsVisibleByLocator(By locator)
         {
             return (driver) =>
@@ -61,7 +60,49 @@ namespace AutomatedProjectEPS.ClassHelpers
             };
         }
 
+        public static Func<IWebDriver, IWebElement> CustomLoaderIsVisibleByLocator(By locator)
+        {
+            return (driver) =>
+            {
+                try
+                {
+                    IWebElement element = ElementIfVisible(driver.FindElement(locator));
+                    if (element != null)
+                    {
+                        return element;
+                    }
+                    else
+                        return null;
 
+
+                }
+                catch (StaleElementReferenceException)
+                {
+                    return null;
+                }
+            };
+        }
+
+        public static Func<IWebDriver, bool> InvisibilityOfLoader()
+        {
+            return (driver) =>
+            {
+                try
+                {
+                    IWebElement element = ElementIfVisible(Browser._Driver.FindElementByAccessibilityId("Loader")); ;
+                    while (element != null)
+                    {
+                        return false;
+                    }
+                    return true;
+                }
+                catch (WebDriverException)
+                {
+                    return false;
+                }
+            };
+
+        }
 
     }
 }

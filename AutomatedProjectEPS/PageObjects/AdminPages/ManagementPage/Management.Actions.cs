@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using static AutomatedProjectEPS.ClassHelpers.ListsHelper;
 
 namespace AutomatedProjectEPS.PageObjects
 {
@@ -30,8 +30,10 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Search User")]
         public Management SearchUser(string userName)
         {
+            WaitUntil.ElementIsVisible(_searchFld);
             searchFld.Clear();
             searchFld.SendKeys(userName);
+            WaitUntil.InvisibilityOfLoader();
             searchBtn.Click();
 
 
@@ -92,6 +94,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter the user Data")]
         public Management EnterUserData()
         {
+            firstNameFld.SendKeys(Keys.Control);
             firstNameFld.SendKeys("Jane");
             lastNameFld.SendKeys("Doe");
             emailFld.SendKeys("qatester91311@gmail.com");
@@ -103,7 +106,30 @@ namespace AutomatedProjectEPS.PageObjects
 
             return this;
         }
-        
+
+        [AllureStep("Edit the user Data")]
+        public Management EditUserData()
+        {
+            firstNameFld.Clear();
+            firstNameFld.SendKeys("Edited-Jane");
+            lastNameFld.Clear();
+            lastNameFld.SendKeys("Edited-Doe");
+            emailFld.Clear();
+            emailFld.SendKeys("Edited-qatester91311@gmail.com");
+            phoneFld.Clear();
+            phoneFld.SendKeys("85468949");
+            faxFld.Clear();
+            faxFld.SendKeys("+369852147");
+            addressFld.Clear();
+            addressFld.SendKeys("Edited-9 County Road CC 3/10 " + DateTimeOffset.Now);
+            cityFld.Clear();
+            cityFld.SendKeys("BestCity");
+            zipFld.Clear();
+            zipFld.SendKeys("6587SS");
+
+            return this;
+        }
+
         [AllureStep("Activate User")]
         public Management ActivateUser()
         {
@@ -137,6 +163,50 @@ namespace AutomatedProjectEPS.PageObjects
             noteSaveBtn.Click();
             return this;
         }
+        [AllureStep("Activate flashcount limit")]
+        public Management ActivateFlashLimit()
+        {
+            flashCountBtn.Click();
+            
+            return this;
+        }
+
+        [AllureStep("Increase flash Limit by 1")]
+        public Management ClickIncreaseFlashLimitBtn()
+        {
+            flashIncreaseLimitBtn.Click();
+
+            return this;
+        }
+
+        [AllureStep("Decrease flash Limit by 1")]
+        public Management ClickDecreaseFlashLimitBtn()
+        {
+            flashDecreaseLimitBtn.Click();
+
+            return this;
+        }
+
+        [AllureStep("Change flash Limit by enter numbers from keyboard")]
+        public Management EditFlashLimitField()
+        {
+            flashCountFld.Clear();
+            flashCountFld.SendKeys("99999");
+
+            return this;
+        }
+
+        [AllureStep("Deactivate flashcount limit")]
+        public Management DeactivateFlashLimit()
+        {
+            if(flashCountFld.Displayed == true)
+            {
+                flashCountBtn.Click();
+            }
+            
+
+            return this;
+        }
 
         [AllureStep("Add filters")]
         public Management AddMultipleFilters(string filter)
@@ -158,6 +228,97 @@ namespace AutomatedProjectEPS.PageObjects
             return this;
         }
 
+        [AllureStep("Remove filters")]
+        public Management RemoveFilters()
+        {
+            IReadOnlyCollection<IWebElement> removeBtn = Browser._Driver.FindElementsByAccessibilityId("RemoveFilterBtn");
+            foreach (var item in removeBtn)
+            {
+                if(item != null && item.Displayed == true)
+                {
+                    ArrayList filters = new ArrayList();
+                    for (int i = 0; i < removeBtn.Count; i++)
+                    {
+                        filters.Add(item);
+
+                    }
+
+
+                    foreach (var f in filters)
+                    {
+                        removeFilterBtn.Click();
+                    }
+                }
+                
+                return this;
+            }
+            return this;
+        }
+
+        [AllureStep("Test filter")]
+        public Management ClickTestFilter(string filter)
+        {
+            IReadOnlyCollection<IWebElement> testBtn = Browser._Driver.FindElementsByAccessibilityId("TestFilterBtn");
+            foreach (var item in testBtn)
+            {
+                if (item != null && item.Displayed == true)
+                {
+                    ArrayList filters = new ArrayList();
+                    for (int i = 0; i < testBtn.Count; i++)
+                    {
+                        filters.Add(item);
+
+                    }
+                   
+                    for (int i = 0; i < testBtn.Count; i++)
+                    {
+
+                        testFilterBtn.Click();
+                        CheckFilterData();
+                        CloseListBtn.Click();
+                        Console.WriteLine(CheckFilterData());
+                    }
+                    /*foreach (var f in filters)
+                    {
+                        testFilterBtn.Click();
+                        Pages.Common.SwitchWindow();
+                        string xPath = "//*[contains(text(), '" + filter + "')]";
+                        EcusListPopUp.FindElements(By.XPath(xPath));
+                        CloseListBtn.Click();
+                    }*/
+                }
+
+                
+            }
+            return this;
+        }
+
+       // [AllureStep ("Verify filters data is shown")]
+
+      //  public Management CheckFilterData()
+      //  {
+            
+         //   Pages.Common.SwitchWindow();
+          //  List<string> givenList = new List<string>();
+          //  List<string> filteredList = new List<string>();
+          //  List<IWebElement> list = new List<IWebElement>(Browser._Driver.FindElements(By.XPath("//*/List[@AutomationId=\"EcusList\"]/ListItem")));
+          //  foreach(var l in list)
+          //  {
+                
+           //     givenList.Add(l.Text);
+                
+          //  }
+          //  List<IWebElement> list1 = new List<IWebElement>(Browser._Driver.FindElements(By.XPath("//*/List[@AutomationId=\"EcusList\"]/ListItem")));
+         //   foreach (var listItem in list1)
+         //   {
+        //        filteredList.Add(listItem.Text);
+        //    }
+         //   var firstList = givenList.Except(filteredList).ToString();
+        //    var secondList = filteredList.Except(givenList).ToString();
+
+         //   return !firstList.Any() && !secondList.Any();
+      //  }
+
         #region For 034 and JHM browsers
         [AllureStep("Find and select country from list")]
         public Management FindCountryInput(string Country)
@@ -165,6 +326,7 @@ namespace AutomatedProjectEPS.PageObjects
             countryCbbx.SendKeys(Keys.Control);
             
             countryCbbx.Click();
+            countryCbbx.SendKeys(Country);
             countryCbbx.FindElement(By.Name(Country)).Click();
 
             return this;
@@ -174,10 +336,6 @@ namespace AutomatedProjectEPS.PageObjects
         public Management FindRoleInput(string Role)
         {
             roleCbbx.SendKeys(Keys.Control);
-            new Actions(Browser._Driver)
-               .Release()
-               .Build()
-               .Perform();
             roleCbbx.Click();
             roleCbbx.FindElement(By.Name(Role)).Click();
 
@@ -214,10 +372,7 @@ namespace AutomatedProjectEPS.PageObjects
         public Management FindSaveUserBtn()
         {
             saveUserBtn.SendKeys(Keys.Control);
-            new Actions(Browser._Driver)
-               .Release()
-               .Build()
-               .Perform();
+            
             saveUserBtn.Click();
             Pages.Common.SwitchWindow();
             Assert.AreNotEqual(Browser._Driver.FindElementByAccessibilityId("Messagebox").Text, "Unable to connect to the server. \r\nPlease contact the appropriate Technical Support Representative.");
@@ -297,25 +452,38 @@ namespace AutomatedProjectEPS.PageObjects
             string label = usernameFld.Text;
             return label;
         }
+
+        [AllureStep("Get FirstName")]
+        public string GetUserFirstName()
+        {
+            string label = firstNameFld.Text;
+            return label;
+        }
         #endregion
 
         #region DealearActions
-       
+
         [AllureStep("Select dealer")]
         public Management SelectDealer()
         {
-           
-            IReadOnlyCollection<IWebElement> addBtnCollection = Browser._Driver.FindElementsByAccessibilityId("AddDealerBtn");
-            foreach (var item in addBtnCollection)
+
+            IReadOnlyCollection<IWebElement> treeItems = Browser._Driver.FindElementsByXPath("//*[contains(@Name, 'Jane')]");
+
+            IWebElement dealerName = Browser._Driver.FindElementByXPath("//*[contains(@Name, 'Jane')]");
+            foreach (var item in treeItems)
             {
-                if (item.Displayed == true)
+
+                if (item.Displayed && item.Text == dealerName.Text)
                 {
-                    
-                    item.Click();
+                    new Actions(Browser._Driver)
+                   .Click(item)
+                   .Build()
+                   .Perform();
+                    break;
                 }
 
             }
-           
+
             return this;
         }
 
@@ -335,17 +503,67 @@ namespace AutomatedProjectEPS.PageObjects
             return this;
         }
 
-        [AllureStep("Enter Dealer Data")]
-        public Management EnterDealerData()
+        [AllureStep("Enter root Dealer Data")]
+        public Management EnterRootDealerData(string company)
         {
-            CompanyNameTbx.SendKeys("Jane QA" + " " +DateTimeOffset.Now.ToUnixTimeMilliseconds());
+            /*CompanyNameTbx.Clear();*/
+            CompanyNameTbx.SendKeys(Keys.Control);
+            CompanyNameTbx.SendKeys(company);
+            ContactNameTbx.Clear();
             ContactNameTbx.SendKeys("Doe");
+            emailFld.Clear();
             emailFld.SendKeys("qatester91311@gmail.com");
+            phoneFld.Clear();
             phoneFld.SendKeys("+123654789");
+            AddressTbx.Clear();
             AddressTbx.SendKeys("9 County Road CC 3/10");
+            cityFld.Clear();
             cityFld.SendKeys("Wray");
+            StateCbbx.Clear();
             StateCbbx.SendKeys("DF");
-            
+
+            return this;
+        }
+
+        [AllureStep("Enter Nested Dealer Data")]
+        public Management EnterNestedDealerData()
+        {
+            /*CompanyNameTbx.Clear();*/
+            CompanyNameTbx.SendKeys("Jane QA" + " " + DateTimeOffset.Now.ToUnixTimeMilliseconds());
+            ContactNameTbx.Clear();
+            ContactNameTbx.SendKeys("Doe");
+            emailFld.Clear();
+            emailFld.SendKeys("qatester91311@gmail.com");
+            phoneFld.Clear();
+            phoneFld.SendKeys("+123654789");
+            AddressTbx.Clear();
+            AddressTbx.SendKeys("9 County Road CC 3/10");
+            cityFld.Clear();
+            cityFld.SendKeys("Wray");
+            StateCbbx.Clear();
+            StateCbbx.SendKeys("DF");
+
+            return this;
+        }
+
+        [AllureStep("Edit Dealer Data")]
+        public Management EditDealerData()
+        {
+            CompanyNameTbx.Clear();
+            CompanyNameTbx.SendKeys("Jane" + " " + DateTimeOffset.Now.ToUnixTimeMilliseconds() + " Edited");
+            ContactNameTbx.Clear();
+            ContactNameTbx.SendKeys("QA");
+            emailFld.Clear();
+            emailFld.SendKeys("qatester91311@gmail.com");
+            phoneFld.Clear();
+            phoneFld.SendKeys("+(123) 654789");
+            AddressTbx.Clear();
+            AddressTbx.SendKeys("2268 S Tongass Hwy, Ketchikan, Alaska 99901, USA");
+            cityFld.Clear();
+            cityFld.SendKeys("Ketchikan");
+            StateCbbx.Clear();
+            StateCbbx.SendKeys("AK");
+
             return this;
         }
 
@@ -378,7 +596,17 @@ namespace AutomatedProjectEPS.PageObjects
         {
             Pages.Common.SwitchWindow();
 
-            noteTextArea.SendKeys("Lorem ipsum");
+            noteTextArea.SendKeys("Phone number: (907) 826-3317 \n Street: 245 Cold Storage Rd \n City: Craig \n State: Alaska(AK) \n Zipcode: 99921 \n Country: USA \n Address: 245 Cold Storage Rd, Craig, Alaska 99921, USA \n");
+            noteSaveBtn.Click();
+            return this;
+        }
+
+        [AllureStep("Clear User notes and Save")]
+        public Management ClearDealerNotes()
+        {
+            Pages.Common.SwitchWindow();
+
+            noteTextArea.Clear();
             noteSaveBtn.Click();
             return this;
         }

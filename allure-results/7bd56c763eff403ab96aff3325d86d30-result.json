@@ -1,0 +1,390 @@
+{
+  "uuid": "d4a47e76-4121-464e-8505-2eb33bc778f8-tr-0-1011",
+  "historyId": "_034.Tests.AdminTests.EditNestedDealer",
+  "fullName": "_034.Tests.AdminTests.EditNestedDealer",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "14"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditNestedDealer"
+    },
+    {
+      "name": "package",
+      "value": "_034.Tests.AdminTests"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "034"
+    },
+    {
+      "name": "subSuite",
+      "value": "Admin"
+    }
+  ],
+  "links": [],
+  "name": "EditNestedDealer",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: some item equal to \"034-\"\r\n  But was:  < <Element (id = 7.17268.58294385)>, <Element (id = 7.17268.58294385)>, <Element (id = 7.17268.58294385)> >\r\n",
+    "trace": "   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_o(String filter) in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 276\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Management.ClickTestFilter(String filter)\r\n   at _034.Tests.AdminTests.EditNestedDealer() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\034.Tests\\TESTS\\AdminTests.cs:line 355\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditNestedDealer",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: some item equal to \"034-\"\r\n  But was:  < <Element (id = 7.17268.58294385)>, <Element (id = 7.17268.58294385)>, <Element (id = 7.17268.58294385)> >\r\n",
+        "trace": "   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_o(String filter) in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 276\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Management.ClickTestFilter(String filter)\r\n   at _034.Tests.AdminTests.EditNestedDealer() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\034.Tests\\TESTS\\AdminTests.cs:line 355\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Select Rest of World server",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437469341,
+          "stop": 1642437470737
+        },
+        {
+          "name": "Enter user's email: userj034",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437470737,
+          "stop": 1642437471818
+        },
+        {
+          "name": "Enter user's password: $c9YH=",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437471818,
+          "stop": 1642437472329
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437472329,
+          "stop": 1642437474661
+        },
+        {
+          "name": "Navigate to Access Management page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437474662,
+          "stop": 1642437475701
+        },
+        {
+          "name": "Search User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437475701,
+          "stop": 1642437477783
+        },
+        {
+          "name": "Open Nested Tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437477783,
+          "stop": 1642437480734
+        },
+        {
+          "name": "Press \"Add Dealer\" Button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437480734,
+          "stop": 1642437481876
+        },
+        {
+          "name": "Enter Dealer Data",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437481877,
+          "stop": 1642437488892
+        },
+        {
+          "name": "Activate User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437488892,
+          "stop": 1642437490190
+        },
+        {
+          "name": "Select Region",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437490190,
+          "stop": 1642437491746
+        },
+        {
+          "name": "Add filters",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437491746,
+          "stop": 1642437501102
+        },
+        {
+          "name": "Find and select country from list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437501103,
+          "stop": 1642437505822
+        },
+        {
+          "name": "Click \"Save\" button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437505822,
+          "stop": 1642437507374
+        },
+        {
+          "name": "Get Company label",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437507375,
+          "stop": 1642437507671
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437507672,
+          "stop": 1642437514440
+        },
+        {
+          "name": "Search User",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437514440,
+          "stop": 1642437521875
+        },
+        {
+          "name": "Open Nested Tree",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437521875,
+          "stop": 1642437527707
+        },
+        {
+          "name": "Select dealer",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437527707,
+          "stop": 1642437540566
+        },
+        {
+          "name": "Test filter",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Expected: some item equal to \"034-\"\r\n  But was:  < <Element (id = 7.17268.58294385)>, <Element (id = 7.17268.58294385)>, <Element (id = 7.17268.58294385)> >\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.Contains(Object expected, ICollection actual)\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_o(String filter) in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\AdminPages\\ManagementPage\\Management.Actions.cs:line 276\r\n   at AutomatedProjectEPS.PageObjects.Management.__a$_around_ClickTestFilter_100663361_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642437540566,
+          "stop": 1642437618316
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b4863a849a2049c497749ae833c39bdb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642437465494,
+      "stop": 1642437625031
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642437465493,
+  "stop": 1642437625035
+}

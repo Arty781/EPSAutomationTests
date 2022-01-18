@@ -31,6 +31,8 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement Loader => Browser._Driver.FindElementByAccessibilityId("Loader");
         public readonly By _Loader = By.XPath("//*[contains(@AutomationId, 'Loader')]");
 
+        
+
 
 
        

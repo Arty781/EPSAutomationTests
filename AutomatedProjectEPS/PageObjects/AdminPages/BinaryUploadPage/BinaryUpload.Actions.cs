@@ -60,7 +60,7 @@ namespace AutomatedProjectEPS.PageObjects
             WaitUntil.ElementIsClickable(_inputBinaryLabel);
             string label = GetBinaryLabel();
             inputBinaryLabel.Clear();
-            inputBinaryLabel.SendKeys(label + " " + filter + "QA-TEST" + " " + DateTime.Now.ToShortTimeString());
+            inputBinaryLabel.SendKeys(label + " " + filter + "QA-TEST" + " " + DateTime.Now.ToString());
             return this;
         }
 

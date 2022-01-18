@@ -24,6 +24,11 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement cbbxServer => Browser._Driver.FindElementByAccessibilityId("ServerCbbx");
         public readonly By _cbbxServer = By.XPath("//*[contains(@AutomationId, 'ServerCbbx')]");
 
+        public IWebElement serverNameTb => Browser._Driver.FindElementByAccessibilityId("ServerNameTb");
+        public readonly By _serverNameTb = By.XPath("//*[contains(@AutomationId, 'ServerNameTb')]");
+
+        public IWebElement ErrorMessage => Browser._Driver.FindElementByAccessibilityId("ErrorMessageTb");
+        public readonly By _ErrorMessage = By.XPath("//*[contains(@AutomationId, 'ErrorMessageTb')]");
 
 
 
@@ -31,7 +36,7 @@ namespace AutomatedProjectEPS.PageObjects
 
 
 
-      
+
 
 
     }

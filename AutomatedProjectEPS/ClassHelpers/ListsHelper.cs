@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,13 @@ namespace AutomatedProjectEPS.ClassHelpers
             public string Filter { get; set; }
             public string Description { get; set; }
         }
+
+        public class ECusList
+        {
+            public string EcuRow { get; set; }
+            public ECusList(string ecu) => EcuRow = ecu;
+            
+        }
+
     }
 }

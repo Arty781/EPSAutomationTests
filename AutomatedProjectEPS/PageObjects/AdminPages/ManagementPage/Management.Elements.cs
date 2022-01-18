@@ -121,5 +121,14 @@ namespace AutomatedProjectEPS.PageObjects
         public IWebElement StateCbbx => Browser._Driver.FindElementByAccessibilityId("StateCbbx");
         public readonly By _StateCbbx = By.XPath("//*[contains(@AutomationId, 'StateCbbx')]");
         #endregion
+
+        public IWebElement EcusListPopUp => Browser._Driver.FindElementByAccessibilityId("EcusList");
+        public readonly By _EcusListPopUp = By.XPath("//*[contains(@AutomationId, 'EcusList')]");
+
+        public IWebElement CloseListBtn => Browser._Driver.FindElementByAccessibilityId("CloseWindow");
+        public readonly By _CloseListBtn = By.XPath("//*[contains(@AutomationId, 'CloseWindow')]");
+
+        public IWebElement EcusListItem => Browser._Driver.FindElement(_EcusListItem);
+        public readonly By _EcusListItem = By.XPath("//*/List[@AutomationId=\"EcusList\"]/ListItem");
     }
 }

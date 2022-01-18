@@ -42,6 +42,27 @@
         public const string AdminJHM = @"C:\Users\ribal\AppData\Local\JHM Power Connect Admin\FlashToolAdmin.exe";*/
         #endregion
 
+        #region LOCAL
+
+        /* public const string ClientOEM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA OEM Flash Tool\FlashToolClient.exe";
+         public const string AdminOEM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA OEM Flash Tool Admin\FlashToolAdmin.exe";
+
+         public const string Client034 = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA 034 Flash Tool\FlashToolClient.exe";
+         public const string Admin034 = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA 034 Flash Tool Admin\FlashToolAdmin.exe";
+
+         public const string ClientCC = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA CC Flash Tool\FlashToolClient.exe";
+         public const string AdminCC = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA CC Flash Tool Admin\FlashToolAdmin.exe";
+
+         public const string ClientSRT = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA SRT Flash Tool\FlashToolClient.exe";
+         public const string AdminSRT = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA SRT Flash Tool Admin\FlashToolAdmin.exe";
+
+         public const string ClientVWR = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA VWR Flash Tool\FlashToolClient.exe";
+         public const string AdminVWR = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA VWR Flash Tool Admin\FlashToolAdmin.exe";
+
+         public const string ClientJHM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA JHM Power Connect\FlashToolClient.exe";
+         public const string AdminJHM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA JHM Power Connect Admin\FlashToolAdmin.exe";*/
+        #endregion
+
     }
 
     public class DriverPuth
@@ -73,6 +94,7 @@
         #endregion
 
         #region Client Credentials
+        
         public const string LoginClientOEM = "ClientOEM";
         public const string LoginClient034 = "Client034";
         public const string LoginClientCC = "ClientCC";
@@ -211,6 +233,13 @@
     public class Roles
     {
         public const string Role = "Client";
+    }
+
+    public class Servers
+    {
+        /*public const string Server = "America";*/
+        public const string Server = "Europe";
+        /*public const string Server = "Australia";*/
     }
 
 }

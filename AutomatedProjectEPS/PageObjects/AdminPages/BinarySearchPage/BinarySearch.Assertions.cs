@@ -19,5 +19,13 @@ namespace AutomatedProjectEPS.PageObjects
             Assert.AreEqual(binaryLabel, elemFromList.Text);
             return this;
         }
+
+        [AllureStep("Make Sure that removed {0} binary is not displayedfound")]
+        public BinarySearch MakeSureBinaryDeleted(string binaryLabel)
+        {
+            WaitUntil.InvisibilityOfLoader();
+            Assert.AreEqual(false, PresenceOfElement.IsElementPresent(_elemFromList));
+            return this;
+        }
     }
 }

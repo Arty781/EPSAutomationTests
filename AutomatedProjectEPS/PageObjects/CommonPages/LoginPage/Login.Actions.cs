@@ -1,7 +1,9 @@
 ﻿using AutomatedProjectEPS.ClassHelpers;
 using NUnit.Allure.Steps;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium.Windows;
+using OpenQA.Selenium.Interactions;
 using System.Collections.Generic;
 
 namespace AutomatedProjectEPS.PageObjects
@@ -33,18 +35,27 @@ namespace AutomatedProjectEPS.PageObjects
             
             btnLogin.Click();
             WaitUntil.WaitSomeInterval(2);
+           
 
             return Pages.Controller;
         }
 
 
-        [AllureStep("Enter user's email: {0}")]
-        public Login Admin(string email)
+        [AllureStep("Select {0} server")]
+        public Login SelectServer(string server)
         {
-            WaitUntil.WaitSomeInterval();
-            IWebElement elem = Browser._Driver.FindElementByAccessibilityId("UserNameInput");
-            elem.Clear();
-            elem.SendKeys(email);
+            WaitUntil.ElementIsClickable(_cbbxServer);
+            cbbxServer.Click();
+            IReadOnlyCollection<IWebElement> serverList = Browser._Driver.FindElementsByAccessibilityId("ServerNameTb");
+            foreach(var item in serverList)
+            {
+
+                if(item.Displayed == true && item.Text == server)
+                {
+                    item.Click();
+                }
+                
+            }
             return this;
         }
 

@@ -23,6 +23,7 @@ namespace _034.Tests
         public void UploadEcuBinaries()
         {
             Pages.Login
+                .SelectServer(Servers.Server)
                 .EnterLogin(Credentials.LoginAdmin034)
                 .EnterPassword(Credentials.PasswordAdmin034)
                 .PressLoginButton();
@@ -54,6 +55,7 @@ namespace _034.Tests
         public void UploadTcuBinaries()
         {
             Pages.Login
+                .SelectServer(Servers.Server)
                 .EnterLogin(Credentials.LoginAdmin034)
                 .EnterPassword(Credentials.PasswordAdmin034)
                 .PressLoginButton();
@@ -85,6 +87,7 @@ namespace _034.Tests
         public void EditAndRemoveBinaries()
         {
             Pages.Login
+                .SelectServer(Servers.Server)
                 .EnterLogin(Credentials.LoginAdmin034)
                 .EnterPassword(Credentials.PasswordAdmin034)
                 .PressLoginButton();
@@ -113,8 +116,9 @@ namespace _034.Tests
                .SelectBinary()
                .PressRemoveBinaryButton();
             Pages.Common
-               .PressEnterKey()
-               .VerifyRemovedBinary(binaryLabel);
+               .PressEnterKey();
+            Pages.BinarySearch
+                .MakeSureBinaryDeleted(binaryLabel);
 
         }
         #endregion
@@ -129,6 +133,7 @@ namespace _034.Tests
         public void CheckFlashHistory()
         {
             Pages.Login
+                .SelectServer(Servers.Server)
                 .EnterLogin(Credentials.LoginAdmin034)
                 .EnterPassword(Credentials.PasswordAdmin034)
                 .PressLoginButton();
@@ -153,6 +158,7 @@ namespace _034.Tests
         public void AddNewUserInRootDealer()
         {
             Pages.Login
+                .SelectServer(Servers.Server)
                 .EnterLogin(Credentials.LoginAdmin034)
                 .EnterPassword(Credentials.PasswordAdmin034)
                 .PressLoginButton();
@@ -160,7 +166,7 @@ namespace _034.Tests
                 .GoToAccessManagement();
             Pages.Management
                 .OpenRootTree()
-                /*.ScrollDown()*/
+                .ScrollDown()
                 .PressAddUserBtn()
                 .EnterUserData()
                 .ActivateUser()
@@ -177,7 +183,7 @@ namespace _034.Tests
             Pages.Common
                .PressEnterKey();
             Pages.Management
-             .SearchUser034(userNameLabel)
+             .SearchUser(userNameLabel)
              .OpenNestedTree()
              .SelectUser()
              .VerifyCreatedUser(userNameLabel, UserData.FirstName, UserData.LastName);
@@ -195,6 +201,7 @@ namespace _034.Tests
         public void DeleteUserInRootDealer()
         {
             Pages.Login
+              .SelectServer(Servers.Server)
               .EnterLogin(Credentials.LoginAdmin034)
               .EnterPassword(Credentials.PasswordAdmin034)
               .PressLoginButton();
@@ -231,26 +238,27 @@ namespace _034.Tests
         }
         #endregion
 
-        #region AddNewDealerInNestedDealer
+        #region AddNewRootDealer
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
         [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("034")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void AddNewDealerInNestedDealer()
+        public void AddNewRootDealer()
         {
             Pages.Login
+                .SelectServer(Servers.Server)
                 .EnterLogin(Credentials.LoginAdmin034)
                 .EnterPassword(Credentials.PasswordAdmin034)
                 .PressLoginButton();
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
-                .SearchUser(Distributors._034)
-                .OpenNestedTree()
+                .OpenRootTree()
+                .ScrollDown()
                 .PressAddDealerBtn()
-                .EnterDealerData()
+                .EnterRootDealerData(Distributors._034)
                 .ActivateDealer()
                 .OpenDealerNotesModal()
                 .AddDealerNotes()
@@ -260,7 +268,48 @@ namespace _034.Tests
                 .ClickSaveDealerBtn();
 
             string dealerNameLabel = Pages.Management.GetCompanyLabel();
-            
+
+            Pages.Common
+               .PressEnterKey();
+            Pages.Management
+             .SearchUser(dealerNameLabel)
+             .OpenNestedTree()
+             .VerifyCreatedRootDealer(dealerNameLabel);
+
+        }
+        #endregion
+
+        #region AddNewNestedDealer
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("034")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void AddNewNestedDealer()
+        {
+            Pages.Login
+                .SelectServer(Servers.Server)
+                .EnterLogin(Credentials.LoginAdmin034)
+                .EnterPassword(Credentials.PasswordAdmin034)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .SearchUser(Distributors._034)
+                .OpenNestedTree()
+                .PressAddDealerBtn()
+                .EnterNestedDealerData()
+                .ActivateDealer()
+                .OpenDealerNotesModal()
+                .AddDealerNotes()
+                .SelectRegion()
+                .AddMultipleFilters(CompanyFilter._034)
+                .FindCountryInput(Countries.Country)
+                .ClickSaveDealerBtn();
+
+            string dealerNameLabel = Pages.Management.GetCompanyLabel();
+
             Pages.Common
                .PressEnterKey();
             Pages.Management
@@ -271,22 +320,203 @@ namespace _034.Tests
         }
         #endregion
 
-        #region EditDealerInNestedDealer
+        #region EditNewNestedDealer
         [AllureTag("Regression")]
         [AllureSeverity(SeverityLevel.critical)]
         [AllureOwner("Sukharevsky Artem")]
         [AllureSuite("034")]
         [AllureSubSuite("Admin")]
         [Test]
-        public void EditDealerInNestedDealer()
+        public void EditNestedDealer()
         {
             Pages.Login
-              .EnterLogin(Credentials.LoginAdmin034)
-              .EnterPassword(Credentials.PasswordAdmin034)
-              .PressLoginButton();
+                .SelectServer(Servers.Server)
+                .EnterLogin(Credentials.LoginAdmin034)
+                .EnterPassword(Credentials.PasswordAdmin034)
+                .PressLoginButton();
             Pages.Navigation
                 .GoToAccessManagement();
             Pages.Management
+                .SearchUser(Distributors._034)
+                .OpenNestedTree()
+                .PressAddDealerBtn()
+                .EnterNestedDealerData()
+                .ActivateDealer()
+                .OpenDealerNotesModal()
+                .AddDealerNotes()
+                .SelectRegion()
+                .AddMultipleFilters(CompanyFilter._034)
+                .FindCountryInput(Countries.Country)
+                .ClickSaveDealerBtn();
+
+            string dealerNameLabel = Pages.Management.GetCompanyLabel();
+
+            Pages.Common
+               .PressEnterKey();
+            Pages.Management
+             .SearchUser(dealerNameLabel)
+             .OpenNestedTree()
+             .SelectDealer()
+             .EditDealerData()
+             .ActivateDealer()
+             .OpenDealerNotesModal()
+             .ClearDealerNotes()
+             .ClickTestFilter(CompanyFilter._034)
+             .RemoveFilters();
+            string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
+            Pages.Management
+             .ClickSaveDealerBtn();
+            Pages.Common
+               .PressEnterKey();
+            Pages.Management
+             .SearchUser(editedDealerNameLabel)
+             .OpenNestedTree()
+             .SelectDealer()
+             .VerifyEditedDealer(editedDealerNameLabel);
+
+        }
+        #endregion
+
+        #region EditRootUser
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("034")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void EditRootUser()
+        {
+            Pages.Login
+                .SelectServer(Servers.Server)
+                .EnterLogin(Credentials.LoginAdmin034)
+                .EnterPassword(Credentials.PasswordAdmin034)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .OpenNestedTree()
+                .ScrollDown()
+                .PressAddUserBtn()
+                .EnterUserData()
+                .AddMultipleFilters(CompanyFilter._034)
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn()
+                .VerifyUserSavedPopUp();
+            Pages.Common
+               .PressEnterKey();
+
+            Pages.Management
+                .SearchUser(userNameLabel)
+                .OpenRootTree()
+                .SelectUser()
+                .EditUserData()
+                .RemoveFilters()
+                .FindCountryInput("Georgia")
+                .FindRoleInput("SearchOnly");
+            string firstName = Pages.Management.GetUserFirstName();
+            Pages.Management
+                .FindSaveUserBtn()
+                .VerifyUserEditedPopUp();
+            Pages.Common
+               .PressEnterKey();
+            Pages.Management
+             .SearchUser(userNameLabel)
+             .OpenNestedTree()
+             .SelectUser()
+             .VerifyUserEdited(firstName);
+
+        }
+        #endregion
+
+        #region EditNestedUser
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("034")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void EditNestedUser()
+        {
+            Pages.Login
+                .SelectServer(Servers.Server)
+                .EnterLogin(Credentials.LoginAdmin034)
+                .EnterPassword(Credentials.PasswordAdmin034)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .SearchUser(Distributors._034)
+                .OpenNestedTree()
+                .PressAddUserBtn()
+                .EnterUserData()
+                .ActivateFlashLimit()
+                .ClickIncreaseFlashLimitBtn()
+                .AddMultipleFilters(CompanyFilter._034)
+                .FindCountryInput(Countries.Country)
+                .FindRoleInput(Roles.Role)
+                .FindUserNameInput(UserData.userName);
+
+            string userNameLabel = Pages.Management.GetUserNameLabel();
+            Pages.Management
+                .FindPasswordInput(UserData.Password)
+                .FindSaveUserBtn()
+                .VerifyUserSavedPopUp();
+            Pages.Common
+               .PressEnterKey();
+
+            Pages.Management
+                .SearchUser(userNameLabel)
+                .OpenNestedTree()
+                .SelectUser()
+                .VerifyIsActiveFlashLimit();
+            Pages.Management
+                .EditUserData()
+                .EditFlashLimitField()
+                .ClickDecreaseFlashLimitBtn()
+                .RemoveFilters()
+                .FindCountryInput("Georgia")
+                .FindRoleInput("SearchOnly");
+            string firstName = Pages.Management.GetUserFirstName();
+            Pages.Management
+               .VerifyIsEditedFlashLimit();
+            Pages.Management
+                .FindSaveUserBtn()
+                .VerifyUserEditedPopUp();
+            Pages.Common
+               .PressEnterKey();
+            Pages.Management
+             .SearchUser(userNameLabel)
+             .OpenNestedTree()
+             .SelectUser()
+             .VerifyUserEdited(firstName);
+
+        }
+        #endregion
+
+        #region DeleteNestedUser
+        [AllureTag("Regression")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureOwner("Sukharevsky Artem")]
+        [AllureSuite("034")]
+        [AllureSubSuite("Admin")]
+        [Test]
+        public void DeleteNestedUser()
+        {
+            Pages.Login
+                .SelectServer(Servers.Server)
+                .EnterLogin(Credentials.LoginAdmin034)
+                .EnterPassword(Credentials.PasswordAdmin034)
+                .PressLoginButton();
+            Pages.Navigation
+                .GoToAccessManagement();
+            Pages.Management
+                .SearchUser(Distributors._034)
                 .OpenNestedTree()
                 .PressAddUserBtn()
                 .EnterUserData()
@@ -298,7 +528,8 @@ namespace _034.Tests
             string userNameLabel = Pages.Management.GetUserNameLabel();
             Pages.Management
                 .FindPasswordInput(UserData.Password)
-                .FindSaveUserBtn();
+                .FindSaveUserBtn()
+                .VerifyUserSavedPopUp();
             Pages.Common
                .PressEnterKey();
 
@@ -306,9 +537,13 @@ namespace _034.Tests
              .SearchUser(userNameLabel)
              .OpenNestedTree()
              .SelectUser()
-             .ClickDeleteUserBtn();
+             .ClickDeleteUserBtn()
+             .VerifyDeletedConfirmationPopUp();
             Pages.Common
-               .PressEnterKey()
+               .PressEnterKey();
+            Pages.Management
+                .VerifyDeletedUserPopUp(userNameLabel);
+            Pages.Common
                .PressEnterKey();
             Pages.Management
             .SearchUser(userNameLabel)

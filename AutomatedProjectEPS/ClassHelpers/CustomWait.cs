@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using AutomatedProjectEPS.PageObjects;
+using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -103,6 +105,29 @@ namespace AutomatedProjectEPS.ClassHelpers
             };
 
         }
+
+        public static Func<IWebDriver, bool> InvisibilityOfElement(By locator)
+        {
+            return (driver) =>
+            {
+                try
+                {
+                    IWebElement element = ElementIfVisible(driver.FindElement(locator)); ;
+                    while (element != null)
+                    {
+                        return false;
+                    }
+                    return true;
+                }
+                catch (WebDriverException)
+                {
+                    return false;
+                }
+            };
+
+        }
+
+
 
     }
 }

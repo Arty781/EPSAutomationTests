@@ -1,0 +1,76 @@
+{
+  "uuid": "32472fec-4002-4cd3-a634-f16db4ed783f-tc-0-1003",
+  "name": "JHM.Tests.AdminTests.EditNestedDealer",
+  "children": [
+    "2e3f2a1b-b054-4a9f-b3cf-900a89ecf2c2-tr-0-1012"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643106965635,
+      "stop": 1643106965635
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643106965636,
+      "stop": 1643106965636
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643106965636,
+      "stop": 1643106965636
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643106965636,
+      "stop": 1643106965636
+    }
+  ],
+  "links": [],
+  "start": 1643106777288,
+  "stop": 1643106965672
+}

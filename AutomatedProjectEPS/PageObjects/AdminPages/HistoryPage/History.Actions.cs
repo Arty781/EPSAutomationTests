@@ -16,7 +16,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Change Start Date")]
         public History ChangeStartDate()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             WaitUntil.ElementIsClickable(_datePicker);
             datePicker.Clear();
             datePicker.SendKeys(DateTime.UtcNow.AddMonths(-3).ToShortDateString());

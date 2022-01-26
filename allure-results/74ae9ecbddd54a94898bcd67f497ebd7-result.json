@@ -1,0 +1,225 @@
+{
+  "uuid": "f755dec8-f04f-4e71-8fd3-f4735f5e0204-tr-0-1016",
+  "historyId": "VWR.Tests.ClientTestsECU.BaseEcuFlashing",
+  "fullName": "VWR.Tests.ClientTestsECU.BaseEcuFlashing",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "testClass",
+      "value": "VWR.Tests.ClientTestsECU"
+    },
+    {
+      "name": "testMethod",
+      "value": "BaseEcuFlashing"
+    },
+    {
+      "name": "package",
+      "value": "VWR.Tests.ClientTestsECU"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "Sukharevsky Artem"
+    },
+    {
+      "name": "suite",
+      "value": "VWR"
+    },
+    {
+      "name": "subSuite",
+      "value": "Client"
+    }
+  ],
+  "links": [],
+  "name": "BaseEcuFlashing",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 180 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.InvisibilityOfLoader(Int32 seconds) in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 39\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectBinary()\r\n   at VWR.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\VWR.Tests\\TESTS\\ClientTestsECU.cs:line 40"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "BaseEcuFlashing",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 180 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.InvisibilityOfLoader(Int32 seconds) in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 39\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_w_0(Object[] )\r\n   at AutomatedProjectEPS.PageObjects.Calibration.SelectBinary()\r\n   at VWR.Tests.ClientTestsECU.BaseEcuFlashing() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\VWR.Tests\\TESTS\\ClientTestsECU.cs:line 40"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter user's email: ClientVWR",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117571035,
+          "stop": 1643117571813
+        },
+        {
+          "name": "Enter user's password: Test123!",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117571813,
+          "stop": 1643117572302
+        },
+        {
+          "name": "Press login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117572303,
+          "stop": 1643117574584
+        },
+        {
+          "name": "Select controller for Engine",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117574585,
+          "stop": 1643117575170
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117575171,
+          "stop": 1643117580932
+        },
+        {
+          "name": "Fill client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117580933,
+          "stop": 1643117603921
+        },
+        {
+          "name": "Press Confirm button for client info",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117603921,
+          "stop": 1643117606495
+        },
+        {
+          "name": "Close message box",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117606495,
+          "stop": 1643117609534
+        },
+        {
+          "name": "Select binary from the list - {0}",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 180 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at AutomatedProjectEPS.ClassHelpers.WaitUntil.InvisibilityOfLoader(Int32 seconds) in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\ClassHelpers\\WaitUntil.cs:line 39\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\EPSAutomationTests\\AutomatedProjectEPS\\PageObjects\\ClientPages\\CalibrationPage\\Calibration.Actions.cs:line 28\r\n   at AutomatedProjectEPS.PageObjects.Calibration.__a$_around_SelectBinary_100663465_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1643117610135,
+          "stop": 1643117790575
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6157f4a05e2f4cc3a3e1039b5e81991b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1643117567013,
+      "stop": 1643117790611
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1643117567013,
+  "stop": 1643117790616
+}

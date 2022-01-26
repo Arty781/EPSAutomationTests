@@ -14,22 +14,30 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Fill client info")]
         public ClientInfo FillClientInfo()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             if (inputFirstName.Text != "")
             {
                 return this;
             }
             else
             {
+                inputFirstName.Clear();
                 inputFirstName.SendKeys("qafirstnameqa");
+                inputLastName.Clear();
                 inputLastName.SendKeys("qalastname");
+                inputAddress.Clear();
                 inputAddress.SendKeys("qaaddress");
+                inputCity.Clear();
                 inputCity.SendKeys("qacity");
+                inputState.Clear();
                 inputState.SendKeys("UA");
+                inputZIP.Clear();
                 inputZIP.SendKeys("123456");
                 cbbxCountry.Click();
                 cbbxCountry.SendKeys("Albania");
+                inputEmail.Clear();
                 inputEmail.SendKeys("auto@test.io");
+                inputPhone.Clear();
                 inputPhone.SendKeys("1234567890");
                 inputNote.SendKeys("qanotes");
                 return this;

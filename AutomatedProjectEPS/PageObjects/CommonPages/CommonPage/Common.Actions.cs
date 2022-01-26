@@ -43,10 +43,10 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common CloseProgressBarAfterFlashing()
         {
-            WaitUntil.WaitSecondWindowHandle(600);
-            SwitchWindow();
+            /*WaitUntil.WaitSecondWindowHandle(700);
+            SwitchWindow();*/
 
-            WaitUntil.ElementIsVisible(_progressBarBox);
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_progressBarBox, 900);
             progressBarBox.Click();
             progressBarBox.SendKeys(Keys.Enter);
             return this;
@@ -55,10 +55,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common CloseProgressBar()
         {
-            WaitUntil.WaitSecondWindowHandle();
-            SwitchWindow();
-
-            WaitUntil.ElementIsVisible(_progressBarBox);
+            
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_progressBarBox, 30);
             progressBarBox.Click();
             progressBarBox.SendKeys(Keys.Enter);
             return this;
@@ -78,10 +76,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Close message box")]
         public Common CloseMessageBox()
         {
-            WaitUntil.WaitSecondWindowHandle();
-            SwitchWindow();
-
-            WaitUntil.ElementIsVisible(_MessageBox);
+            
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_MessageBox, 120);
             MessageBox.Click();
             MessageBox.SendKeys(Keys.Enter);
 
@@ -105,7 +101,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Wait until loader is closed")]
         public Common LoaderIsClosed()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             return this;
         }
 

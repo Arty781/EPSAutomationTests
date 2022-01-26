@@ -14,7 +14,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Make sure the binary is installed successfully")]
         public Flash CheckSuccessFlashing034()
         {
-            WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 600);
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 900);
             Assert.AreEqual("SuccessfulBurn", textboxResult034.Text);
             return this;
         }
@@ -22,7 +22,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Make sure the binary is installed successfully")]
         public Flash CheckSuccessFlashingJHM()
         {
-            WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 600);
+            WaitUntil.VisibilityOfAllElementsLocatedBy(_btnNewFlash, 900);
             Assert.AreEqual(textboxResultJHM.Text, "SuccessfulBurn");
             return this;
         }

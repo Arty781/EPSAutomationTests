@@ -24,14 +24,14 @@ namespace _034.Tests
                 .SelectTransmissionController()
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.TCU, 5);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.TCU, 5);*/
 
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary()
-                .SelectCalibration(BinaryType.Base);
+                .SelectBinaryJHM034()
+                .SelectCalibrationJHM034(BinaryType.Base);
             Pages.Common
                 .PressNextButton();
             Pages.ClientInfo
@@ -39,7 +39,10 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Flash
-                .PressFlashButton()
+                .PressFlashButton();
+            Pages.Common
+                .CloseProgressBarAfterFlashing();
+            Pages.Flash
                 .CheckSuccessFlashing034()
                 .PressNewFlashButton();
         }
@@ -60,14 +63,14 @@ namespace _034.Tests
                 .SelectTransmissionController()
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.TCU, 5);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.TCU, 5);*/
 
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary()
-                .SelectCalibration(BinaryType.Performance);
+                .SelectBinaryJHM034()
+                .SelectCalibrationJHM034(BinaryType.Performance);
             Pages.Common
                 .PressNextButton();
             Pages.ClientInfo
@@ -75,7 +78,10 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Flash
-                .PressFlashButton()
+                .PressFlashButton();
+            Pages.Common
+                .CloseProgressBarAfterFlashing();
+            Pages.Flash
                 .CheckSuccessFlashing034()
                 .PressNewFlashButton();
         }

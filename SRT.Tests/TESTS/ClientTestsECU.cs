@@ -30,8 +30,8 @@ namespace SRT.Tests
             Pages.Common
                 .PressEnterKey();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 11);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 11);*/
 
             Pages.Calibration
                 .SelectBinary()
@@ -72,8 +72,8 @@ namespace SRT.Tests
             Pages.Common
                 .PressEnterKey();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 11);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 11);*/
 
             Pages.Calibration
                 .SelectBinary()

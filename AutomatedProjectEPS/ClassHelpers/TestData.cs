@@ -1,66 +1,68 @@
-﻿namespace AutomatedProjectEPS.ClassHelpers
+﻿using System;
+
+namespace AutomatedProjectEPS.ClassHelpers
 {
     public class AppsPuth
     {
         #region BETA
-        public const string ClientOEM = @"C:\Users\Anuitex-84\AppData\Local\BETA OEM Flash Tool\FlashToolClient.exe";
-        public const string AdminOEM = @"C:\Users\Anuitex-84\AppData\Local\BETA OEM Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientOEM = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA OEM Flash Tool\FlashToolClient.exe";
+        public static string AdminOEM = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA OEM Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string Client034 = @"C:\Users\Anuitex-84\AppData\Local\BETA 034 Flash Tool\FlashToolClient.exe";
-        public const string Admin034 = @"C:\Users\Anuitex-84\AppData\Local\BETA 034 Flash Tool Admin\FlashToolAdmin.exe";
+        public static string Client034 = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA 034 Flash Tool\FlashToolClient.exe";
+        public static string Admin034 = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA 034 Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientCC = @"C:\Users\Anuitex-84\AppData\Local\BETA CC Flash Tool\FlashToolClient.exe";
-        public const string AdminCC = @"C:\Users\Anuitex-84\AppData\Local\BETA CC Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientCC = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA CC Flash Tool\FlashToolClient.exe";
+        public static string AdminCC = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA CC Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientSRT = @"C:\Users\Anuitex-84\AppData\Local\BETA SRT Flash Tool\FlashToolClient.exe";
-        public const string AdminSRT = @"C:\Users\Anuitex-84\AppData\Local\BETA SRT Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientSRT = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA SRT Flash Tool\FlashToolClient.exe";
+        public static string AdminSRT = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA SRT Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientVWR = @"C:\Users\Anuitex-84\AppData\Local\BETA VWR Flash Tool\FlashToolClient.exe";
-        public const string AdminVWR = @"C:\Users\Anuitex-84\AppData\Local\BETA VWR Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientVWR = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA VWR Flash Tool\FlashToolClient.exe";
+        public static string AdminVWR = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA VWR Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientJHM = @"C:\Users\Anuitex-84\AppData\Local\BETA JHM Power Connect\FlashToolClient.exe";
-        public const string AdminJHM = @"C:\Users\Anuitex-84\AppData\Local\BETA JHM Power Connect Admin\FlashToolAdmin.exe";
+        public static string ClientJHM = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA JHM Power Connect\FlashToolClient.exe";
+        public static string AdminJHM = $@"C:\Users\{Environment.UserName}\AppData\Local\BETA JHM Power Connect Admin\FlashToolAdmin.exe";
         #endregion
 
         #region PROD
-        /*public const string ClientOEM = @"C:\Users\ribal\AppData\Local\OEM Flash Tool\FlashToolClient.exe";
-        public const string AdminOEM = @"C:\Users\ribal\AppData\Local\OEM Flash Tool Admin\FlashToolAdmin.exe";
+        /*public static string ClientOEM = $@"C:\Users\{Environment.UserName}\AppData\Local\OEM Flash Tool\FlashToolClient.exe";
+        public static string AdminOEM = $@"C:\Users\{Environment.UserName}\AppData\Local\OEM Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string Client034 = @"C:\Users\ribal\AppData\Local\034 Flash Tool\FlashToolClient.exe";       
-        public const string Admin034 = @"C:\Users\ribal\AppData\Local\034 Flash Tool Admin\FlashToolAdmin.exe";    
+        public static string Client034 = $@"C:\Users\{Environment.UserName}\AppData\Local\034 Flash Tool\FlashToolClient.exe";
+        public static string Admin034 = $@"C:\Users\{Environment.UserName}\AppData\Local\034 Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientCC = @"C:\Users\ribal\\AppData\Local\CC Flash Tool\FlashToolClient.exe";
-        public const string AdminCC = @"C:\Users\ribal\AppData\Local\CC Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientCC = $@"C:\Users\{Environment.UserName}\AppData\Local\CC Flash Tool\FlashToolClient.exe";
+        public static string AdminCC = $@"C:\Users\{Environment.UserName}\AppData\Local\CC Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientSRT = @"C:\Users\ribal\AppData\Local\SRT Flash Tool\FlashToolClient.exe";
-        public const string AdminSRT = @"C:\Users\ribal\AppData\Local\SRT Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientSRT = $@"C:\Users\{Environment.UserName}\AppData\Local\SRT Flash Tool\FlashToolClient.exe";
+        public static string AdminSRT = $@"C:\Users\{Environment.UserName}\AppData\Local\SRT Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientVWR = @"C:\Users\ribal\AppData\Local\VWR Flash Tool\FlashToolClient.exe";
-        public const string AdminVWR = @"C:\Users\ribal\AppData\Local\VWR Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientVWR = $@"C:\Users\{Environment.UserName}\AppData\Local\VWR Flash Tool\FlashToolClient.exe";
+        public static string AdminVWR = $@"C:\Users\{Environment.UserName}\AppData\Local\VWR Flash Tool Admin\FlashToolAdmin.exe";
 
-        public const string ClientJHM = @"C:\Users\ribal\AppData\Local\JHM Power Connect\FlashToolClient.exe";
-        public const string AdminJHM = @"C:\Users\ribal\AppData\Local\JHM Power Connect Admin\FlashToolAdmin.exe";*/
+        public static string ClientJHM = $@"C:\Users\{Environment.UserName}\AppData\Local\JHM Power Connect\FlashToolClient.exe";
+        public static string AdminJHM = $@"C:\Users\{Environment.UserName}\AppData\Local\JHM Power Connect Admin\FlashToolAdmin.exe";*/
         #endregion
 
         #region LOCAL
 
-        /* public const string ClientOEM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA OEM Flash Tool\FlashToolClient.exe";
-         public const string AdminOEM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA OEM Flash Tool Admin\FlashToolAdmin.exe";
+        /*public static string ClientOEM = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA OEM Flash Tool\FlashToolClient.exe";
+        public static string AdminOEM = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA OEM Flash Tool Admin\FlashToolAdmin.exe";
 
-         public const string Client034 = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA 034 Flash Tool\FlashToolClient.exe";
-         public const string Admin034 = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA 034 Flash Tool Admin\FlashToolAdmin.exe";
+        public static string Client034 = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA 034 Flash Tool\FlashToolClient.exe";
+        public static string Admin034 = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA 034 Flash Tool Admin\FlashToolAdmin.exe";
 
-         public const string ClientCC = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA CC Flash Tool\FlashToolClient.exe";
-         public const string AdminCC = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA CC Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientCC = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA CC Flash Tool\FlashToolClient.exe";
+        public static string AdminCC = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA CC Flash Tool Admin\FlashToolAdmin.exe";
 
-         public const string ClientSRT = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA SRT Flash Tool\FlashToolClient.exe";
-         public const string AdminSRT = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA SRT Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientSRT = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA SRT Flash Tool\FlashToolClient.exe";
+        public static string AdminSRT = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA SRT Flash Tool Admin\FlashToolAdmin.exe";
 
-         public const string ClientVWR = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA VWR Flash Tool\FlashToolClient.exe";
-         public const string AdminVWR = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA VWR Flash Tool Admin\FlashToolAdmin.exe";
+        public static string ClientVWR = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA VWR Flash Tool\FlashToolClient.exe";
+        public static string AdminVWR = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA VWR Flash Tool Admin\FlashToolAdmin.exe";
 
-         public const string ClientJHM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA JHM Power Connect\FlashToolClient.exe";
-         public const string AdminJHM = @"C:\Users\Anuitex-84\Desktop\EPS Beta Refactoring (Local)\Programs\BETA JHM Power Connect Admin\FlashToolAdmin.exe";*/
+        public static string ClientJHM = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA JHM Power Connect\FlashToolClient.exe";
+        public static string AdminJHM = $@"C:\Users\{Environment.UserName}\Desktop\EPS Beta Refactoring (Local)\Programs\BETA JHM Power Connect Admin\FlashToolAdmin.exe";*/
         #endregion
 
     }
@@ -94,7 +96,7 @@
         #endregion
 
         #region Client Credentials
-        
+
         public const string LoginClientOEM = "ClientOEM";
         public const string LoginClient034 = "Client034";
         public const string LoginClientCC = "ClientCC";
@@ -124,7 +126,7 @@
         public const string PasswordAdminVWR = "$c9YH=";
 
         public const string LoginAdminJHM = "userjhm";
-        public const string PasswordAdminJHM = "string";*/
+        public const string PasswordAdminJHM = "4LG0Mxw";*/
         #endregion
 
         #region Client Credentials
@@ -237,8 +239,8 @@
 
     public class Servers
     {
-        /*public const string Server = "America";*/
-        public const string Server = "Europe";
+        public const string Server = "America";
+        /*public const string Server = "Europe";*/
         /*public const string Server = "Australia";*/
     }
 

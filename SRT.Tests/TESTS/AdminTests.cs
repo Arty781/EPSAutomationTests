@@ -353,7 +353,6 @@ namespace SRT.Tests
              .ActivateDealer()
              .OpenDealerNotesModal()
              .ClearDealerNotes()
-             .ClickTestFilter(CompanyFilter.SRT)
              .RemoveFilters();
             string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
             Pages.Management

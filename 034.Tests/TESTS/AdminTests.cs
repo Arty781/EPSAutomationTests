@@ -360,8 +360,7 @@ namespace _034.Tests
              .EditDealerData()
              .ActivateDealer()
              .OpenDealerNotesModal()
-             .ClearDealerNotes()
-             .ClickTestFilter(CompanyFilter._034)
+             .AddDealerNotes()
              .RemoveFilters();
             string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
             Pages.Management

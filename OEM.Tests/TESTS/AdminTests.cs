@@ -353,8 +353,7 @@ namespace OEM.Tests
              .EditDealerData()
              .ActivateDealer()
              .OpenDealerNotesModal()
-             .ClearDealerNotes()
-             .ClickTestFilter(CompanyFilter.OEM)
+             .AddDealerNotes()
              .RemoveFilters();
             string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
             Pages.Management

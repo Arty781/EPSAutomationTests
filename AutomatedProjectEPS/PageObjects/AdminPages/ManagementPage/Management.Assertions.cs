@@ -15,35 +15,35 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Verify that User {0} is displayed in tree")]
         public void VerifyCreatedUser(string userNameLabel, string FirstName, string LastName)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Browser._Driver.FindElementByXPath("//*[contains(@Name, 'Jane')]").Text, FirstName + " " + LastName + " - " + userNameLabel);
         }
 
         [AllureStep("Verify that User {0} is not displayed in tree")]
         public void VerifyDeleteUser(string userNameLabel)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(false, PresenceOfElement.IsElementPresent(By.Name(userNameLabel)));
         }
 
         [AllureStep("Verify that Dealer {0} is displayed in tree")]
         public void VerifyCreatedDealer(string dealerNameLabel)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Browser._Driver.FindElementByXPath("//*[contains(@Name, 'Jane')]").Text, dealerNameLabel);
         }
 
         [AllureStep("Verify that Dealer {0} is displayed in tree")]
         public void VerifyCreatedRootDealer(string dealerNameLabel)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Browser._Driver.FindElementByXPath("//*[contains(@Name, 'TestCompany')]").Text, dealerNameLabel);
         }
 
         [AllureStep("Verify that Dealer {0} is displayed in tree")]
         public void VerifyEditedDealer(string dealerNameLabel)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Browser._Driver.FindElementByXPath("//*[contains(@Name, 'Jane')]").Text, dealerNameLabel);
         }
 
@@ -57,14 +57,14 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Verify that \"User has been edited\" pop-up is displayed")]
         public void VerifyUserEditedPopUp()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Pages.Common.Messagebox.Text, "User has been edited");
         }
 
         [AllureStep("Verify Confirmation pop-up is displayed")]
         public void VerifyDeletedConfirmationPopUp()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Pages.Common.Messagebox.Text, "Are you sure you want to delete this user?");
         }
 
@@ -78,21 +78,21 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Verify deleted User {0} pop-up is displayed")]
         public void VerifyIsEditedUser(string userNameLabel)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(Pages.Common.Messagebox.Text, "User " + userNameLabel + " was deleted successfully");
         }
 
         [AllureStep("Verify edited firstname is displayed")]
         public void VerifyUserEdited(string firstName)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(firstName, Pages.Management.firstNameFld.Text);
         }
 
         [AllureStep("Verify flash limit is active and the number of flash limit is displayed")]
         public void VerifyIsActiveFlashLimit()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.IsTrue(flashCountFld.Displayed);
             Assert.AreEqual(flashCountFld.Text, "1");
         }
@@ -100,8 +100,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Verify flash limit is edited")]
         public void VerifyIsEditedFlashLimit()
         {
-            WaitUntil.InvisibilityOfLoader();
-            
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
+
             Assert.AreEqual("99998", flashCountFld.Text);
         }
 

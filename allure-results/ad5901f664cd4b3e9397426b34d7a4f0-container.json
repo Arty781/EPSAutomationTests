@@ -1,0 +1,76 @@
+{
+  "uuid": "fabf4ad4-168f-4afb-b18e-10bb031df93c-tc-0-1003",
+  "name": "JHM.Tests.AdminTests.DeleteUserInRootDealer",
+  "children": [
+    "3c8cb461-68a4-4fba-993b-d591174e734f-tr-0-1009"
+  ],
+  "befores": [
+    {
+      "name": "OneTimeSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643102572663,
+      "stop": 1643102572663
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643102572663,
+      "stop": 1643102572663
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643102572663,
+      "stop": 1643102572663
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643102572663,
+      "stop": 1643102572663
+    }
+  ],
+  "links": [],
+  "start": 1643102382497,
+  "stop": 1643102572665
+}

@@ -33,7 +33,7 @@ namespace AutomatedProjectEPS.PageObjects
             WaitUntil.ElementIsVisible(_searchFld);
             searchFld.Clear();
             searchFld.SendKeys(userName);
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             searchBtn.Click();
 
 
@@ -43,7 +43,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Open Root Tree")]
         public Management OpenRootTree()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             ExpanderBtn.Click();
             
             return this;
@@ -52,7 +52,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Open Nested Tree")]
         public Management OpenNestedTree()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             ExpanderBtn.Click();
             IReadOnlyCollection<IWebElement> expanders = Browser._Driver.FindElementsByAccessibilityId("Expander");
             ExpanderBtn.Click();
@@ -215,14 +215,14 @@ namespace AutomatedProjectEPS.PageObjects
             filters.AddRange(new string[] { filter, "Qa", "Test" });
             for(int i = 0; i < filters.Count; i++)
             {
-                
+                filterFld.Clear();
+                filterDescrFld.Clear();
                 filterFld.SendKeys(filters[i].ToString());
                 filterDescrFld.SendKeys(filters[i].ToString());
                 andRadioBtn.Click();
                 addFilterBtn.SendKeys(Keys.Control);
                 addFilterBtn.Click();
-                filterFld.Clear();
-                filterDescrFld.Clear();
+                
             }
 
             return this;
@@ -422,7 +422,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Click \"Delete User\" button")]
         public Management ClickDeleteUserBtn()
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             userDeleteBtn.SendKeys(Keys.Control);
             new Actions(Browser._Driver)
                 .SendKeys(Keys.PageDown)
@@ -506,7 +506,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter root Dealer Data")]
         public Management EnterRootDealerData(string company)
         {
-            /*CompanyNameTbx.Clear();*/
+            CompanyNameTbx.Clear();
             CompanyNameTbx.SendKeys(Keys.Control);
             CompanyNameTbx.SendKeys(company);
             ContactNameTbx.Clear();
@@ -528,7 +528,8 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Enter Nested Dealer Data")]
         public Management EnterNestedDealerData()
         {
-            /*CompanyNameTbx.Clear();*/
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
+            CompanyNameTbx.Clear();
             CompanyNameTbx.SendKeys("Jane QA" + " " + DateTimeOffset.Now.ToUnixTimeMilliseconds());
             ContactNameTbx.Clear();
             ContactNameTbx.SendKeys("Doe");
@@ -582,6 +583,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Open User notes modal")]
         public Management OpenDealerNotesModal()
         {
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             accNotesBtn.SendKeys(Keys.Control);
             new Actions(Browser._Driver)
                 .Release(accNotesBtn)
@@ -596,7 +598,7 @@ namespace AutomatedProjectEPS.PageObjects
         {
             Pages.Common.SwitchWindow();
 
-            noteTextArea.SendKeys("Phone number: (907) 826-3317 \n Street: 245 Cold Storage Rd \n City: Craig \n State: Alaska(AK) \n Zipcode: 99921 \n Country: USA \n Address: 245 Cold Storage Rd, Craig, Alaska 99921, USA \n");
+            noteTextArea.SendKeys("Phone number: (907) 826-3317 ");
             noteSaveBtn.Click();
             return this;
         }
@@ -606,7 +608,7 @@ namespace AutomatedProjectEPS.PageObjects
         {
             Pages.Common.SwitchWindow();
 
-            noteTextArea.Clear();
+            noteTextArea.SendKeys("Phone number: (907) 826-3317");
             noteSaveBtn.Click();
             return this;
         }

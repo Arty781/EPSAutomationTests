@@ -30,8 +30,8 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary()
-                .SelectCalibration(BinaryType.Base);
+                .SelectBinaryJHM034()
+                .SelectCalibrationJHM034(BinaryType.Base);
             Pages.Common
                 .PressNextButton();
             Pages.ClientInfo
@@ -39,7 +39,10 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Flash
-                .PressFlashButton()
+                .PressFlashButton();
+            Pages.Common
+                .CloseProgressBarAfterFlashing();
+            Pages.Flash
                 .CheckSuccessFlashing034()
                 .PressNewFlashButton();
         }
@@ -66,8 +69,8 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary()
-                .SelectCalibration(BinaryType.Performance);
+                .SelectBinaryJHM034()
+                .SelectCalibrationJHM034(BinaryType.Performance);
             Pages.Common
                 .PressNextButton();
             Pages.ClientInfo
@@ -75,7 +78,10 @@ namespace _034.Tests
             Pages.Common
                 .PressNextButton();
             Pages.Flash
-                .PressFlashButton()
+                .PressFlashButton();
+            Pages.Common
+                .CloseProgressBarAfterFlashing();
+            Pages.Flash
                 .CheckSuccessFlashing034()
                 .PressNewFlashButton();
         }

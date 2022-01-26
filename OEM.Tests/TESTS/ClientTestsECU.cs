@@ -29,8 +29,8 @@ namespace OEM.Tests
             Pages.Controller
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 10);
+           /* string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 10);*/
 
             Pages.ClientInfo
                 .FillClientInfoOEM()
@@ -83,8 +83,8 @@ namespace OEM.Tests
             Pages.Controller
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 10);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 10);*/
 
             Pages.ClientInfo
                 .FillClientInfoOEM()

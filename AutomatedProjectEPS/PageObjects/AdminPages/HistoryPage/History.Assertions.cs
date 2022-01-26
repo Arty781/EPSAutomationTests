@@ -36,17 +36,23 @@ namespace AutomatedProjectEPS.PageObjects
         
         public void CheckIsflashingsDisplayed(string distributor)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             IReadOnlyCollection<IWebElement> report = Browser._Driver.FindElements(_gridCell);
-            IWebElement row = null;
-
+            string flashitem = null;
             foreach (var item in report)
             {
-                row = item;
-                Assert.AreEqual(distributor, row.Text);
+                flashitem = item.Text;
+                if (report.Count != 0)
+                {
+                    if(flashitem == distributor)
+                    {
+                        break;
+                    }
+                    
+                }
+                Console.WriteLine($"Flashing with distributor \"{0}\" has not found", item);
             }
-
-
+            Assert.IsTrue(PresenceOfElement.IsElementPresent(By.Name(flashitem)));
         }
     }
 }

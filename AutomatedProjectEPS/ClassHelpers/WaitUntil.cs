@@ -38,6 +38,10 @@ namespace AutomatedProjectEPS.ClassHelpers
         {
            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(CustomWait.InvisibilityOfLoader());
         }
-        
+
+        public static void InvisibilityOfElementLocated(By locator, int seconds = 180)
+        {
+            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(seconds)).Until(SeleniumExtras.WaitHelpers.ExpectedConditions.InvisibilityOfElementLocated(locator));
+        }
     }
 }

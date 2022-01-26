@@ -355,7 +355,6 @@ namespace VWR.Tests
              .ActivateDealer()
              .OpenDealerNotesModal()
              .ClearDealerNotes()
-             .ClickTestFilter(CompanyFilter.VWR)
              .RemoveFilters();
             string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
             Pages.Management

@@ -12,8 +12,8 @@ namespace AutomatedProjectEPS.PageObjects
     {
         public IWebElement cbbxBinaries => Browser._Driver.FindElement(_cbbxBinaries);
         public readonly By _cbbxBinaries = By.XPath("//*[contains(@AutomationId, 'BinariesCbbx')]");
-        public IWebElement EcuNameTb => Browser._Driver.FindElementByAccessibilityId("EcuNameTb");
-        public readonly By _EcuNameTb = By.XPath("//*[contains(@AutomationId, 'EcuNameTb')]");
+        public IWebElement SelectedBinaryTb => Browser._Driver.FindElementByAccessibilityId("SelectedBinaryTb");
+        public readonly By _SelectedBinaryTb = By.XPath("//*[contains(@AutomationId, 'SelectedBinaryTb')]");
 
         public IWebElement cbbxCalibrations => Browser._Driver.FindElement(_cbbxCalibrations);
         public readonly By _cbbxCalibrations = By.XPath("//*[contains(@AutomationId, 'CalibrationsCbbx')]");
@@ -32,17 +32,17 @@ namespace AutomatedProjectEPS.PageObjects
 
         //OEM  listbox with Ecus
         public IWebElement lbEcus => Browser._Driver.FindElement(_lbEcus);
-        public readonly By _lbEcus = By.XPath("//*[contains(@AutomationId, 'EcusLb')]");
+        public readonly By _lbEcus = By.XPath("//*[contains(@AutomationId, 'SelectedBinaryTb')]");
 
         public IWebElement tbEcuName => Browser._Driver.FindElement(_tbEcuName);
-        public readonly By _tbEcuName = By.XPath("//*[contains(@AutomationId, 'tb_EcuName')]");
+        public readonly By _tbEcuName = By.XPath("//*[contains(@AutomationId, 'SelectedBinaryTb')]");
 
 
 
 
         //OEM  listbox with Calibrations
-        public IWebElement lbCalibrations => Browser._Driver.FindElement(_lbCalibrations);
-        public readonly By _lbCalibrations = By.XPath("//*[contains(@AutomationId, 'CalibrationsLb')]");  //Name - e.g.'Serie emulation'         ClassName - ListBoxItem
+        public IWebElement lbCalibrations => Browser._Driver.FindElementByAccessibilityId("SelectedCalibrationTb");
+        public readonly By _lbCalibrations = By.XPath("//*[contains(@AutomationId, 'SelectedCalibrationTb')]");  //Name - e.g.'Serie emulation'         ClassName - ListBoxItem
 
         public IWebElement tbCalibrationName => Browser._Driver.FindElement(_tbCalibrationName);
         public readonly By _tbCalibrationName = By.XPath("//*[contains(@AutomationId, 'CalibrationNameTb')]");     //Name - e.g.'Perf'       ClassName - ListBoxItem

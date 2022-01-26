@@ -29,8 +29,8 @@ namespace CC.Tests
             Pages.Common
                 .PressEnterKey();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.TCU, 2);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.TCU, 2);*/
 
             Pages.Calibration
                 .SelectBinary()
@@ -72,8 +72,8 @@ namespace CC.Tests
             Pages.Common
                 .PressEnterKey();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.TCU, 2);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.TCU, 2);*/
 
             Pages.Calibration
                 .SelectBinary()

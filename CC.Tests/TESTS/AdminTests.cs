@@ -354,7 +354,6 @@ namespace CC.Tests
              .ActivateDealer()
              .OpenDealerNotesModal()
              .ClearDealerNotes()
-             .ClickTestFilter(CompanyFilter.CC)
              .RemoveFilters();
             string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
             Pages.Management

@@ -34,6 +34,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Upload performance binary - {0}")]
         public BinaryUpload BrowsePerformanceBinary(string puthBinary)
         {
+            WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'BrowsePerformanceBinaryBtn')]"));
             IWebElement btnBrowse = Browser._Driver.FindElementByAccessibilityId("BrowsePerformanceBinaryBtn");
             WaitUntil.ElementIsClickable(By.XPath("//*[contains(@AutomationId, 'BrowsePerformanceBinaryBtn')]"));
             btnBrowse.SendKeys(Keys.Enter + Browser.RootPath() + "Binariki\\" + puthBinary + Keys.Enter);

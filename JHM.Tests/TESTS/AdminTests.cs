@@ -357,7 +357,6 @@ namespace JHM.Tests
              .ActivateDealer()
              .OpenDealerNotesModal()
              .ClearDealerNotes()
-             .ClickTestFilter(CompanyFilter.JHM)
              .RemoveFilters();
             string editedDealerNameLabel = Pages.Management.GetCompanyLabel();
             Pages.Management

@@ -23,7 +23,7 @@ namespace AutomatedProjectEPS.PageObjects
         [AllureStep("Make Sure that removed {0} binary is not displayedfound")]
         public BinarySearch MakeSureBinaryDeleted(string binaryLabel)
         {
-            WaitUntil.InvisibilityOfLoader();
+            WaitUntil.InvisibilityOfElementLocated(Pages.Common._Loader);
             Assert.AreEqual(false, PresenceOfElement.IsElementPresent(_elemFromList));
             return this;
         }

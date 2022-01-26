@@ -34,8 +34,8 @@ namespace VWR.Tests
             Pages.Common
                 .PressEnterKey();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 4);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 4);*/
 
             Pages.Calibration
                 .SelectBinary()
@@ -44,12 +44,7 @@ namespace VWR.Tests
             Pages.Flash
                 .PressFlashButton();
             Pages.Common
-                .CloseProgressBarAfterFlashing()
-                .WaitFifteenSeconds()
-                .CloseMessageBox()
-                .CloseProgressBar()
-                .CloseProgressBar()
-                .SwitchWindow();
+                .CloseProgressBarAfterFlashing();
             Pages.Flash
                 .CheckSuccessFlashingLogs();
 
@@ -76,8 +71,8 @@ namespace VWR.Tests
             Pages.Common
                 .PressEnterKey();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 4);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 4);*/
 
             Pages.Calibration
                 .SelectBinary()
@@ -86,12 +81,7 @@ namespace VWR.Tests
             Pages.Flash
                 .PressFlashButton();
             Pages.Common
-                .CloseProgressBarAfterFlashing()
-                .WaitFifteenSeconds()
-                .CloseMessageBox()
-                .CloseProgressBar()
-                .CloseProgressBar()
-                .SwitchWindow();
+                .CloseProgressBarAfterFlashing();
             Pages.Flash
                 .CheckSuccessFlashingLogs();
         }

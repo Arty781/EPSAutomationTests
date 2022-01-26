@@ -22,14 +22,14 @@ namespace JHM.Tests
                 .PressLoginButton()
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 9);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 9);*/
 
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary()
-                .SelectCalibration(BinaryType.Base);
+                .SelectBinaryJHM034()
+                .SelectCalibrationJHM034(BinaryType.Base);
             Pages.Common
                 .PressNextButton();
             Pages.ClientInfo
@@ -57,14 +57,14 @@ namespace JHM.Tests
                 .PressLoginButton()
                 .PressCheckIdButton();
 
-            string binaryName = new AppDbContext()
-                .GetLastBinary(BinaryPartNumbers.ECU, 9);
+            /*string binaryName = new AppDbContext()
+                .GetLastBinary(BinaryPartNumbers.ECU, 9);*/
 
             Pages.Common
                 .PressNextButton();
             Pages.Calibration
-                .SelectBinary()
-                .SelectCalibration(BinaryType.Performance);
+                .SelectBinaryJHM034()
+                .SelectCalibrationJHM034(BinaryType.Performance);
             Pages.Common
                 .PressNextButton();
             Pages.ClientInfo
